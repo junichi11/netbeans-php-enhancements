@@ -116,17 +116,24 @@ public final class SmartDeleteAction implements ActionListener {
         CharSequence text = token.text();
         int startOffset = ts.offset() + 1;
         int removeLength = 0;
+        int textLength = text.length();
 
         // string
         // "something" or 'something' -> "" or ''
         if (id == PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING) {
-            removeLength = text.length() - 2;
+            if (textLength <= 2) {
+                // "" or ''
+                removeLength = textLength;
+                startOffset = ts.offset();
+            } else {
+                removeLength = textLength - 2;
+            }
         }
 
         // variable
         // $something -> $
         if (id == PHPTokenId.PHP_VARIABLE) {
-            removeLength = text.length() - 1;
+            removeLength = textLength - 1;
         }
 
         try {
