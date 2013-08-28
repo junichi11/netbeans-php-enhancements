@@ -45,6 +45,8 @@ import com.junichi11.netbeans.php.enhancements.utils.DocUtils;
 import com.junichi11.netbeans.php.enhancements.utils.Utils;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.EnumSet;
+import java.util.Set;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
@@ -69,6 +71,10 @@ import org.openide.util.NbBundle.Messages;
 public final class SmartDeleteAction implements ActionListener {
 
     private final EditorCookie context;
+    private final Set<PHPTokenId> availableIds = EnumSet.of(
+            PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING,
+            PHPTokenId.PHP_VARIABLE,
+            PHPTokenId.PHP_STRING);
 
     public SmartDeleteAction(EditorCookie context) {
         this.context = context;
@@ -109,7 +115,7 @@ public final class SmartDeleteAction implements ActionListener {
         ts.moveNext();
         Token<PHPTokenId> token = ts.token();
         PHPTokenId id = token.id();
-        if (id != PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING && id != PHPTokenId.PHP_VARIABLE) {
+        if (!availableIds.contains(id)) {
             return;
         }
 
@@ -134,6 +140,13 @@ public final class SmartDeleteAction implements ActionListener {
         // $something -> $
         if (id == PHPTokenId.PHP_VARIABLE) {
             removeLength = textLength - 1;
+        }
+
+        // php string
+        // e.g. DEFINE
+        if (id == PHPTokenId.PHP_STRING) {
+            startOffset = ts.offset();
+            removeLength = textLength;
         }
 
         try {
