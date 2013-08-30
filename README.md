@@ -5,6 +5,7 @@ Support for some small features.
 ## Features
 
 - Smart delete (Ctrl + Shift + BACK_SPACE)
+- Generate dummy text (Alt + Insert > Dummy Text)
 
 ### Smart delete
 
@@ -25,6 +26,16 @@ e.g.
 ```php
 <?php $somethingVariable;?> -> <?php $;?>
 ```
+
+### Generate dummy text
+
+We can use this feature on PHP and Html editors.  
+Please set base text on the Dialog. It will be looped with option.
+
+#### options
+
+- loop count
+- text length
 
 ## License
 
