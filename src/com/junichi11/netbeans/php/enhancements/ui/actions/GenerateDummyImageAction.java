@@ -167,15 +167,9 @@ public final class GenerateDummyImageAction implements ActionListener {
     }
 
     private void showWarningDialog(String fileNameWithExt) {
-        NotifyDescriptor notifyDescriptor = new NotifyDescriptor(
+        NotifyDescriptor.Message message = new NotifyDescriptor.Message(
                 Bundle.GenerateDummyImageAction_File_Exists_Warning(fileNameWithExt),
-                Bundle.GenerateDummyImageAction_File_Exists_Title(),
-                NotifyDescriptor.OK_CANCEL_OPTION,
-                NotifyDescriptor.WARNING_MESSAGE,
-                null,
-                null);
-        if (DialogDisplayer.getDefault().notify(notifyDescriptor) == NotifyDescriptor.OK_OPTION) {
-            // do nothing
-        }
+                NotifyDescriptor.WARNING_MESSAGE);
+        Object response = DialogDisplayer.getDefault().notify(message);
     }
 }
