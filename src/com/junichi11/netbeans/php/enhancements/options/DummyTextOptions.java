@@ -48,7 +48,7 @@ import org.openide.util.NbPreferences;
  *
  * @author junichi11
  */
-public class DummyTextOptions {
+public final class DummyTextOptions {
 
     private static final DummyTextOptions INSTANCE = new DummyTextOptions();
     private static final String DUMMY_TEXT = "dummy.text"; // NOI18N
