@@ -41,8 +41,13 @@
  */
 package com.junichi11.netbeans.php.enhancements.ui.actions;
 
+import com.junichi11.netbeans.php.enhancements.options.DummyImageOptions;
 import java.awt.Color;
 import java.awt.Dialog;
+import java.awt.event.InputMethodEvent;
+import java.awt.event.InputMethodListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import javax.swing.JColorChooser;
 import javax.swing.JPanel;
 import org.openide.DialogDescriptor;
@@ -67,7 +72,7 @@ public class DummyImagePanel extends JPanel {
     }
 
     private void init() {
-        setColorBox(getColor());
+        load();
     }
 
     private void setColorBox(Color color) {
@@ -174,6 +179,18 @@ public class DummyImagePanel extends JPanel {
         return hex;
     }
 
+    private void load() {
+        DummyImageOptions options = DummyImageOptions.getInstance();
+        widthSpinner.setValue(options.getImageWidth());
+        heightSpinner.setValue(options.getImageHeight());
+        colorTextField.setText(options.getColor());
+        opacitySpinner.setValue(options.getOpacity());
+        fileNamePrefixTextField.setText(options.getFileNamePrefix());
+        fileNameSuffixTextField.setText(options.getFileNameSuffix());
+        overwriteCheckBox.setSelected(options.isOverwrite());
+        setColorBox(getColor());
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -197,6 +214,8 @@ public class DummyImagePanel extends JPanel {
         fileNamePrefixTextField = new javax.swing.JTextField();
         fileNameSuffixLabel = new javax.swing.JLabel();
         fileNameSuffixTextField = new javax.swing.JTextField();
+        saveAsDefaultButton = new javax.swing.JButton();
+        loadDefaultButton = new javax.swing.JButton();
 
         org.openide.awt.Mnemonics.setLocalizedText(widthLabel, org.openide.util.NbBundle.getMessage(DummyImagePanel.class, "DummyImagePanel.widthLabel.text")); // NOI18N
 
@@ -241,6 +260,20 @@ public class DummyImagePanel extends JPanel {
 
         fileNameSuffixTextField.setText(org.openide.util.NbBundle.getMessage(DummyImagePanel.class, "DummyImagePanel.fileNameSuffixTextField.text")); // NOI18N
 
+        org.openide.awt.Mnemonics.setLocalizedText(saveAsDefaultButton, org.openide.util.NbBundle.getMessage(DummyImagePanel.class, "DummyImagePanel.saveAsDefaultButton.text")); // NOI18N
+        saveAsDefaultButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveAsDefaultButtonActionPerformed(evt);
+            }
+        });
+
+        org.openide.awt.Mnemonics.setLocalizedText(loadDefaultButton, org.openide.util.NbBundle.getMessage(DummyImagePanel.class, "DummyImagePanel.loadDefaultButton.text")); // NOI18N
+        loadDefaultButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loadDefaultButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -279,6 +312,12 @@ public class DummyImagePanel extends JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fileNameSuffixTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(loadDefaultButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(saveAsDefaultButton)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -308,8 +347,12 @@ public class DummyImagePanel extends JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(fileNameSuffixLabel)
                     .addComponent(fileNameSuffixTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(overwriteCheckBox)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(saveAsDefaultButton)
+                    .addComponent(loadDefaultButton))
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -322,6 +365,21 @@ public class DummyImagePanel extends JPanel {
             setColorBox(getColor());
         }
     }//GEN-LAST:event_colorTextFieldMouseClicked
+
+    private void saveAsDefaultButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveAsDefaultButtonActionPerformed
+        DummyImageOptions options = DummyImageOptions.getInstance();
+        options.setImageWidth(getImageWidth());
+        options.setImageHeight(getImageHeight());
+        options.setOpacity(getOpacity());
+        options.setColor(getColorCode());
+        options.setFileNamePrefix(getFileNamePrefix());
+        options.setFileNameSuffix(getFileNameSuffix());
+        options.setOverwrite(isOverwrite());
+    }//GEN-LAST:event_saveAsDefaultButtonActionPerformed
+
+    private void loadDefaultButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadDefaultButtonActionPerformed
+        load();
+    }//GEN-LAST:event_loadDefaultButtonActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel colorLabel;
     private javax.swing.JPanel colorPanel;
@@ -332,9 +390,11 @@ public class DummyImagePanel extends JPanel {
     private javax.swing.JTextField fileNameSuffixTextField;
     private javax.swing.JLabel heightLabel;
     private javax.swing.JSpinner heightSpinner;
+    private javax.swing.JButton loadDefaultButton;
     private javax.swing.JLabel opacityLabel;
     private javax.swing.JSpinner opacitySpinner;
     private javax.swing.JCheckBox overwriteCheckBox;
+    private javax.swing.JButton saveAsDefaultButton;
     private javax.swing.JLabel widthLabel;
     private javax.swing.JSpinner widthSpinner;
     // End of variables declaration//GEN-END:variables
