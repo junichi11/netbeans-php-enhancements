@@ -6,6 +6,7 @@ Support for some small features.
 
 - Smart delete (Ctrl + Shift + BACK_SPACE)
 - Generate dummy text (Alt + Insert > Dummy Text)
+- Generate dummy image
 
 ### Smart delete
 
@@ -36,6 +37,12 @@ Please set base text on the Dialog. It will be looped with option.
 
 - loop count
 - text length
+
+### Generate dummy image
+
+We can generate a dummy image with this feature to specific folder.  
+Please right-click a folder > `Generate dummy image`
+
 
 ## License
 
