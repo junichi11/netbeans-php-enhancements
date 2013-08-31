@@ -92,7 +92,7 @@ public final class DummyImageOptions {
     }
 
     public String getColor() {
-        return getPreferences().get(IMAGE_COLOR, "#0c0c0c"); // NOI18N
+        return getPreferences().get(IMAGE_COLOR, "#c0c0c0"); // NOI18N
     }
 
     public void setColor(String color) {
