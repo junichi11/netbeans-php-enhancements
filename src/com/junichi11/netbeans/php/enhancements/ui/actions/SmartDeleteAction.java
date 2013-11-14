@@ -42,16 +42,20 @@
 package com.junichi11.netbeans.php.enhancements.ui.actions;
 
 import com.junichi11.netbeans.php.enhancements.utils.DocUtils;
-import com.junichi11.netbeans.php.enhancements.utils.Utils;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.EnumSet;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
+import javax.swing.text.AbstractDocument;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.EditorRegistry;
+import org.netbeans.api.html.lexer.HTMLTokenId;
 import org.netbeans.api.lexer.Token;
+import org.netbeans.api.lexer.TokenHierarchy;
+import org.netbeans.api.lexer.TokenId;
 import org.netbeans.api.lexer.TokenSequence;
 import org.netbeans.modules.php.editor.lexer.PHPTokenId;
 import org.openide.awt.ActionID;
@@ -71,10 +75,11 @@ import org.openide.util.NbBundle.Messages;
 public final class SmartDeleteAction implements ActionListener {
 
     private final EditorCookie context;
-    private final Set<PHPTokenId> availableIds = EnumSet.of(
+    private final Set<TokenId> availableIds = new HashSet<TokenId>(Arrays.asList(
             PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING,
             PHPTokenId.PHP_VARIABLE,
-            PHPTokenId.PHP_STRING);
+            PHPTokenId.PHP_STRING,
+            HTMLTokenId.VALUE));
 
     public SmartDeleteAction(EditorCookie context) {
         this.context = context;
@@ -92,10 +97,6 @@ public final class SmartDeleteAction implements ActionListener {
             return;
         }
 
-        if (!Utils.isPHP(editor)) {
-            return;
-        }
-
         // caret position is end of token
         // i.e. if it is start of next token, string is not removed.
         // so, caret position - 1
@@ -104,35 +105,37 @@ public final class SmartDeleteAction implements ActionListener {
         if (offset < 0) {
             offset = 0;
         }
-
         // get token sequence
-        TokenSequence<PHPTokenId> ts = Utils.getTokenSequence(document, offset);
+        TokenSequence ts = getTokenSequence(document, offset);
         if (ts == null) {
             return;
         }
 
-        ts.move(offset);
-        ts.moveNext();
-        Token<PHPTokenId> token = ts.token();
-        PHPTokenId id = token.id();
-        if (!availableIds.contains(id)) {
+        Token token = ts.token();
+        TokenId id = token.id();
+        String primaryCategory = id.primaryCategory();
+        boolean isString = primaryCategory.equals("string"); // NOI18N
+        if (!availableIds.contains(id) && !isString) {
             return;
         }
-
-        CharSequence text = token.text();
+        String text = token.text().toString();
         int startOffset = ts.offset() + 1;
         int removeLength = 0;
         int textLength = text.length();
-
         // string
         // "something" or 'something' -> "" or ''
-        if (id == PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING) {
-            if (textLength <= 2) {
-                // "" or ''
+        if (isString || id == HTMLTokenId.VALUE) {
+            if (wrapWith(text, "\"") || wrapWith(text, "'")) { // NOI18N
+                if (textLength <= 2) {
+                    // "" or ''
+                    removeLength = textLength;
+                    startOffset = ts.offset();
+                } else {
+                    removeLength = textLength - 2;
+                }
+            } else {
                 removeLength = textLength;
                 startOffset = ts.offset();
-            } else {
-                removeLength = textLength - 2;
             }
         }
 
@@ -155,5 +158,30 @@ public final class SmartDeleteAction implements ActionListener {
         } catch (BadLocationException ex) {
             Exceptions.printStackTrace(ex);
         }
+    }
+
+    private boolean wrapWith(String target, String wrapString) {
+        return target.startsWith(wrapString) && target.endsWith(wrapString);
+    }
+
+    private TokenSequence getTokenSequence(Document document, int offset) {
+        AbstractDocument ad = (AbstractDocument) document;
+        ad.readLock();
+        TokenSequence tokenSequence;
+        try {
+            TokenHierarchy th = TokenHierarchy.get(document);
+            tokenSequence = th.tokenSequence();
+        } finally {
+            ad.readUnlock();
+        }
+        tokenSequence.move(offset);
+        tokenSequence.moveNext();
+
+        while (tokenSequence.embedded() != null) {
+            tokenSequence = tokenSequence.embedded();
+            tokenSequence.move(offset);
+            tokenSequence.moveNext();
+        }
+        return tokenSequence;
     }
 }
