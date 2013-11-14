@@ -7,6 +7,7 @@ Support for some small features.
 - Smart delete (Ctrl + Shift + BACK_SPACE)
 - Generate dummy text (Alt + Insert > Dummy Text)
 - Generate dummy image
+- Convert to PHP short array syntax
 
 ### Smart delete
 
@@ -21,7 +22,7 @@ e.g.
 ```
 
 #### delete variable name
- 
+
 e.g.
 
 ```php
@@ -30,7 +31,7 @@ e.g.
 
 ### Generate dummy text
 
-We can use this feature on PHP and Html editors.  
+We can use this feature on PHP and Html editors.
 Please set base text on the Dialog. It will be looped with option.
 
 #### options
@@ -40,9 +41,13 @@ Please set base text on the Dialog. It will be looped with option.
 
 ### Generate dummy image
 
-We can generate a dummy image with this feature to specific folder.  
+We can generate a dummy image with this feature to specific folder.
 Please right-click a folder > `Generate dummy image`
 
+### Convert to PHP short array syntax
+
+Convert array() to [].
+Right-click (file|directory) > Convert to php short array syntax
 
 ## License
 
