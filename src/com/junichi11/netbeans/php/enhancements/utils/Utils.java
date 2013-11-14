@@ -69,6 +69,10 @@ public final class Utils {
         return PHP_MIME_TYPE.equals(mimeType);
     }
 
+    public static boolean isPHP(Document document) {
+        return NbEditorUtilities.getMimeType(document).equals(PHP_MIME_TYPE);
+    }
+
     public static boolean isHtml(JTextComponent editor) {
         String mimeType = NbEditorUtilities.getMimeType(editor);
         if (mimeType == null || mimeType.isEmpty()) {
