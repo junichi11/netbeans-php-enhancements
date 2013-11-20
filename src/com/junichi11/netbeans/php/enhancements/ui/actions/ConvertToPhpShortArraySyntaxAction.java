@@ -167,51 +167,60 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
 
         try {
             // get document
-            StyledDocument document = getDocument(ec);
-            if (!Utils.isPHP(document)) {
+            StyledDocument sdoc = getDocument(ec);
+            if (!Utils.isPHP(sdoc)) {
                 return;
             }
-            final StyledDocument sdoc = document;
-            ts = Utils.getTokenSequence(sdoc, 0);
-            if (ts == null) {
-                return;
-            }
-            ts.move(0);
-
-            NbDocument.runAtomic(sdoc, new Runnable() {
-
-                @Override
-                public void run() {
-                    init();
-
-                    while (ts.moveNext()) {
-                        Token token = ts.token();
-                        handleToken(token);
-                    }
-                    if (!isChanged) {
-                        return;
-                    }
-
-                    try {
-                        // XXX line feed is added to last token when document is devided to tokens
-                        int length = sb.length();
-                        if (length > 0) {
-                            // delete last position
-                            sb.deleteCharAt(length - 1);
-                        }
-                        sdoc.remove(0, sdoc.getLength());
-                        sdoc.insertString(0, sb.toString(), null);
-                    } catch (BadLocationException ex) {
-                        Exceptions.printStackTrace(ex);
-                    }
-                }
-            });
+            convert(sdoc);
 
             // save
-            ec.saveDocument();
+            if (isChanged) {
+                ec.saveDocument();
+            }
         } catch (IOException ex) {
             Exceptions.printStackTrace(ex);
         }
+    }
+
+    /**
+     * Convert to short array syntax.
+     *
+     * @param sdoc
+     */
+    public void convert(final StyledDocument sdoc) {
+        ts = Utils.getTokenSequence(sdoc, 0);
+        if (ts == null) {
+            return;
+        }
+        ts.move(0);
+
+        NbDocument.runAtomic(sdoc, new Runnable() {
+            @Override
+            public void run() {
+                init();
+
+                while (ts.moveNext()) {
+                    Token token = ts.token();
+                    handleToken(token);
+                }
+                if (!isChanged) {
+                    return;
+                }
+
+                try {
+                    // XXX line feed is added to last token when document is devided to tokens
+                    int length = sb.length();
+                    if (length > 0) {
+                        // delete last position
+                        sb.deleteCharAt(length - 1);
+                    }
+                    sdoc.remove(0, sdoc.getLength());
+                    sdoc.insertString(0, sb.toString(), null);
+                } catch (BadLocationException ex) {
+                    Exceptions.printStackTrace(ex);
+                }
+            }
+        });
     }
 
     private void init() {
