@@ -12,7 +12,7 @@
                     <compile-dependency/>
                     <run-dependency>
                         <release-version>1</release-version>
-                        <specification-version>1.35.1</specification-version>
+                        <specification-version>1.32.1</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
@@ -39,7 +39,7 @@
                     <compile-dependency/>
                     <run-dependency>
                         <release-version>3</release-version>
-                        <specification-version>3.46.1.22.43</specification-version>
+                        <specification-version>3.33.3.21.40</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
@@ -75,7 +75,7 @@
                     <compile-dependency/>
                     <run-dependency>
                         <release-version>2</release-version>
-                        <specification-version>1.53.1.1</specification-version>
+                        <specification-version>1.49.3.1</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
