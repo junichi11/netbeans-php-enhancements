@@ -126,7 +126,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             if (caretToken == null || caretToken.id() == PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING) {
                 return;
             }
-            List tokenIdList = Arrays.asList(PHPTokenId.PHP_SEMICOLON, PHPTokenId.PHP_CURLY_CLOSE, PHPTokenId.PHP_OPENTAG);
+            List<PHPTokenId> tokenIdList = Arrays.asList(PHPTokenId.PHP_SEMICOLON, PHPTokenId.PHP_CURLY_CLOSE, PHPTokenId.PHP_OPENTAG);
             Token<? extends PHPTokenId> token = LexUtilities.findPreviousToken(ts, tokenIdList);
             if (token == null || !tokenIdList.contains(token.id())) {
                 return;
@@ -134,7 +134,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
 
             Token<? extends PHPTokenId> arrayToken;
             int caretOffset = context.getOffset();
-            List findList = Arrays.asList(PHPTokenId.PHP_ARRAY);
+            List<PHPTokenId> findList = Arrays.asList(PHPTokenId.PHP_ARRAY);
             do {
                 arrayToken = LexUtilities.findNextToken(ts, findList);
                 if (arrayToken == null) {
