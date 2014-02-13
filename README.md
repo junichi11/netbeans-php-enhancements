@@ -8,6 +8,7 @@ Support for some small features.
 - Generate dummy text (Alt + Insert > Dummy Text)
 - Generate dummy image
 - Convert to PHP short array syntax
+- Typing hooks
 
 ### Smart delete
 
@@ -48,6 +49,22 @@ Please right-click a folder > `Generate dummy image`
 
 Convert array() to [].
 Right-click (file|directory) > Convert to php short array syntax
+
+### Typing hooks
+
+If you want to enable this feature, Please check Options(Tools > Options > PHP > Enhancements).
+
+This is avaible with the following operators:
+
+- Object operator ->
+- Double arrow operator =>
+
+e.g.  type `$this-` => `$this->`, type `array('key' =)` => `array('key' =>)`
+
+```php
+$this->property;
+array('key' => 'value');
+```
 
 ## License
 

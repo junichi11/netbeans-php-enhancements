@@ -200,7 +200,7 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
                 init();
 
                 while (ts.moveNext()) {
-                    Token token = ts.token();
+                    Token<PHPTokenId> token = ts.token();
                     handleToken(token);
                 }
                 if (!isChanged) {
@@ -240,7 +240,7 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
         return document;
     }
 
-    private void handleToken(Token token) {
+    private void handleToken(Token<PHPTokenId> token) {
         // array
         if (token.id() == PHPTokenId.PHP_ARRAY) {
             handleArray();

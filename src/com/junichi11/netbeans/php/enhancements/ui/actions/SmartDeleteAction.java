@@ -75,7 +75,7 @@ import org.openide.util.NbBundle.Messages;
 public final class SmartDeleteAction implements ActionListener {
 
     private final EditorCookie context;
-    private final Set<TokenId> availableIds = new HashSet<TokenId>(Arrays.asList(
+    private final Set<? extends TokenId> availableIds = new HashSet<TokenId>(Arrays.asList(
             PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING,
             PHPTokenId.PHP_VARIABLE,
             PHPTokenId.PHP_STRING,
@@ -106,12 +106,12 @@ public final class SmartDeleteAction implements ActionListener {
             offset = 0;
         }
         // get token sequence
-        TokenSequence ts = getTokenSequence(document, offset);
+        TokenSequence<? extends TokenId> ts = getTokenSequence(document, offset);
         if (ts == null) {
             return;
         }
 
-        Token token = ts.token();
+        Token<? extends TokenId> token = ts.token();
         TokenId id = token.id();
         String primaryCategory = id.primaryCategory();
         boolean isString = primaryCategory.equals("string"); // NOI18N
@@ -164,12 +164,12 @@ public final class SmartDeleteAction implements ActionListener {
         return target.startsWith(wrapString) && target.endsWith(wrapString);
     }
 
-    private TokenSequence getTokenSequence(Document document, int offset) {
+    private TokenSequence<? extends TokenId> getTokenSequence(Document document, int offset) {
         AbstractDocument ad = (AbstractDocument) document;
         ad.readLock();
-        TokenSequence tokenSequence;
+        TokenSequence<? extends TokenId> tokenSequence;
         try {
-            TokenHierarchy th = TokenHierarchy.get(document);
+            TokenHierarchy<Document> th = TokenHierarchy.get(document);
             tokenSequence = th.tokenSequence();
         } finally {
             ad.readUnlock();
