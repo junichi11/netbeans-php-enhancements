@@ -55,8 +55,8 @@ import org.netbeans.modules.php.editor.lexer.PHPTokenId;
  */
 public final class Utils {
 
-    private static final String PHP_MIME_TYPE = "text/x-php5"; // NOI18N
-    private static final String HTML_MIME_TYPE = "text/html"; // NOI18N
+    public static final String PHP_MIME_TYPE = "text/x-php5"; // NOI18N
+    public static final String HTML_MIME_TYPE = "text/html"; // NOI18N
 
     private Utils() {
     }
