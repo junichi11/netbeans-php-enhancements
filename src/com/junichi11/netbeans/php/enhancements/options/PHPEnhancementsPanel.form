@@ -16,15 +16,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="typingHooksLabel" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Component id="codeCompletionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="doubleArrowOperatorCheckBox" min="-2" max="-2" attributes="0"/>
                           <Component id="objectOperatorCheckBox" min="-2" max="-2" attributes="0"/>
+                          <Component id="toUppercaseConstCheckBox" min="-2" max="-2" attributes="0"/>
+                          <Component id="toUppercaseDefineCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -41,6 +44,12 @@
               <Component id="objectOperatorCheckBox" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="doubleArrowOperatorCheckBox" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="codeCompletionLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="toUppercaseConstCheckBox" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="toUppercaseDefineCheckBox" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -60,11 +69,6 @@
           <ResourceString bundle="com/junichi11/netbeans/php/enhancements/options/Bundle.properties" key="PHPEnhancementsPanel.objectOperatorCheckBox.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
         </Property>
       </Properties>
-      <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleParent" type="javax.accessibility.Accessible" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="null"/>
-        </Property>
-      </AccessibilityProperties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="doubleArrowOperatorCheckBox">
       <Properties>
@@ -72,11 +76,27 @@
           <ResourceString bundle="com/junichi11/netbeans/php/enhancements/options/Bundle.properties" key="PHPEnhancementsPanel.doubleArrowOperatorCheckBox.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
         </Property>
       </Properties>
-      <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleParent" type="javax.accessibility.Accessible" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="null"/>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codeCompletionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="com/junichi11/netbeans/php/enhancements/options/Bundle.properties" key="PHPEnhancementsPanel.codeCompletionLabel.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
         </Property>
-      </AccessibilityProperties>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="toUppercaseConstCheckBox">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="com/junichi11/netbeans/php/enhancements/options/Bundle.properties" key="PHPEnhancementsPanel.toUppercaseConstCheckBox.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="toUppercaseDefineCheckBox">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="com/junichi11/netbeans/php/enhancements/options/Bundle.properties" key="PHPEnhancementsPanel.toUppercaseDefineCheckBox.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
