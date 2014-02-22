@@ -53,6 +53,8 @@ public final class PHPEnhancementsOptions {
     private static final PHPEnhancementsOptions INSTANCE = new PHPEnhancementsOptions();
     private static final String OBJECT_OPERATOR_TYPINGHOOK = "object.operator.typinghook"; // NOI18N
     private static final String DOUBLE_ARROW_TYPINGHOOK = "double.arrow.operator.typinghook"; // NOI18N
+    private static final String TO_UPPERCASE_CONST = "uppercase.const"; // NOI18N
+    private static final String TO_UPPERCASE_DEFINE = "uppercase.define"; // NOI18N
 
     public static PHPEnhancementsOptions getInstance() {
         return INSTANCE;
@@ -75,6 +77,22 @@ public final class PHPEnhancementsOptions {
 
     public void setDoubleArrowOperator(boolean isDoubleArrowOperator) {
         getPreferences().putBoolean(DOUBLE_ARROW_TYPINGHOOK, isDoubleArrowOperator);
+    }
+
+    public boolean isToUppercaseConst() {
+        return getPreferences().getBoolean(TO_UPPERCASE_CONST, false);
+    }
+
+    public void setToUppercaseConst(boolean isToUppercaseConst) {
+        getPreferences().putBoolean(TO_UPPERCASE_CONST, isToUppercaseConst);
+    }
+
+    public boolean isToUppercaseDefine() {
+        return getPreferences().getBoolean(TO_UPPERCASE_DEFINE, false);
+    }
+
+    public void setToUppercaseDefine(boolean isToUppercaseDefine) {
+        getPreferences().putBoolean(TO_UPPERCASE_DEFINE, isToUppercaseDefine);
     }
 
     private Preferences getPreferences() {

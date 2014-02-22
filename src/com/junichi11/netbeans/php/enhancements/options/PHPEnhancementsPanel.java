@@ -64,12 +64,21 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
         typingHooksLabel = new javax.swing.JLabel();
         objectOperatorCheckBox = new javax.swing.JCheckBox();
         doubleArrowOperatorCheckBox = new javax.swing.JCheckBox();
+        codeCompletionLabel = new javax.swing.JLabel();
+        toUppercaseConstCheckBox = new javax.swing.JCheckBox();
+        toUppercaseDefineCheckBox = new javax.swing.JCheckBox();
 
         org.openide.awt.Mnemonics.setLocalizedText(typingHooksLabel, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.typingHooksLabel.text")); // NOI18N
 
         org.openide.awt.Mnemonics.setLocalizedText(objectOperatorCheckBox, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.objectOperatorCheckBox.text")); // NOI18N
 
         org.openide.awt.Mnemonics.setLocalizedText(doubleArrowOperatorCheckBox, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.doubleArrowOperatorCheckBox.text")); // NOI18N
+
+        org.openide.awt.Mnemonics.setLocalizedText(codeCompletionLabel, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.codeCompletionLabel.text")); // NOI18N
+
+        org.openide.awt.Mnemonics.setLocalizedText(toUppercaseConstCheckBox, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.toUppercaseConstCheckBox.text")); // NOI18N
+
+        org.openide.awt.Mnemonics.setLocalizedText(toUppercaseDefineCheckBox, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.toUppercaseDefineCheckBox.text")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -79,11 +88,14 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(typingHooksLabel)
+                    .addComponent(codeCompletionLabel)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(doubleArrowOperatorCheckBox)
-                            .addComponent(objectOperatorCheckBox))))
+                            .addComponent(objectOperatorCheckBox)
+                            .addComponent(toUppercaseConstCheckBox)
+                            .addComponent(toUppercaseDefineCheckBox))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -95,23 +107,30 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
                 .addComponent(objectOperatorCheckBox)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(doubleArrowOperatorCheckBox)
+                .addGap(18, 18, 18)
+                .addComponent(codeCompletionLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(toUppercaseConstCheckBox)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(toUppercaseDefineCheckBox)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        objectOperatorCheckBox.getAccessibleContext().setAccessibleParent(null);
-        doubleArrowOperatorCheckBox.getAccessibleContext().setAccessibleParent(null);
     }// </editor-fold>//GEN-END:initComponents
 
     void load() {
         PHPEnhancementsOptions options = PHPEnhancementsOptions.getInstance();
         objectOperatorCheckBox.setSelected(options.isObjectOperator());
         doubleArrowOperatorCheckBox.setSelected(options.isDoubleArrowOperator());
+        toUppercaseConstCheckBox.setSelected(options.isToUppercaseConst());
+        toUppercaseDefineCheckBox.setSelected(options.isToUppercaseDefine());
     }
 
     void store() {
         PHPEnhancementsOptions options = PHPEnhancementsOptions.getInstance();
         options.setObjectOperator(objectOperatorCheckBox.isSelected());
         options.setDoubleArrowOperator(doubleArrowOperatorCheckBox.isSelected());
+        options.setToUppercaseConst(toUppercaseConstCheckBox.isSelected());
+        options.setToUppercaseDefine(toUppercaseDefineCheckBox.isSelected());
     }
 
     boolean valid() {
@@ -120,8 +139,11 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel codeCompletionLabel;
     private javax.swing.JCheckBox doubleArrowOperatorCheckBox;
     private javax.swing.JCheckBox objectOperatorCheckBox;
+    private javax.swing.JCheckBox toUppercaseConstCheckBox;
+    private javax.swing.JCheckBox toUppercaseDefineCheckBox;
     private javax.swing.JLabel typingHooksLabel;
     // End of variables declaration//GEN-END:variables
 }
