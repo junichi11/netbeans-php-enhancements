@@ -9,6 +9,7 @@ Support for some small features.
 - Generate dummy image
 - Convert to PHP short array syntax
 - Typing hooks
+- Code completion
 
 ### Smart delete
 
@@ -65,6 +66,12 @@ e.g.  type `$this-` => `$this->`, type `array('key' =)` => `array('key' =>)`
 $this->property;
 array('key' => 'value');
 ```
+
+### Code completion
+
+Please check `Tools > Options > PHP > Enhancements` 
+
+- Change name for `define`, `defined` and `const` to uppercase name  
 
 ## License
 
