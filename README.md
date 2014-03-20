@@ -10,6 +10,8 @@ Support for some small features.
 - Convert to PHP short array syntax
 - Typing hooks
 - Code completion
+- Convert String to Html entities (name entities)
+- Convert Html eltities to String
 
 ### Smart delete
 
@@ -69,9 +71,9 @@ array('key' => 'value');
 
 ### Code completion
 
-Please check `Tools > Options > PHP > Enhancements` 
+Please check `Tools > Options > PHP > Enhancements`
 
-- Change name for `define`, `defined` and `const` to uppercase name  
+- Change name for `define`, `defined` and `const` to uppercase name
 
 ## License
 

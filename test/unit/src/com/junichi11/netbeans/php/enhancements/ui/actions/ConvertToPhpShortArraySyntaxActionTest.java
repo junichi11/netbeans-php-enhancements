@@ -125,6 +125,18 @@ public class ConvertToPhpShortArraySyntaxActionTest extends NbTestCase {
         testFile("ArraySyntaxTypeTest.php");
     }
 
+    /**
+     * Test of convert method, of class ConvertToPhpShortArraySyntaxAction.
+     *
+     * @throws javax.swing.text.BadLocationException
+     * @throws java.io.IOException
+     * @see https://github.com/junichi11/netbeans-php-enhancements/issues/4
+     */
+    @Test
+    public void testIssue4() throws BadLocationException, IOException {
+        testFile("ArraySyntaxIssue4Test.php");
+    }
+
     private void testFile(String fileName) throws IOException, BadLocationException {
         File dataDir = getDataDir();
         testFile = FileUtil.toFileObject(new File(dataDir, fileName));
