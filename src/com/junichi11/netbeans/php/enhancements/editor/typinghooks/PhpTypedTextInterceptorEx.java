@@ -104,7 +104,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             }
             PHPTokenId id = token.id();
 
-            if (id != PHPTokenId.PHP_VARIABLE) {
+            if (id != PHPTokenId.PHP_VARIABLE && id != PHPTokenId.PHP_STRING) {
                 return;
             }
 
