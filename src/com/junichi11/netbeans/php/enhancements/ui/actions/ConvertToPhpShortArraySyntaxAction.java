@@ -242,27 +242,29 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
 
     private void handleToken(Token<PHPTokenId> token) {
         // array
-        if (token.id() == PHPTokenId.PHP_ARRAY) {
+        PHPTokenId id = token.id();
+        if (id == PHPTokenId.PHP_ARRAY) {
             handleArray();
             return;
         }
-
-        if (arrayCount > 0) {
+        CharSequence text = token.text();
+        // #4 check TokenId
+        if (arrayCount > 0 && id == PHPTokenId.PHP_TOKEN) {
             // open
-            if (LexUtilities.textEquals(token.text(), '(')) { // NOI18N
+            if (LexUtilities.textEquals(text, '(')) { // NOI18N
                 handleOpen();
                 return;
             }
 
             // close
-            if (LexUtilities.textEquals(token.text(), ')')) { // NOI18N
+            if (LexUtilities.textEquals(text, ')')) { // NOI18N
                 handleClose();
                 return;
             }
         }
 
         // default
-        sb.append(token.text());
+        sb.append(text);
     }
 
     private void handleArray() {
