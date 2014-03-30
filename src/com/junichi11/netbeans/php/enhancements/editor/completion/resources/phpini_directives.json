@@ -1,0 +1,3242 @@
+[
+    {
+        "name": "allow_call_time_pass_reference",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP 4.0.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "allow_url_fopen",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.3.4.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "allow_url_include",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP 5. Available since PHP 5.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "always_populate_raw_post_data",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3. Available since PHP 4.1.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "apc.cache_by_default",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in APC <= 3.0.12. Available since APC 3.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "apc.enabled",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_SYSTEM in APC 2. PHP_INI_ALL in APC <= 3.0.12.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.enable_cli",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.7.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.file_update_protection",
+        "description": "<p>Default<\/p>\"2\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.filters",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.gc_ttl",
+        "description": "<p>Default<\/p>\"3600\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.include_once_override",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.12.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.localcache",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.14.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.localcache.size",
+        "description": "<p>Default<\/p>\"512\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.14.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.max_file_size",
+        "description": "<p>Default<\/p>\"1M\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.7.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.mmap_file_mask",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.num_files_hint",
+        "description": "<p>Default<\/p>\"1000\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.optimization",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in APC 2. Removed in APC 3.0.13.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "apc.report_autofilter",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.11.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.rfc1867",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.13.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.rfc1867_freq",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.rfc1867_name",
+        "description": "<p>Default<\/p>\"APC_UPLOAD_PROGRESS\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.rfc1867_prefix",
+        "description": "<p>Default<\/p>\"upload_\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.shm_segments",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.shm_size",
+        "description": "<p>Default<\/p>\"30\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.slam_defense",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.stat",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.10.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.stat_ctime",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.13.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.ttl",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.user_entries_hint",
+        "description": "<p>Default<\/p>\"4096\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.user_ttl",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apc.write_lock",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since APC 3.0.11.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "apd.bitmask",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in apd 0.9.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "apd.dumpdir",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "apd.statement_tracing",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since apd 0.9.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "arg_separator",
+        "description": "<p>Default<\/p>\"&\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.6.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "arg_separator.input",
+        "description": "<p>Default<\/p>\"&\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "arg_separator.output",
+        "description": "<p>Default<\/p>\"&\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "asp_tags",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP 4.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "assert.active",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "assert.bail",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "assert.callback",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "assert.quiet_eval",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "assert.warning",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "async_send",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.2.0. Removed in PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "auto_append_file",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "auto_detect_line_endings",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "auto_globals_jit",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "auto_prepend_file",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "axis2.client_home",
+        "description": "<p>Default<\/p>\"~\/work\/axisc\/c\/deply\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "axis2.enable_exception",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "axis2.enable_trace",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "axis2.log_path",
+        "description": "<p>Default<\/p>\"\/tmp\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "bcmath.scale",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "bcompiler.enabled",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since bcompiler 0.8.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "blenc.key_file",
+        "description": "<p>Default<\/p>\"\/usr\/local\/etc\/blenckeys\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "browscap",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "cgi.check_shebang_line",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.2.1.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "cgi.discard_path",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "cgi.fix_pathinfo",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 5.2.0. Available since PHP 4.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "cgi.force_redirect",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 5.2.0. Available since PHP 4.2.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "cgi.nph",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "cgi.redirect_status_env",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 5.2.0. Available since PHP 4.2.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "cgi.rfc2616_headers",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "child_terminate",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "cli.pager",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "cli.prompt",
+        "description": "<p>Default<\/p>\"\\\\b \\\\> \"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "cli_server.color",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.autoreset",
+        "description": "<p>Default<\/p>\"On\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.auto_initialize",
+        "description": "<p>Default<\/p>\"Off\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.auto_reset",
+        "description": "<p>Default<\/p>\"On\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.command_function",
+        "description": "<p>Default<\/p>\"Off\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since coin_acceptor 0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.delay",
+        "description": "<p>Default<\/p>\"53132\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.delay_coins",
+        "description": "<p>Default<\/p>\"53132\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.delay_prom",
+        "description": "<p>Default<\/p>\"55748\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.device",
+        "description": "<p>Default<\/p>\"\/dev\/ttyS1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.lock_on_close",
+        "description": "<p>Default<\/p>\"Off\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "coin_acceptor.start_unlocked",
+        "description": "<p>Default<\/p>\"On\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since coin_acceptor 0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "com.allow_dcom",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "com.autoregister_casesensitive",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP 4. Available since PHP 4.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "com.autoregister_typelib",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP 4. Available since PHP 4.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "com.autoregister_verbose",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP 4. Available since PHP 4.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "com.code_page",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "com.typelib_file",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "crack.default_dictionary",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_SYSTEM in crack <= 0.2. Available since PHP 4.0.5. Removed in PHP 5.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "curl.cainfo",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.7.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "daffodildb.default_host",
+        "description": "<p>Default<\/p>\"localhost\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "daffodildb.default_password",
+        "description": "<p>Default<\/p>\"daffodil\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "daffodildb.default_socket",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "daffodildb.default_user",
+        "description": "<p>Default<\/p>\"DAFFODIL\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "daffodildb.port",
+        "description": "<p>Default<\/p>\"3456\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "date.default_latitude",
+        "description": "<p>Default<\/p>\"31.7667\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "date.default_longitude",
+        "description": "<p>Default<\/p>\"35.2333\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "date.sunrise_zenith",
+        "description": "<p>Default<\/p>\"90.583333\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "date.sunset_zenith",
+        "description": "<p>Default<\/p>\"90.583333\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "date.timezone",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "dba.default_handler",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "dbx.colnames_case",
+        "description": "<p>Default<\/p>\"unchanged\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.3.0. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "default_charset",
+        "description": "<p>Default<\/p>\"UTF-8\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Default to \"UTF-8\" since PHP >= 5.6.0, empty for PHP < 5.6.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "default_mimetype",
+        "description": "<p>Default<\/p>\"text\/html\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "default_socket_timeout",
+        "description": "<p>Default<\/p>\"60\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "define_syslog_variables",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "detect_unicode",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.0. This deprecated feature will certainly be removed in the future.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "disable_classes",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>Available since PHP 4.3.2.",
+        "category": "php.ini only"
+    },
+    {
+        "name": "disable_functions",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>Available since PHP 4.0.1.",
+        "category": "php.ini only"
+    },
+    {
+        "name": "display_errors",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "display_startup_errors",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "docref_ext",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "docref_root",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "doc_root",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "enable_dl",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>This deprecated feature will certainly be removed in the future.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "enable_post_data_reading",
+        "description": "<p>Default<\/p>On<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "engine",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "error_append_string",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "error_log",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "error_prepend_string",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "error_reporting",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "exif.decode_jis_intel",
+        "description": "<p>Default<\/p>\"JIS\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "exif.decode_jis_motorola",
+        "description": "<p>Default<\/p>\"JIS\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "exif.decode_unicode_intel",
+        "description": "<p>Default<\/p>\"UCS-2LE\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "exif.decode_unicode_motorola",
+        "description": "<p>Default<\/p>\"UCS-2BE\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "exif.encode_jis",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "exif.encode_unicode",
+        "description": "<p>Default<\/p>\"ISO-8859-15\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "exit_on_timeout",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "expect.logfile",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "expect.loguser",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "expect.timeout",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "expose_php",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>",
+        "category": "php.ini only"
+    },
+    {
+        "name": "extension",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>",
+        "category": "php.ini only"
+    },
+    {
+        "name": "extension_dir",
+        "description": "<p>Default<\/p>\"\/path\/to\/php\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fastcgi.impersonate",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 5.2.0. Available since PHP 4.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fastcgi.logging",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 5.2.0. Available since PHP 4.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.allow_persistant",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6. Removed in PHP 4.2.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.2.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.autocommit",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.batchSize",
+        "description": "<p>Default<\/p>\"1000\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.2.0. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.batchsize",
+        "description": "<p>Default<\/p>\"1000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "fbsql.default_database",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.default_database_password",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.default_host",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.default_password",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.default_user",
+        "description": "<p>Default<\/p>\"_SYSTEM\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.generate_warnings",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.max_connections",
+        "description": "<p>Default<\/p>\"128\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.max_links",
+        "description": "<p>Default<\/p>\"128\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.max_results",
+        "description": "<p>Default<\/p>\"128\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.mbatchSize",
+        "description": "<p>Default<\/p>\"1000\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.0.6. Removed in PHP 4.2.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "fbsql.show_timestamp_decimals",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.5.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "file_uploads",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3. Available since PHP 4.0.3.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "filter.default",
+        "description": "<p>Default<\/p>\"unsafe_raw\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in filter <= 0.9.4. Available since PHP 5.2.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "filter.default_flags",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in filter <= 0.9.4. Available since PHP 5.2.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "from",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "gd.jpeg_ignore_warning",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "geoip.custom_directory",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since geoip 1.0.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "geoip.database_standard",
+        "description": "<p>Default<\/p>\"GeoIP.dat\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in geoip 1.0.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "gpc_order",
+        "description": "<p>Default<\/p>\"GPC\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "hidef.ini_path",
+        "description": "<p>Default<\/p>(char*)default_ini_path<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "highlight.bg",
+        "description": "<p>Default<\/p>\"#FFFFFF\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "highlight.comment",
+        "description": "<p>Default<\/p>\"#FF8000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "highlight.default",
+        "description": "<p>Default<\/p>\"#0000BB\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "highlight.html",
+        "description": "<p>Default<\/p>\"#000000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "highlight.keyword",
+        "description": "<p>Default<\/p>\"#007700\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "highlight.string",
+        "description": "<p>Default<\/p>\"#DD0000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "html_errors",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP <= 4.2.3. Available since PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "htscanner.config_file",
+        "description": "<p>Default<\/p>\".htaccess\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "htscanner.default_docroot",
+        "description": "<p>Default<\/p>\"\/\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "htscanner.default_ttl",
+        "description": "<p>Default<\/p>\"300\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since htscanner 0.6.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "htscanner.stop_on_error",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since htscanner 0.7.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "http.allowed_methods",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.4.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.allowed_methods_log",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.12.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.cache_log",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.8.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.composite_log",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.12.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.etag.mode",
+        "description": "<p>Default<\/p>\"MD5\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.etag_mode",
+        "description": "<p>Default<\/p>\"MD5\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.12.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.force_exit",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.18.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.log.allowed_methods",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.log.cache",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.log.composite",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.log.not_found",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.log.redirect",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.ob_deflate_auto",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since pecl_http 0.21.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "http.ob_deflate_flags",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.21.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.ob_inflate_auto",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since pecl_http 0.21.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "http.ob_inflate_flags",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.21.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.only_exceptions",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.11.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.persistent.handles.ident",
+        "description": "<p>Default<\/p>\"GLOBAL\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.5.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.persistent.handles.limit",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since pecl_http 1.5.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "http.redirect_log",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 0.12.0. Removed in pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.request.datashare.connect",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since pecl_http 1.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "http.request.datashare.cookie",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since pecl_http 1.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "http.request.datashare.dns",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since pecl_http 1.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "http.request.datashare.ssl",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since pecl_http 1.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "http.request.methods.allowed",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.request.methods.custom",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "http.send.deflate.start_auto",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "http.send.deflate.start_flags",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.send.inflate.start_auto",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "http.send.inflate.start_flags",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "http.send.not_found_404",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since pecl_http 1.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "hyerwave.allow_persistent",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 4.3.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "hyperwave.allow_persistent",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.3.2. Removed in PHP 5.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "hyperwave.default_port",
+        "description": "<p>Default<\/p>\"418\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibase.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibase.dateformat",
+        "description": "<p>Default<\/p>\"%Y-%m-%d\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibase.default_charset",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibase.default_db",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibase.default_password",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibase.default_user",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibase.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibase.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibase.timeformat",
+        "description": "<p>Default<\/p>\"%H:%M:%S\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibase.timestampformat",
+        "description": "<p>Default<\/p>\"%Y-%m-%d %H:%M:%S\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibm_db2.binmode",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ibm_db2.i5_all_pconnect",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ibm_db2 1.6.5.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibm_db2.i5_allow_commit",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ibm_db2 1.4.9.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibm_db2.i5_dbcs_alloc",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ibm_db2 1.5.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibm_db2.instance_name",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ibm_db2 1.0.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ibm_db2.i5_ignore_userid",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ibm_db2 1.8.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "iconv.input_encoding",
+        "description": "<p>Default<\/p>\"ISO-8859-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "iconv.internal_encoding",
+        "description": "<p>Default<\/p>\"ISO-8859-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "iconv.output_encoding",
+        "description": "<p>Default<\/p>\"ISO-8859-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ifx.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ifx.blobinfile",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ifx.byteasvarchar",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ifx.charasvarchar",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ifx.default_host",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ifx.default_password",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ifx.default_user",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ifx.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ifx.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ifx.nullformat",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ifx.textasvarchar",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.2.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ignore_repeated_errors",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ignore_repeated_source",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ignore_user_abort",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "imlib2.font_cache_max_size",
+        "description": "<p>Default<\/p>\"524288\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "imlib2.font_path",
+        "description": "<p>Default<\/p>\"\/usr\/share\/php\/fonts\/\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "implicit_flush",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_PERDIR in PHP <= 4.2.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "include_path",
+        "description": "<p>Default<\/p>\".;\/path\/to\/php\/pear\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "intl.default_locale",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "intl.error_level",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "intl.use_exceptions",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.5.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ingres 1.0.0",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ingres.array_index_start",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 1.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.auto",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.blob_segment_length",
+        "description": "<p>Default<\/p>\"4096\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 1.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.cursor_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 1.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.default_database",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 1.0.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.default_password",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 1.0.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.default_user",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 1.0.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.describe",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 2.1.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.fetch_buffer_size",
+        "description": "<p>Default<\/p>100<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 2.1.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ingres 1.0.0",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ingres.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since ingres 1.0.0",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "ingres.reuse_connection",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 2.0.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.scrollable",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.trace",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.trace_connect",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 1.2.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ingres.utf8",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since ingres 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "last_modified",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ldap.base_dn",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "ldap.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "log.dbm_dir",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "log_errors",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "log_errors_max_len",
+        "description": "<p>Default<\/p>\"1024\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "magic_quotes_gpc",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3. Deprecated in PHP 5.3.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "magic_quotes_runtime",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "magic_quotes_sybase",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mail.add_x_header",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "mail.force_extra_parameters",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "php.ini only"
+    },
+    {
+        "name": "mail.log",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.3.0 (PHP_INI_SYSTEM|PHP_INI_PERDIR)",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "mailparse.def_charset",
+        "description": "<p>Default<\/p>\"us-ascii\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.1.0. Removed in PHP 4.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "maxdb.default_db",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "maxdb.default_host",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "maxdb.default_pw",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "maxdb.default_user",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "maxdb.long_readlen",
+        "description": "<p>Default<\/p>\"200\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "max_execution_time",
+        "description": "<p>Default<\/p>\"30\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "max_input_nesting_level",
+        "description": "<p>Default<\/p>\"64\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 4.4.8 and PHP 5.2.3.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "max_input_vars",
+        "description": "<p>Default<\/p>1000<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.3.9.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "max_input_time",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "mbstring.detect_order",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.encoding_translation",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "mbstring.func_overload",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP <= 4.2.3; PHP_INI_SYSTEM | PHP_INI_PERDIR from PHP 4.3 through 5.2.6. Available since PHP 4.2.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mbstring.http_input",
+        "description": "<p>Default<\/p>\"pass\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.http_output",
+        "description": "<p>Default<\/p>\"pass\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.internal_encoding",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.language",
+        "description": "<p>Default<\/p>\"neutral\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> Available since PHP 4.3.0.; PHP_INI_PERDIR in PHP <= 5.2.6 ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.script_encoding",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0. Removed in PHP 5.4.0. Use zend.script_encoding instead.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.http_output_conv_mimetypes",
+        "description": "<p>Default<\/p>\"^(text\/|application\/xhtml\\+xml)\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.strict_detection",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mbstring.substitute_character",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.6.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mcrypt.algorithms_dir",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mcrypt.modes_dir",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "memcache.allow_failover",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since memcache 2.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "memcache.chunk_size",
+        "description": "<p>Default<\/p>\"8192\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since memcache 2.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "memcache.default_port",
+        "description": "<p>Default<\/p>\"11211\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since memcache 2.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "memcache.hash_function",
+        "description": "<p>Default<\/p>\"crc32\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since memcache 2.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "memcache.hash_strategy",
+        "description": "<p>Default<\/p>\"standard\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since memcache 2.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "memcache.max_failover_attempts",
+        "description": "<p>Default<\/p>\"20\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since memcache 2.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "memory_limit",
+        "description": "<p>Default<\/p>\"128M\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mime_magic.debug",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mime_magic.magicfile",
+        "description": "<p>Default<\/p>\"\/path\/to\/php\/magic.mime\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mongo.allow_empty_keys",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.allow_persistent",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in 1.2.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.chunk_size",
+        "description": "<p>Default<\/p>262144<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.cmd",
+        "description": "<p>Default<\/p>\"$\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.default_host",
+        "description": "<p>Default<\/p>\"localhost\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.default_port",
+        "description": "<p>Default<\/p>27017<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.is_master_interval",
+        "description": "<p>Default<\/p>15<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Added in 1.2.10, before 1.3.0 the default value was 60.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.long_as_object",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.native_long",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Before 1.5.0, the default value was 0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.ping_interval",
+        "description": "<p>Default<\/p>5<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Added in 1.2.10",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mongo.utf8",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "msql.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "msql.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "msql.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mssql.batchsize",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.4.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.charset",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.compatability_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.connect_timeout",
+        "description": "<p>Default<\/p>\"5\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.datetimeconvert",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mssql.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mssql.max_procs",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.min_error_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.min_message_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.secure_connection",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mssql.textlimit",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.textsize",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mssql.timeout",
+        "description": "<p>Default<\/p>\"60\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysql.allow_local_infile",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysql.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysql.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysql.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysql.trace_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysql.default_port",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysql.default_socket",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysql.default_host",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysql.default_user",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysql.default_password",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysql.connect_timeout",
+        "description": "<p>Default<\/p>\"60\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP <= 4.3.2. Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqli.allow_local_infile",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.2.4.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqli.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqli.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqli.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqli.default_port",
+        "description": "<p>Default<\/p>\"3306\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqli.default_socket",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqli.default_host",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqli.default_user",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqli.default_pw",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqli.reconnect",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.3.5.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqli.cache_size",
+        "description": "<p>Default<\/p>\"2000\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd.collect_memory_statistics",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd.collect_statistics",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd.debug",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd.log_mask",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd.mempool_default_size",
+        "description": "<p>Default<\/p>\"16000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd.net_cmd_buffer_size",
+        "description": "<p>Default<\/p>\"4096\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd.net_read_buffer_size",
+        "description": "<p>Default<\/p>\"32768\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd.net_read_timeout",
+        "description": "<p>Default<\/p>\"31536000\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd.sha256_server_public_key",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.5.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "mysqlnd.trace_alloc",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.5.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_memcache.enable",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since 1.0.0",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_ms.enable",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_ms.force_config_usage",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_ms.ini_file",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_ms.config_file",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_ms.collect_statistics",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_ms.multi_master",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_ms.disable_rw_split",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_mux.enable",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.enable_qc",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.ttl",
+        "description": "<p>Default<\/p>30<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.cache_by_default",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.cache_no_table",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.use_request_time",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.time_statistics",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.collect_statistics",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.collect_statistics_log_file",
+        "description": "<p>Default<\/p>\/tmp\/mysqlnd_qc.stats<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.collect_query_trace",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.query_trace_bt_depth",
+        "description": "<p>Default<\/p>3<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.collect_normalized_query_trace",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.ignore_sql_comments",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.slam_defense",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.slam_defense_ttl",
+        "description": "<p>Default<\/p>30<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.std_data_copy",
+        "description": "<p>Default<\/p>0<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_qc.apc_prefix",
+        "description": "<p>Default<\/p>qc_<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.memc_server",
+        "description": "<p>Default<\/p>127.0.0.1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.memc_port",
+        "description": "<p>Default<\/p>11211<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_qc.sqlite_data_file",
+        "description": "<p>Default<\/p>:memory:<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "mysqlnd_uh.enable",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "mysqlnd_uh.report_wrong_types",
+        "description": "<p>Default<\/p>1<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "nsapi.read_timeout",
+        "description": "<p>Default<\/p>\"60\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "oci8.connection_class",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3 (PECL OCI8 1.3).",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "oci8.default_prefetch",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "oci8.events",
+        "description": "<p>Default<\/p>Off<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3 (PECL OCI8 1.3).",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "oci8.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "oci8.old_oci_close_semantics",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "oci8.persistent_timeout",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "oci8.ping_interval",
+        "description": "<p>Default<\/p>\"60\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "oci8.privileged_connect",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "oci8.statement_cache_size",
+        "description": "<p>Default<\/p>\"20\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.2.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "odbc.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "odbc.check_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "odbc.defaultbinmode",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbc.defaultlrl",
+        "description": "<p>Default<\/p>\"4096\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbc.default_db",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbc.default_cursortype",
+        "description": "<p>Default<\/p>\"3\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbc.default_pw",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbc.default_user",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbc.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "odbc.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "odbtp.datetime_format",
+        "description": "<p>Default<\/p>\"object\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbtp.detach_default_queries",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbtp.guid_format",
+        "description": "<p>Default<\/p>\"string\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since odbtp 1.1.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbtp.interface_file",
+        "description": "<p>Default<\/p>\"\/usr\/local\/share\/odbtp.conf\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "odbtp.truncation_errors",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "opendirectory.default_separator",
+        "description": "<p>Default<\/p>\"\/\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in opendirectory 0.2.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "opendirectory.max_refs",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "opendirectory.separator",
+        "description": "<p>Default<\/p>\"\/\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since opendirectory 0.2.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "open_basedir",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP < 5.2.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "oracle.allow_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "oracle.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "oracle.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "output_buffering",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "output_handler",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 4.0.4.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "pam.servicename",
+        "description": "<p>Default<\/p>\"php\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pcre.backtrack_limit",
+        "description": "<p>Default<\/p>\"1000000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pcre.recursion_limit",
+        "description": "<p>Default<\/p>\"100000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pdo.dsn.*",
+        "description": "<p>Default<\/p><br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>Available since PHP 5.1.0.",
+        "category": "php.ini only"
+    },
+    {
+        "name": "pdo_odbc.connection_pooling",
+        "description": "<p>Default<\/p>\"strict\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pdo_odbc.db2_instance_name",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.1. This deprecated feature will certainly be removed in the future.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "pfpro.defaulthost",
+        "description": "<p>Default<\/p>\"test-payflow.verisign.com\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pfpro.defaultport",
+        "description": "<p>Default<\/p>\"443\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pfpro.defaulttimeout",
+        "description": "<p>Default<\/p>\"30\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pfpro.proxyaddress",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pfpro.proxylogon",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pfpro.proxypassword",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pfpro.proxyport",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 5.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pgsql.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "pgsql.auto_reset_persistent",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.2.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "pgsql.ignore_notice",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pgsql.log_notice",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "pgsql.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "pgsql.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "phar.cache_list",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "phar.extract_list",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since phar 1.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "phar.readonly",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "phar.require_hash",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "post_max_size",
+        "description": "<p>Default<\/p>\"8M\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_SYSTEM in PHP <= 4.2.3. Available since PHP 4.0.3.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "precision",
+        "description": "<p>Default<\/p>\"14\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "printer.default_printer",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.6. Removed in PHP 4.1.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "python.append_path",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "python.prepend_path",
+        "description": "<p>Default<\/p>\".\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "realpath_cache_size",
+        "description": "<p>Default<\/p>\"16K\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "realpath_cache_ttl",
+        "description": "<p>Default<\/p>\"120\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.1.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "register_argc_argv",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "register_globals",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3. Deprecated in PHP 5.3.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "register_long_arrays",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.0.0. Deprecated in PHP 5.3.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "report_memleaks",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "report_zend_debug",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "request_order",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Added in PHP 5.3.0",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "runkit.internal_override",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "runkit.superglobal",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "safe_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "safe_mode_allowed_env_vars",
+        "description": "<p>Default<\/p>\"PHP_\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "safe_mode_exec_dir",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "safe_mode_gid",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.1.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "safe_mode_include_dir",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.1.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "safe_mode_protected_env_vars",
+        "description": "<p>Default<\/p>\"LD_LIBRARY_PATH\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "sendmail_from",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sendmail_path",
+        "description": "<p>Default<\/p>\"\/usr\/sbin\/sendmail -t -i\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "serialize_precision",
+        "description": "<p>Default<\/p>\"17\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p> Available since PHP 4.3.2. Until PHP 5.3.5, the default value was 100. ",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.auto_start",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 5.4.19 and in PHP <= 5.5.1.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "session.bug_compat_42",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.bug_compat_warn",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0. Removed in PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.cache_expire",
+        "description": "<p>Default<\/p>\"180\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.cache_limiter",
+        "description": "<p>Default<\/p>\"nocache\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.cookie_domain",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.cookie_httponly",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.cookie_lifetime",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.cookie_path",
+        "description": "<p>Default<\/p>\"\/\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.cookie_secure",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.4.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.entropy_file",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.entropy_length",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.gc_dividend",
+        "description": "<p>Default<\/p>\"100\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0. Removed in PHP 4.3.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.gc_divisor",
+        "description": "<p>Default<\/p>\"100\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.gc_maxlifetime",
+        "description": "<p>Default<\/p>\"1440\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.gc_probability",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.hash_bits_per_character",
+        "description": "<p>Default<\/p>\"4\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.hash_function",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.name",
+        "description": "<p>Default<\/p>\"PHPSESSID\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.referer_check",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.save_handler",
+        "description": "<p>Default<\/p>\"files\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.save_path",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.serialize_handler",
+        "description": "<p>Default<\/p>\"php\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.upload_progress.cleanup",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "session.upload_progress.enabled",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "session.upload_progress.freq",
+        "description": "<p>Default<\/p>\"1%\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "session.upload_progress.min_freq",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "session.upload_progress.name",
+        "description": "<p>Default<\/p>\"PHP_SESSION_UPLOAD_PROGRESS\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "session.upload_progress.prefix",
+        "description": "<p>Default<\/p>\"upload_progress_\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "session.use_strict_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.5.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.use_cookies",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.use_only_cookies",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session.use_trans_sid",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3. PHP_INI_PERDIR in PHP < 5. Available since PHP 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "session_pgsql.create_table",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.db",
+        "description": "<p>Default<\/p>\"host=localhost dbname=php_session user=nobody\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.disable",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.failover_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.gc_interval",
+        "description": "<p>Default<\/p>\"3600\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.keep_expired",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.sem_file_name",
+        "description": "<p>Default<\/p>\"\/tmp\/php_session_pgsql\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.serializable",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.short_circuit",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.use_app_vars",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "session_pgsql.vacuum_interval",
+        "description": "<p>Default<\/p>\"21600\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "short_open_tag",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP 4.0.0. PHP_INI_PERDIR in PHP >= 4.0.1.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "SMTP",
+        "description": "<p>Default<\/p>\"localhost\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "smtp_port",
+        "description": "<p>Default<\/p>\"25\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "soap.wsdl_cache",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "soap.wsdl_cache_dir",
+        "description": "<p>Default<\/p>\"\/tmp\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "soap.wsdl_cache_enabled",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "soap.wsdl_cache_limit",
+        "description": "<p>Default<\/p>\"5\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.1.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "soap.wsdl_cache_ttl",
+        "description": "<p>Default<\/p>\"86400\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sql.safe_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "sqlite.assoc_case",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sqlite3.extension_dir",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.11.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "sybase.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.0.2. PHP_INI_SYSTEM in PHP <= 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.hostname",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.interface_file",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.login_timeout",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.0.2. PHP_INI_SYSTEM in PHP <= 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.0.2. PHP_INI_SYSTEM in PHP <= 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.min_client_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.min_error_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.min_message_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.min_server_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybase.timeout",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybct.allow_persistent",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.0.2. Available since PHP 4.0.2. Removed in PHP 4.0.3.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "sybct.deadlock_retry_count",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybct.hostname",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybct.login_timeout",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybct.max_links",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.0.2. Available since PHP 4.0.2. Removed in PHP 4.0.3.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "sybct.max_persistent",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.0.2. Available since PHP 4.0.2. Removed in PHP 4.0.3.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "sybct.min_client_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybct.min_server_severity",
+        "description": "<p>Default<\/p>\"10\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2. Removed in PHP 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybct.packet_size",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sybct.timeout",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.2.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "sys_temp_dir",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.5.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "sysvshm.init_mem",
+        "description": "<p>Default<\/p>\"10000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "tidy.clean_output",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_USER<br><p>Changelog<\/p>PHP_INI_PERDIR in PHP 5. Available since PHP 5.0.0.",
+        "category": "PHP_INI_USER"
+    },
+    {
+        "name": "tidy.default_config",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "track_errors",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "track_vars",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 4.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "unserialize_callback_func",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.2.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "uploadprogress.file.filename_template",
+        "description": "<p>Default<\/p>\"\/tmp\/upt_%s.txt\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "upload_max_filesize",
+        "description": "<p>Default<\/p>\"2M\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 4.2.3.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "max_file_uploads",
+        "description": "<p>Default<\/p>20<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.2.12.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "upload_tmp_dir",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "url_rewriter.tags",
+        "description": "<p>Default<\/p>\"a=href,area=href,frame=src,form=,fieldset=\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.4.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "user_agent",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "user_dir",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "user_ini.cache_ttl",
+        "description": "<p>Default<\/p>\"300\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "user_ini.filename",
+        "description": "<p>Default<\/p>\".user.ini\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "valkyrie.auto_validate",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "valkyrie.config_path",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "variables_order",
+        "description": "<p>Default<\/p>\"EGPCS\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_ALL in PHP <= 5.0.5.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "vld.active",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "vld.execute",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since vld 0.8.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "vld.skip_append",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since vld 0.8.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "vld.skip_prepend",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since vld 0.8.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "windows.show_crt_warning",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.5.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "windows_show_crt_warning",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xbithack",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.auto_profile",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.auto_profile_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.auto_trace",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.collect_includes",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.collect_params",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.collect_return",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.collect_vars",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.default_enable",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>PHP_INI_SYSTEM in Xdebug 1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.COOKIE",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.ENV",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.FILES",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.GET",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.POST",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.REQUEST",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.SERVER",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump.SESSION",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump_globals",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump_once",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.dump_undefined",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.extended_info",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "xdebug.idekey",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.manual_url",
+        "description": "<p>Default<\/p>\"http:\/\/www.php.net\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.max_nesting_level",
+        "description": "<p>Default<\/p>\"100\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.output_dir",
+        "description": "<p>Default<\/p>\"\/tmp\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>PHP_INI_SYSTEM in Xdebug <= 1.2.0. Removed in Xdebug 2.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.profiler_aggregate",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.profiler_append",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.profiler_enable",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.profiler_enable_trigger",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.profiler_output_dir",
+        "description": "<p>Default<\/p>\"\/tmp\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.profiler_output_name",
+        "description": "<p>Default<\/p>\"cachegrind.out.%p\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.remote_autostart",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.remote_enable",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "xdebug.remote_handler",
+        "description": "<p>Default<\/p>\"dbgp\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.remote_host",
+        "description": "<p>Default<\/p>\"localhost\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.remote_log",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.remote_mode",
+        "description": "<p>Default<\/p>\"req\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.remote_port",
+        "description": "<p>Default<\/p>\"9000\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.show_exception_trace",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.show_local_vars",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.show_mem_delta",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.trace_format",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.trace_options",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.trace_output_dir",
+        "description": "<p>Default<\/p>\"\/tmp\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.trace_output_name",
+        "description": "<p>Default<\/p>\"trace.%c\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.var_display_max_children",
+        "description": "<p>Default<\/p>\"128\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.var_display_max_data",
+        "description": "<p>Default<\/p>\"512\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xdebug.var_display_max_depth",
+        "description": "<p>Default<\/p>\"3\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since Xdebug 2.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xmlrpc_errors",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 4.1.0.",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "xmlrpc_error_number",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.1.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xmms.path",
+        "description": "<p>Default<\/p>\"\/usr\/bin\/xmms\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xmms.session",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "xsl.security_prefs",
+        "description": "<p>Default<\/p>\"44\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.5.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "y2k_compliance",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Removed in PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "yami.response.timeout",
+        "description": "<p>Default<\/p>\"5\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since yami 1.0.1.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "yaz.keepalive",
+        "description": "<p>Default<\/p>\"120\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "yaz.log_file",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0. Removed in PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "yaz.log_mask",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since yaz 1.0.3.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "yaz.max_links",
+        "description": "<p>Default<\/p>\"100\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0. Removed in PHP 5.0.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "zend.detect_unicode",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "zend.enable_gc",
+        "description": "<p>Default<\/p>\"1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "zend.multibyte",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_PERDIR<br><p>Changelog<\/p>Available since PHP 5.4.0.",
+        "category": "PHP_INI_PERDIR"
+    },
+    {
+        "name": "zend.script_encoding",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.4.0",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "zend.signal_check",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_SYSTEM<br><p>Changelog<\/p>Available since PHP 5.4.0",
+        "category": "PHP_INI_SYSTEM"
+    },
+    {
+        "name": "zend.ze1_compatibility_mode",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 5.0.0. Removed in PHP 5.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "zend_extension",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>",
+        "category": "php.ini only"
+    },
+    {
+        "name": "zend_extension_debug",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>",
+        "category": "php.ini only"
+    },
+    {
+        "name": "zend_extension_debug_ts",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>",
+        "category": "php.ini only"
+    },
+    {
+        "name": "zend_extension_ts",
+        "description": "<p>Default<\/p>NULL<br><p>Changeable<\/p>php.ini only<br><p>Changelog<\/p>",
+        "category": "php.ini only"
+    },
+    {
+        "name": "zlib.output_compression",
+        "description": "<p>Default<\/p>\"0\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.0.5.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "zlib.output_compression_level",
+        "description": "<p>Default<\/p>\"-1\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    },
+    {
+        "name": "zlib.output_handler",
+        "description": "<p>Default<\/p>\"\"<br><p>Changeable<\/p>PHP_INI_ALL<br><p>Changelog<\/p>Available since PHP 4.3.0.",
+        "category": "PHP_INI_ALL"
+    }
+]

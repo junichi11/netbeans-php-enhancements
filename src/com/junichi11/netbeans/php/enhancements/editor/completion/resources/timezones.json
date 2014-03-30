@@ -1,0 +1,2342 @@
+[
+    {
+        "name": "Africa\/Abidjan",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Accra",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Addis_Ababa",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Algiers",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Asmara",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Asmera",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Bamako",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Bangui",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Banjul",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Bissau",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Blantyre",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Brazzaville",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Bujumbura",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Cairo",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Casablanca",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Ceuta",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Conakry",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Dakar",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Dar_es_Salaam",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Djibouti",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Douala",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/El_Aaiun",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Freetown",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Gaborone",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Harare",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Johannesburg",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Juba",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Kampala",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Khartoum",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Kigali",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Kinshasa",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Lagos",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Libreville",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Lome",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Luanda",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Lubumbashi",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Lusaka",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Malabo",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Maputo",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Maseru",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Mbabane",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Mogadishu",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Monrovia",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Nairobi",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Ndjamena",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Niamey",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Nouakchott",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Ouagadougou",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Porto-Novo",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Sao_Tome",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Timbuktu",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Tripoli",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Tunis",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "Africa\/Windhoek",
+        "description": "",
+        "category": "Africa"
+    },
+    {
+        "name": "America\/Adak",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Anchorage",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Anguilla",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Antigua",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Araguaina",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Buenos_Aires",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Catamarca",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/ComodRivadavia",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Cordoba",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Jujuy",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/La_Rioja",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Mendoza",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Rio_Gallegos",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Salta",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/San_Juan",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/San_Luis",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Tucuman",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Argentina\/Ushuaia",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Aruba",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Asuncion",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Atikokan",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Atka",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Bahia",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Bahia_Banderas",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Barbados",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Belem",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Belize",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Blanc-Sablon",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Boa_Vista",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Bogota",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Boise",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Buenos_Aires",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Cambridge_Bay",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Campo_Grande",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Cancun",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Caracas",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Catamarca",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Cayenne",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Cayman",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Chicago",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Chihuahua",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Coral_Harbour",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Cordoba",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Costa_Rica",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Creston",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Cuiaba",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Curacao",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Danmarkshavn",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Dawson",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Dawson_Creek",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Denver",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Detroit",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Dominica",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Edmonton",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Eirunepe",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/El_Salvador",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Ensenada",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Fort_Wayne",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Fortaleza",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Glace_Bay",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Godthab",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Goose_Bay",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Grand_Turk",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Grenada",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Guadeloupe",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Guatemala",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Guayaquil",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Guyana",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Halifax",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Havana",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Hermosillo",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Indianapolis",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Knox",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Marengo",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Petersburg",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Tell_City",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Vevay",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Vincennes",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indiana\/Winamac",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Indianapolis",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Inuvik",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Iqaluit",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Jamaica",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Jujuy",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Juneau",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Kentucky\/Louisville",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Kentucky\/Monticello",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Knox_IN",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Kralendijk",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/La_Paz",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Lima",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Los_Angeles",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Louisville",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Lower_Princes",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Maceio",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Managua",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Manaus",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Marigot",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Martinique",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Matamoros",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Mazatlan",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Mendoza",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Menominee",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Merida",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Metlakatla",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Mexico_City",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Miquelon",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Moncton",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Monterrey",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Montevideo",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Montreal",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Montserrat",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Nassau",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/New_York",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Nipigon",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Nome",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Noronha",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/North_Dakota\/Beulah",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/North_Dakota\/Center",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/North_Dakota\/New_Salem",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Ojinaga",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Panama",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Pangnirtung",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Paramaribo",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Phoenix",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Port-au-Prince",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Port_of_Spain",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Porto_Acre",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Porto_Velho",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Puerto_Rico",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Rainy_River",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Rankin_Inlet",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Recife",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Regina",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Resolute",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Rio_Branco",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Rosario",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Santa_Isabel",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Santarem",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Santiago",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Santo_Domingo",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Sao_Paulo",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Scoresbysund",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Shiprock",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Sitka",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/St_Barthelemy",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/St_Johns",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/St_Kitts",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/St_Lucia",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/St_Thomas",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/St_Vincent",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Swift_Current",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Tegucigalpa",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Thule",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Thunder_Bay",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Tijuana",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Toronto",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Tortola",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Vancouver",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Virgin",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Whitehorse",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Winnipeg",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Yakutat",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "America\/Yellowknife",
+        "description": "",
+        "category": "America"
+    },
+    {
+        "name": "Antarctica\/Casey",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/Davis",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/DumontDUrville",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/Macquarie",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/Mawson",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/McMurdo",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/Palmer",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/Rothera",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/South_Pole",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/Syowa",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Antarctica\/Vostok",
+        "description": "",
+        "category": "Antarctica"
+    },
+    {
+        "name": "Arctic\/Longyearbyen",
+        "description": "",
+        "category": "Arctic"
+    },
+    {
+        "name": "Asia\/Aden",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Almaty",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Amman",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Anadyr",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Aqtau",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Aqtobe",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Ashgabat",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Ashkhabad",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Baghdad",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Bahrain",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Baku",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Bangkok",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Beirut",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Bishkek",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Brunei",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Calcutta",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Choibalsan",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Chongqing",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Chungking",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Colombo",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Dacca",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Damascus",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Dhaka",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Dili",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Dubai",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Dushanbe",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Gaza",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Harbin",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Hebron",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Ho_Chi_Minh",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Hong_Kong",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Hovd",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Irkutsk",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Istanbul",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Jakarta",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Jayapura",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Jerusalem",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kabul",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kamchatka",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Karachi",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kashgar",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kathmandu",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Katmandu",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Khandyga",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kolkata",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Krasnoyarsk",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kuala_Lumpur",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kuching",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Kuwait",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Macao",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Macau",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Magadan",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Makassar",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Manila",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Muscat",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Nicosia",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Novokuznetsk",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Novosibirsk",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Omsk",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Oral",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Phnom_Penh",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Pontianak",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Pyongyang",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Qatar",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Qyzylorda",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Rangoon",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Riyadh",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Saigon",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Sakhalin",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Samarkand",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Seoul",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Shanghai",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Singapore",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Taipei",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Tashkent",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Tbilisi",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Tehran",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Tel_Aviv",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Thimbu",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Thimphu",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Tokyo",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Ujung_Pandang",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Ulaanbaatar",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Ulan_Bator",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Urumqi",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Ust-Nera",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Vientiane",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Vladivostok",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Yakutsk",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Yekaterinburg",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Asia\/Yerevan",
+        "description": "",
+        "category": "Asia"
+    },
+    {
+        "name": "Atlantic\/Azores",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Bermuda",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Canary",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Cape_Verde",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Faeroe",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Faroe",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Jan_Mayen",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Madeira",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Reykjavik",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/South_Georgia",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/St_Helena",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Atlantic\/Stanley",
+        "description": "",
+        "category": "Atlantic"
+    },
+    {
+        "name": "Australia\/ACT",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Adelaide",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Brisbane",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Broken_Hill",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Canberra",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Currie",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Darwin",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Eucla",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Hobart",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/LHI",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Lindeman",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Lord_Howe",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Melbourne",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/North",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/NSW",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Perth",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Queensland",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/South",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Sydney",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Tasmania",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Victoria",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/West",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Australia\/Yancowinna",
+        "description": "",
+        "category": "Australia"
+    },
+    {
+        "name": "Europe\/Amsterdam",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Andorra",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Athens",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Belfast",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Belgrade",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Berlin",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Bratislava",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Brussels",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Bucharest",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Budapest",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Busingen",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Chisinau",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Copenhagen",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Dublin",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Gibraltar",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Guernsey",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Helsinki",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Isle_of_Man",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Istanbul",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Jersey",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Kaliningrad",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Kiev",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Lisbon",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Ljubljana",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/London",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Luxembourg",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Madrid",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Malta",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Mariehamn",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Minsk",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Monaco",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Moscow",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Nicosia",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Oslo",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Paris",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Podgorica",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Prague",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Riga",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Rome",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Samara",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/San_Marino",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Sarajevo",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Simferopol",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Skopje",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Sofia",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Stockholm",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Tallinn",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Tirane",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Tiraspol",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Uzhgorod",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Vaduz",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Vatican",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Vienna",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Vilnius",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Volgograd",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Warsaw",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Zagreb",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Zaporozhye",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Europe\/Zurich",
+        "description": "",
+        "category": "Europe"
+    },
+    {
+        "name": "Indian\/Antananarivo",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Chagos",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Christmas",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Cocos",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Comoro",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Kerguelen",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Mahe",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Maldives",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Mauritius",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Mayotte",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Indian\/Reunion",
+        "description": "",
+        "category": "Indian"
+    },
+    {
+        "name": "Pacific\/Apia",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Auckland",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Chatham",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Chuuk",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Easter",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Efate",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Enderbury",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Fakaofo",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Fiji",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Funafuti",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Galapagos",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Gambier",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Guadalcanal",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Guam",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Honolulu",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Johnston",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Kiritimati",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Kosrae",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Kwajalein",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Majuro",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Marquesas",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Midway",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Nauru",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Niue",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Norfolk",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Noumea",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Pago_Pago",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Palau",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Pitcairn",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Pohnpei",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Ponape",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Port_Moresby",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Rarotonga",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Saipan",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Samoa",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Tahiti",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Tarawa",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Tongatapu",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Truk",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Wake",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Wallis",
+        "description": "",
+        "category": "Pacific"
+    },
+    {
+        "name": "Pacific\/Yap",
+        "description": "",
+        "category": "Pacific"
+    }
+]
