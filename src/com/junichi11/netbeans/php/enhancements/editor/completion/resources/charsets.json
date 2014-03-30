@@ -1,0 +1,172 @@
+[
+    {
+        "name": "ISO-8859-1",
+        "description": "Western European, Latin-1.",
+        "category": ""
+    },
+    {
+        "name": "ISO8859-1",
+        "description": "Western European, Latin-1.",
+        "category": "Alias"
+    },
+    {
+        "name": "ISO-8859-5",
+        "description": "Little used cyrillic charset (Latin/Cyrillic).",
+        "category": ""
+    },
+    {
+        "name": "ISO8859-5",
+        "description": "Little used cyrillic charset (Latin/Cyrillic).",
+        "category": "Alias"
+    },
+    {
+        "name": "ISO-8859-15",
+        "description": "Western European, Latin-9. Adds the Euro sign, French and Finnish letters missing in Latin-1 (ISO-8859-1).",
+        "category": ""
+    },
+    {
+        "name": "ISO8859-15",
+        "description": "Western European, Latin-9. Adds the Euro sign, French and Finnish letters missing in Latin-1 (ISO-8859-1).",
+        "category": "Alias"
+    },
+    {
+        "name": "UTF-8",
+        "description": "ASCII compatible multi-byte 8-bit Unicode.",
+        "category": ""
+    },
+    {
+        "name": "cp866",
+        "description": "DOS-specific Cyrillic charset.",
+        "category": ""
+    },
+    {
+        "name": "ibm866",
+        "description": "DOS-specific Cyrillic charset.",
+        "category": "Alias"
+    },
+    {
+        "name": "866",
+        "description": "DOS-specific Cyrillic charset.",
+        "category": "Alias"
+    },
+    {
+        "name": "cp1251",
+        "description": "Windows-specific Cyrillic charset.",
+        "category": ""
+    },
+    {
+        "name": "Windows-1251",
+        "description": "Windows-specific Cyrillic charset.",
+        "category": "Alias"
+    },
+    {
+        "name": "win-1251",
+        "description": "Windows-specific Cyrillic charset.",
+        "category": "Alias"
+    },
+    {
+        "name": "1251",
+        "description": "Windows-specific Cyrillic charset.",
+        "category": "Alias"
+    },
+    {
+        "name": "cp1252",
+        "description": "Windows specific charset for Western European.",
+        "category": ""
+    },
+    {
+        "name": "Windows-1252",
+        "description": "Windows specific charset for Western European.",
+        "category": "Alias"
+    },
+    {
+        "name": "1252",
+        "description": "Windows specific charset for Western European.",
+        "category": "Alias"
+    },
+    {
+        "name": "KOI8-R",
+        "description": "Russian.",
+        "category": ""
+    },
+    {
+        "name": "koi8-ru",
+        "description": "Russian.",
+        "category": "Alias"
+    },
+    {
+        "name": "koi8r",
+        "description": "Russian.",
+        "category": "Alias"
+    },
+    {
+        "name": "BIG5",
+        "description": "Traditional Chinese, mainly used in Taiwan.",
+        "category": ""
+    },
+    {
+        "name": "950",
+        "description": "Traditional Chinese, mainly used in Taiwan.",
+        "category": "Alias"
+    },
+    {
+        "name": "GB2312",
+        "description": "Simplified Chinese, national standard character set.",
+        "category": ""
+    },
+    {
+        "name": "936",
+        "description": "Simplified Chinese, national standard character set.",
+        "category": "Alias"
+    },
+    {
+        "name": "BIG5-HKSCS",
+        "description": "Big5 with Hong Kong extensions, Traditional Chinese.",
+        "category": ""
+    },
+    {
+        "name": "Shift_JIS",
+        "description": "Japanese",
+        "category": ""
+    },
+    {
+        "name": "SJIS",
+        "description": "Japanese",
+        "category": "Alias"
+    },
+    {
+        "name": "SJIS-win",
+        "description": "Japanese",
+        "category": "Alias"
+    },
+    {
+        "name": "cp932",
+        "description": "Japanese",
+        "category": "Alias"
+    },
+    {
+        "name": "932",
+        "description": "Japanese",
+        "category": "Alias"
+    },
+    {
+        "name": "EUC-JP",
+        "description": "Japanese",
+        "category": ""
+    },
+    {
+        "name": "EUCJP",
+        "description": "Japanese",
+        "category": "Alias"
+    },
+    {
+        "name": "eucJP-win",
+        "description": "Japanese",
+        "category": "Alias"
+    },
+    {
+        "name": "MacRoman",
+        "description": "Charset that was used by Mac OS.",
+        "category": ""
+    }
+]

@@ -72,6 +72,7 @@ public final class Parameters {
     public static final List<Parameter> HTTP_HEADER_RESPONSES = new ArrayList<Parameter>();
     public static final List<Parameter> HTTP_STATUS_CODES = new ArrayList<Parameter>();
     public static final List<Parameter> ENCODINGS = new ArrayList<Parameter>();
+    public static final List<Parameter> CHARSETS = new ArrayList<Parameter>();
     public static final List<Parameter> SUBSTCHARS = new ArrayList<Parameter>();
     public static final List<Parameter> MB_LANGUAGES = new ArrayList<Parameter>();
     public static final List<Parameter> ENVS = new ArrayList<Parameter>();
@@ -94,6 +95,7 @@ public final class Parameters {
         PARAMETER_MAP.put("http_status_codes", HTTP_STATUS_CODES); // NOI18N
         PARAMETER_MAP.put("http_header_responses", HTTP_HEADER_RESPONSES); // NOI18N
         PARAMETER_MAP.put("encodings", ENCODINGS); // NOI18N
+        PARAMETER_MAP.put("charsets", CHARSETS); // NOI18N
         PARAMETER_MAP.put("substchars", SUBSTCHARS); // NOI18N
         PARAMETER_MAP.put("mb_languages", MB_LANGUAGES); // NOI18N
 

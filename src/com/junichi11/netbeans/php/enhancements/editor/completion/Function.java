@@ -41,6 +41,7 @@
  */
 package com.junichi11.netbeans.php.enhancements.editor.completion;
 
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.CHARSETS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.DATE_FORMATS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.ENCODINGS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_HEADER_RESPONSES;
@@ -507,8 +508,8 @@ public enum Function {
                 @Override
                 List<Parameter> get(int paramIndex, String filter) {
                     switch (paramIndex) {
-                        case 3:
-                            return ENCODINGS;
+                        case 2:
+                            return CHARSETS;
                         default:
                             return Collections.emptyList();
                     }
