@@ -98,6 +98,16 @@ public enum Function {
                             return Collections.emptyList();
                     }
                 }
+
+                @Override
+                public String getProperFilter(String filter) {
+                    int lastIndexOfSpace = filter.lastIndexOf(' '); // NOI18N
+                    if (lastIndexOfSpace != -1) {
+                        return filter.substring(lastIndexOfSpace + 1);
+                    }
+                    return filter;
+                }
+
             },
     DATE_FORMAT("date_format") { // NOI18N
                 @Override
@@ -108,6 +118,11 @@ public enum Function {
                         default:
                             return Collections.emptyList();
                     }
+                }
+
+                @Override
+                public String getProperFilter(String filter) {
+                    return DATE.getProperFilter(filter);
                 }
             },
     DATE_DEFAULT_TIMEZONE_SET("date_default_timezone_set") { // NOI18N
@@ -510,11 +525,21 @@ public enum Function {
                 List<Parameter> get(int paramIndex, String filter) {
                     return DATE.get(paramIndex, filter);
                 }
+
+                @Override
+                public String getProperFilter(String filter) {
+                    return DATE.getProperFilter(filter);
+                }
             },
     DATE_TIME_IMMUTABLE__FORMAT("DateTimeImmutable::format") { // NOI18N
                 @Override
                 List<Parameter> get(int paramIndex, String filter) {
                     return DATE.get(paramIndex, filter);
+                }
+
+                @Override
+                public String getProperFilter(String filter) {
+                    return DATE.getProperFilter(filter);
                 }
             },;
 

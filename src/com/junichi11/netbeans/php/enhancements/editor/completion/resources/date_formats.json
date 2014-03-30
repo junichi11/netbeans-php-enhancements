@@ -190,6 +190,11 @@
         "category": "2014-03-29"
     },
     {
+        "name": "Y-m-d H:i:s",
+        "description": "",
+        "category": "2014-03-29 23:01:30"
+    },
+    {
         "name": "Y/m/d",
         "description": "",
         "category": "2014/03/29"
@@ -220,8 +225,13 @@
         "category": "29.03.2014"
     },
     {
-        "name": "h:i:s",
+        "name": "H:i:s",
         "description": "",
         "category": "23:01:30"
+    },
+    {
+        "name": "h:i:s",
+        "description": "",
+        "category": "11:01:30"
     }
 ]
