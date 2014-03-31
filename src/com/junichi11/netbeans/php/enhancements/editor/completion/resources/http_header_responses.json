@@ -1,166 +1,166 @@
 [
     {
-        "name": "Access-Control-Allow-Origin",
+        "name": "Access-Control-Allow-Origin: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Accept-Ranges",
+        "name": "Accept-Ranges: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Age",
+        "name": "Age: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Allow",
+        "name": "Allow: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Cache-Control",
+        "name": "Cache-Control: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Connection",
+        "name": "Connection: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Encoding",
+        "name": "Content-Encoding: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Language",
+        "name": "Content-Language: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Length",
+        "name": "Content-Length: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Location",
+        "name": "Content-Location: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-MD5",
+        "name": "Content-MD5: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Disposition",
+        "name": "Content-Disposition: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Range",
+        "name": "Content-Range: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Type",
+        "name": "Content-Type: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Date",
+        "name": "Date: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "ETag",
+        "name": "ETag: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Expires",
+        "name": "Expires: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Last-Modified",
+        "name": "Last-Modified: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Link",
+        "name": "Link: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Location",
+        "name": "Location: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "P3P",
+        "name": "P3P: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Pragma",
+        "name": "Pragma: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Proxy-Authenticate",
+        "name": "Proxy-Authenticate: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Refresh",
+        "name": "Refresh: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Retry-After",
+        "name": "Retry-After: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Server",
+        "name": "Server: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Set-Cookie",
+        "name": "Set-Cookie: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Status",
+        "name": "Status: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Strict-Transport-Security",
+        "name": "Strict-Transport-Security: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Trailer",
+        "name": "Trailer: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Transfer-Encoding",
+        "name": "Transfer-Encoding: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Upgrade",
+        "name": "Upgrade: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Vary",
+        "name": "Vary: ",
         "description": "",
         "category": ""
     },
@@ -170,52 +170,52 @@
         "category": ""
     },
     {
-        "name": "Warning",
+        "name": "Warning: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "WWW-Authenticate",
+        "name": "WWW-Authenticate: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "X-Frame-Options",
+        "name": "X-Frame-Options: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "X-XSS-Protection",
+        "name": "X-XSS-Protection: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "Content-Security-Policy",
+        "name": "Content-Security-Policy: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "X-Content-Security-Policy",
+        "name": "X-Content-Security-Policy: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "X-WebKit-CSP",
+        "name": "X-WebKit-CSP: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "X-Content-Type-Options",
+        "name": "X-Content-Type-Options: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "X-Powered-By",
+        "name": "X-Powered-By: ",
         "description": "",
         "category": ""
     },
     {
-        "name": "X-UA-Compatible",
+        "name": "X-UA-Compatible: ",
         "description": "",
         "category": ""
     },

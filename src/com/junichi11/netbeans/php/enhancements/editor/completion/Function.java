@@ -45,12 +45,16 @@ import com.junichi11.netbeans.php.enhancements.editor.completion.ParameterFilter
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.CHARSETS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.DATE_FORMATS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.ENCODINGS;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_CHARSETS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_HEADER_RESPONSES;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_METHODS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_STATUS_CODES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MB_LANGUAGES;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MEDIA_TYPES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.PHPINI_DIRECTIVES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.SUBSTCHARS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.TIMEZONES;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -75,6 +79,22 @@ public enum Function {
                             if (matcher.find()) {
                                 return HTTP_STATUS_CODES;
                             }
+                            matcher = HTTP_CONTENT_TYPE_PATTERN.matcher(filter);
+                            if (matcher.find()) {
+                                if (matcher.group("encoding") != null) { // NOI18N
+                                    return HTTP_CHARSETS;
+                                }
+                                if (matcher.group("charset") != null) { // NOI18N
+                                    return Arrays.asList(new Parameter("charset=", "", "")); // NOI18N
+                                }
+                                if (matcher.group("media") != null) { // NOI18N
+                                    return MEDIA_TYPES;
+                                }
+                            }
+                            matcher = HTTP_ALLOW_PATTERN.matcher(filter);
+                            if (matcher.find()) {
+                                return HTTP_METHODS;
+                            }
                             return HTTP_HEADER_RESPONSES;
                         default:
                             return Collections.emptyList();
@@ -86,6 +106,27 @@ public enum Function {
                     Matcher matcher = HTTP_VERSION_PATTERN.matcher(filter);
                     if (matcher.find()) {
                         return matcher.group("code"); // NOI18N
+                    }
+                    matcher = HTTP_CONTENT_TYPE_PATTERN.matcher(filter);
+                    if (matcher.find()) {
+                        if (matcher.group("encoding") != null) { // NOI18N
+                            return matcher.group("encoding"); // NOI18N
+                        }
+                        if (matcher.group("charset") != null) { // NOI18N
+                            return ""; // NOI18N
+                        }
+                        if (matcher.group("media") != null) { // NOI18N
+                            return matcher.group("media"); // NOI18N
+                        }
+                    }
+                    matcher = HTTP_ALLOW_PATTERN.matcher(filter);
+                    if (matcher.find()) {
+                        String method = matcher.group("method"); // NOI18N
+                        int lastIndexOfComma = method.lastIndexOf(", "); // NOI18N
+                        if (lastIndexOfComma != -1) {
+                            return method.substring(lastIndexOfComma + 2);
+                        }
+                        return method;
                     }
                     return super.getProperFilterText(filter);
                 }
@@ -555,6 +596,8 @@ public enum Function {
     private final String name;
     private static final Map<String, Function> STRING_TO_ENUM = new HashMap<String, Function>();
     public static final Pattern HTTP_VERSION_PATTERN = Pattern.compile("(?<version>\\AHTTP/\\d\\.\\d)\\s+(?<code>.*)\\z"); // NOI18N
+    public static final Pattern HTTP_CONTENT_TYPE_PATTERN = Pattern.compile("(?<header>\\AContent-Type: (?<media>.*; (?<charset>charset=(?<encoding>.*|)|.*)|.*))\\z"); // NOI18N
+    public static final Pattern HTTP_ALLOW_PATTERN = Pattern.compile("(?<header>\\AAllow: (?<method>.*))\\z"); // NOI18N
 
     static {
         for (Function function : values()) {
