@@ -137,12 +137,12 @@ public class ParameterCompletionProvider implements CompletionProvider {
                 }
                 // current input text
                 String currentInputText = token.text().toString();
-                String filter = ""; // NOI18N
+                String filterText = ""; // NOI18N
                 if (currentInputText.length() >= 2) {
                     int tokenStartPosition = ts.offset();
                     int endIndex = caretOffset - tokenStartPosition;
                     if (endIndex > 1) {
-                        filter = currentInputText.substring(1, endIndex);
+                        filterText = currentInputText.substring(1, endIndex);
                     }
                 }
 
@@ -152,6 +152,7 @@ public class ParameterCompletionProvider implements CompletionProvider {
                     return;
                 }
                 List<Parameter> parameters;
+                ParameterFilter parameterFilter = null;
                 switch (context.getType()) {
                     case FUNCTION:
                         String functionName = context.getName();
@@ -170,23 +171,28 @@ public class ParameterCompletionProvider implements CompletionProvider {
                         if (parameterIndex < 0) {
                             return;
                         }
-                        parameters = function.get(parameterIndex, filter);
-                        filter = function.getProperFilter(filter);
+                        parameters = function.get(parameterIndex, filterText);
+                        filterText = function.getProperFilterText(filterText);
+                        parameterFilter = function.getParameterFilter();
                         break;
                     case ARRAY:
                         SuperGlobalArray superGlobal = SuperGlobalArray.fromString(context.getName());
                         if (superGlobal == null) {
                             return;
                         }
-                        parameters = superGlobal.get(filter);
+                        parameters = superGlobal.get(filterText);
                         break;
                     default:
                         return;
                 }
 
+                if (parameterFilter == null) {
+                    parameterFilter = ParameterFilter.DEFAULT_FILTER;
+                }
+
                 for (Parameter parameter : parameters) {
-                    if (parameter.getName().toLowerCase().contains(filter.toLowerCase())) {
-                        resultSet.addItem(new ParameterCompletionItem(caretOffset, filter, parameter));
+                    if (parameterFilter.accept(parameter, filterText)) {
+                        resultSet.addItem(new ParameterCompletionItem(caretOffset, filterText, parameter));
                     }
                 }
             } catch (ParseException ex) {

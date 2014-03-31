@@ -41,6 +41,7 @@
  */
 package com.junichi11.netbeans.php.enhancements.editor.completion;
 
+import com.junichi11.netbeans.php.enhancements.editor.completion.ParameterFilter.DefaultParameterFilter;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.CHARSETS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.DATE_FORMATS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.ENCODINGS;
@@ -81,12 +82,12 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilter(String filter) {
+                public String getProperFilterText(String filter) {
                     Matcher matcher = HTTP_VERSION_PATTERN.matcher(filter);
                     if (matcher.find()) {
                         return matcher.group("code"); // NOI18N
                     }
-                    return super.getProperFilter(filter);
+                    return super.getProperFilterText(filter);
                 }
             },
     DATE("date") { // NOI18N
@@ -101,7 +102,7 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilter(String filter) {
+                public String getProperFilterText(String filter) {
                     int lastIndexOfSpace = filter.lastIndexOf(' '); // NOI18N
                     if (lastIndexOfSpace != -1) {
                         return filter.substring(lastIndexOfSpace + 1);
@@ -122,8 +123,8 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilter(String filter) {
-                    return DATE.getProperFilter(filter);
+                public String getProperFilterText(String filter) {
+                    return DATE.getProperFilterText(filter);
                 }
             },
     DATE_DEFAULT_TIMEZONE_SET("date_default_timezone_set") { // NOI18N
@@ -147,6 +148,12 @@ public enum Function {
                             return Collections.emptyList();
                     }
                 }
+
+                @Override
+                public ParameterFilter getParameterFilter() {
+                    return INI_SET_FILTER;
+                }
+
             },
     INI_GET("ini_get") { // NOI18N
                 @Override
@@ -528,8 +535,8 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilter(String filter) {
-                    return DATE.getProperFilter(filter);
+                public String getProperFilterText(String filter) {
+                    return DATE.getProperFilterText(filter);
                 }
             },
     DATE_TIME_IMMUTABLE__FORMAT("DateTimeImmutable::format") { // NOI18N
@@ -539,11 +546,12 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilter(String filter) {
-                    return DATE.getProperFilter(filter);
+                public String getProperFilterText(String filter) {
+                    return DATE.getProperFilterText(filter);
                 }
             },;
 
+    private static final ParameterFilter INI_SET_FILTER = new IniSetFilter();
     private final String name;
     private static final Map<String, Function> STRING_TO_ENUM = new HashMap<String, Function>();
     public static final Pattern HTTP_VERSION_PATTERN = Pattern.compile("(?<version>\\AHTTP/\\d\\.\\d)\\s+(?<code>.*)\\z"); // NOI18N
@@ -578,12 +586,28 @@ public enum Function {
         return STRING_TO_ENUM.get(name);
     }
 
-    public String getProperFilter(String filter) {
+    public String getProperFilterText(String filter) {
         return filter;
+    }
+
+    public ParameterFilter getParameterFilter() {
+        return ParameterFilter.DEFAULT_FILTER;
     }
 
     @Override
     public String toString() {
         return name;
+    }
+
+    private static class IniSetFilter extends DefaultParameterFilter {
+
+        @Override
+        public boolean accept(Parameter parameter, String filterText) {
+            if (super.accept(parameter, filterText)) {
+                String category = parameter.getCategory();
+                return "PHP_INI_ALL".equals(category); // NOI18N
+            }
+            return false;
+        }
     }
 }
