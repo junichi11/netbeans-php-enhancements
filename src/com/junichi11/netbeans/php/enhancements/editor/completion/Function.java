@@ -49,6 +49,9 @@ import static com.junichi11.netbeans.php.enhancements.editor.completion.Paramete
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_HEADER_RESPONSES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_METHODS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_STATUS_CODES;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MB_GET_INFO_TYPES;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MB_HTTP_INPUT_TYPES;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MB_KANA_CONVERSIONS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MB_LANGUAGES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MEDIA_TYPES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.PHPINI_DIRECTIVES;
@@ -102,7 +105,7 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilterText(String filter) {
+                public String getProperFilterText(int paramIndex, String filter) {
                     Matcher matcher = HTTP_VERSION_PATTERN.matcher(filter);
                     if (matcher.find()) {
                         return matcher.group("code"); // NOI18N
@@ -113,7 +116,7 @@ public enum Function {
                             return matcher.group("encoding"); // NOI18N
                         }
                         if (matcher.group("charset") != null) { // NOI18N
-                            return ""; // NOI18N
+                            return matcher.group("charset"); // NOI18N
                         }
                         if (matcher.group("media") != null) { // NOI18N
                             return matcher.group("media"); // NOI18N
@@ -128,7 +131,7 @@ public enum Function {
                         }
                         return method;
                     }
-                    return super.getProperFilterText(filter);
+                    return super.getProperFilterText(paramIndex, filter);
                 }
             },
     DATE("date") { // NOI18N
@@ -143,7 +146,7 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilterText(String filter) {
+                public String getProperFilterText(int paramIndex, String filter) {
                     int lastIndexOfSpace = filter.lastIndexOf(' '); // NOI18N
                     if (lastIndexOfSpace != -1) {
                         return filter.substring(lastIndexOfSpace + 1);
@@ -164,8 +167,8 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilterText(String filter) {
-                    return DATE.getProperFilterText(filter);
+                public String getProperFilterText(int paramIndex, String filter) {
+                    return DATE.getProperFilterText(paramIndex, filter);
                 }
             },
     DATE_DEFAULT_TIMEZONE_SET("date_default_timezone_set") { // NOI18N
@@ -191,8 +194,20 @@ public enum Function {
                 }
 
                 @Override
-                public ParameterFilter getParameterFilter() {
+                public ParameterFilter getParameterFilter(int paramIndex, String filterText, String inputText) {
                     return INI_SET_FILTER;
+                }
+
+            },
+    INI_ALTER("ini_alter") { // NOI18N
+                @Override
+                List<Parameter> get(int paramIndex, String filter) {
+                    return INI_SET.get(paramIndex, filter);
+                }
+
+                @Override
+                public ParameterFilter getParameterFilter(int paramIndex, String filterText, String inputText) {
+                    return INI_SET.getParameterFilter(paramIndex, filterText, inputText);
                 }
 
             },
@@ -205,6 +220,12 @@ public enum Function {
                         default:
                             return Collections.emptyList();
                     }
+                }
+            },
+    INI_RESTORE("ini_restore") { // NOI18N
+                @Override
+                List<Parameter> get(int paramIndex, String filter) {
+                    return INI_GET.get(paramIndex, filter);
                 }
             },
     SETLOCALE("setlocale") { // NOI18N
@@ -255,12 +276,33 @@ public enum Function {
                 @Override
                 List<Parameter> get(int paramIndex, String filter) {
                     switch (paramIndex) {
+                        case 1:
+                            return MB_KANA_CONVERSIONS;
                         case 2:
                             return ENCODINGS;
                         default:
                             return Collections.emptyList();
                     }
                 }
+
+                @Override
+                public String getProperFilterText(int paramIndex, String filter) {
+                    switch (paramIndex) {
+                        case 1:
+                            return ""; // NOI18N
+                        default:
+                            return super.getProperFilterText(paramIndex, filter);
+                    }
+                }
+
+                @Override
+                public ParameterFilter getParameterFilter(int paramIndex, String filterText, final String inputText) {
+                    if (paramIndex == 1) {
+                        return MB_KANA_CONVERSIONS_FILTER;
+                    }
+                    return super.getParameterFilter(paramIndex, filterText, inputText);
+                }
+
             },
     MB_CONVERT_VARIABLES("mb_convert_variables") { // NOI18N
                 @Override
@@ -338,6 +380,18 @@ public enum Function {
                         default:
                             return Collections.emptyList();
                     }
+                }
+            },
+    MB_GET_INFO("mb_get_info") { // NOI18N
+                @Override
+                List<Parameter> get(int paramIndex, String filter) {
+                    return MB_GET_INFO_TYPES;
+                }
+            },
+    MB_HTTP_INPUT("mb_http_input") { // NOI18N
+                @Override
+                List<Parameter> get(int paramIndex, String filter) {
+                    return MB_HTTP_INPUT_TYPES;
                 }
             },
     MB_HTTP_OUTPUT("mb_http_output") { // NOI18N
@@ -576,8 +630,8 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilterText(String filter) {
-                    return DATE.getProperFilterText(filter);
+                public String getProperFilterText(int paramIndex, String filter) {
+                    return DATE.getProperFilterText(paramIndex, filter);
                 }
             },
     DATE_TIME_IMMUTABLE__FORMAT("DateTimeImmutable::format") { // NOI18N
@@ -587,12 +641,20 @@ public enum Function {
                 }
 
                 @Override
-                public String getProperFilterText(String filter) {
-                    return DATE.getProperFilterText(filter);
+                public String getProperFilterText(int paramIndex, String filter) {
+                    return DATE.getProperFilterText(paramIndex, filter);
                 }
             },;
 
+    // filters
     private static final ParameterFilter INI_SET_FILTER = new IniSetFilter();
+    private static final ParameterFilter MB_KANA_CONVERSIONS_FILTER = new ParameterFilter() {
+        @Override
+        public boolean accept(Parameter parameter, String filterText, String inputText) {
+            String parameterName = parameter.getName();
+            return !inputText.contains(parameterName);
+        }
+    };
     private final String name;
     private static final Map<String, Function> STRING_TO_ENUM = new HashMap<String, Function>();
     public static final Pattern HTTP_VERSION_PATTERN = Pattern.compile("(?<version>\\AHTTP/\\d\\.\\d)\\s+(?<code>.*)\\z"); // NOI18N
@@ -629,11 +691,11 @@ public enum Function {
         return STRING_TO_ENUM.get(name);
     }
 
-    public String getProperFilterText(String filter) {
+    public String getProperFilterText(int paramIndex, String filter) {
         return filter;
     }
 
-    public ParameterFilter getParameterFilter() {
+    public ParameterFilter getParameterFilter(int paramIndex, String filterText, String inputText) {
         return ParameterFilter.DEFAULT_FILTER;
     }
 
@@ -645,8 +707,8 @@ public enum Function {
     private static class IniSetFilter extends DefaultParameterFilter {
 
         @Override
-        public boolean accept(Parameter parameter, String filterText) {
-            if (super.accept(parameter, filterText)) {
+        public boolean accept(Parameter parameter, String filterText, String inputText) {
+            if (super.accept(parameter, filterText, inputText)) {
                 String category = parameter.getCategory();
                 return "PHP_INI_ALL".equals(category); // NOI18N
             }

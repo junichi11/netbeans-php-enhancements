@@ -137,14 +137,15 @@ public class ParameterCompletionProvider implements CompletionProvider {
                 }
                 // current input text
                 String currentInputText = token.text().toString();
-                String filterText = ""; // NOI18N
+                String inputText = ""; // NOI18N
                 if (currentInputText.length() >= 2) {
                     int tokenStartPosition = ts.offset();
                     int endIndex = caretOffset - tokenStartPosition;
                     if (endIndex > 1) {
-                        filterText = currentInputText.substring(1, endIndex);
+                        inputText = currentInputText.substring(1, endIndex);
                     }
                 }
+                String filterText = inputText;
 
                 // get context
                 Context context = getContext(ts, doc);
@@ -172,8 +173,8 @@ public class ParameterCompletionProvider implements CompletionProvider {
                             return;
                         }
                         parameters = function.get(parameterIndex, filterText);
-                        filterText = function.getProperFilterText(filterText);
-                        parameterFilter = function.getParameterFilter();
+                        filterText = function.getProperFilterText(parameterIndex, filterText);
+                        parameterFilter = function.getParameterFilter(parameterIndex, filterText, inputText);
                         break;
                     case ARRAY:
                         SuperGlobalArray superGlobal = SuperGlobalArray.fromString(context.getName());
@@ -191,7 +192,7 @@ public class ParameterCompletionProvider implements CompletionProvider {
                 }
 
                 for (Parameter parameter : parameters) {
-                    if (parameterFilter.accept(parameter, filterText)) {
+                    if (parameterFilter.accept(parameter, filterText, inputText)) {
                         resultSet.addItem(new ParameterCompletionItem(caretOffset, filterText, parameter));
                     }
                 }
@@ -416,6 +417,9 @@ public class ParameterCompletionProvider implements CompletionProvider {
 
         @Override
         public void processKeyEvent(KeyEvent evt) {
+            if (evt.getKeyChar() == '/') {
+                Completion.get().showCompletion();
+            }
         }
 
         @Override

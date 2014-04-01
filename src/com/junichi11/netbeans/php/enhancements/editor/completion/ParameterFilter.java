@@ -47,13 +47,13 @@ package com.junichi11.netbeans.php.enhancements.editor.completion;
  */
 public interface ParameterFilter {
 
-    public boolean accept(Parameter parameter, String filterText);
+    public boolean accept(Parameter parameter, String filterText, String inputText);
     public static final ParameterFilter DEFAULT_FILTER = new DefaultParameterFilter();
 
     public static class DefaultParameterFilter implements ParameterFilter {
 
         @Override
-        public boolean accept(Parameter parameter, String filterText) {
+        public boolean accept(Parameter parameter, String filterText, String inputText) {
             return parameter.getName().toLowerCase().contains(filterText.toLowerCase());
         }
 

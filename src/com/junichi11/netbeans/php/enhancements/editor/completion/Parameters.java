@@ -77,6 +77,9 @@ public final class Parameters {
     public static final List<Parameter> CHARSETS = new ArrayList<Parameter>();
     public static final List<Parameter> SUBSTCHARS = new ArrayList<Parameter>();
     public static final List<Parameter> MB_LANGUAGES = new ArrayList<Parameter>();
+    public static final List<Parameter> MB_KANA_CONVERSIONS = new ArrayList<Parameter>();
+    public static final List<Parameter> MB_GET_INFO_TYPES = new ArrayList<Parameter>();
+    public static final List<Parameter> MB_HTTP_INPUT_TYPES = new ArrayList<Parameter>();
     public static final List<Parameter> MEDIA_TYPES = new ArrayList<Parameter>();
     public static final List<Parameter> ENVS = new ArrayList<Parameter>();
 
@@ -103,6 +106,9 @@ public final class Parameters {
         PARAMETER_MAP.put("charsets", CHARSETS); // NOI18N
         PARAMETER_MAP.put("substchars", SUBSTCHARS); // NOI18N
         PARAMETER_MAP.put("mb_languages", MB_LANGUAGES); // NOI18N
+        PARAMETER_MAP.put("mb_kana_conversions", MB_KANA_CONVERSIONS); // NOI18N
+        PARAMETER_MAP.put("mb_get_info_types", MB_GET_INFO_TYPES); // NOI18N
+        PARAMETER_MAP.put("mb_http_input_types", MB_HTTP_INPUT_TYPES); // NOI18N
         PARAMETER_MAP.put("media_types", MEDIA_TYPES); // NOI18N
 
         // array
