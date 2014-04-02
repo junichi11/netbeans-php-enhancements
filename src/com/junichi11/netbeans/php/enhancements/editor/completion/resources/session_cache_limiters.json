@@ -1,0 +1,22 @@
+[
+    {
+        "name": "public",
+        "description": "<p>Headers sent<\/p>Expires: (sometime in the future, according session.cache_expire)<br>Cache-Control: public, max-age=(sometime in the future, according to session.cache_expire)<br>Last-Modified: (the timestamp of when the session was last saved)",
+        "category": ""
+    },
+    {
+        "name": "private_no_expire",
+        "description": "<p>Headers sent<\/p>Cache-Control: private, max-age=(session.cache_expire in the future), pre-check=(session.cache_expire in the future)<br>Last-Modified: (the timestamp of when the session was last saved)",
+        "category": ""
+    },
+    {
+        "name": "private",
+        "description": "<p>Headers sent<\/p>Expires: Thu, 19 Nov 1981 08:52:00 GMT<br>Cache-Control: private, max-age=(session.cache_expire in the future), pre-check=(session.cache_expire in the future)<br>Last-Modified: (the timestamp of when the session was last saved)",
+        "category": ""
+    },
+    {
+        "name": "nocache",
+        "description": "<p>Headers sent<\/p>Expires: Thu, 19 Nov 1981 08:52:00 GMT<br>Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0<br>Pragma: no-cache",
+        "category": ""
+    }
+]

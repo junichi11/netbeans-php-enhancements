@@ -45,6 +45,7 @@ import com.junichi11.netbeans.php.enhancements.editor.completion.ParameterFilter
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.CHARSETS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.DATE_FORMATS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.ENCODINGS;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_CACHE_CONTROL_DIRECTIVES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_CHARSETS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_HEADER_RESPONSES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.HTTP_METHODS;
@@ -55,6 +56,7 @@ import static com.junichi11.netbeans.php.enhancements.editor.completion.Paramete
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MB_LANGUAGES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.MEDIA_TYPES;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.PHPINI_DIRECTIVES;
+import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.SESSION_CACHE_LIMITERS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.SUBSTCHARS;
 import static com.junichi11.netbeans.php.enhancements.editor.completion.Parameters.TIMEZONES;
 import java.util.Arrays;
@@ -98,6 +100,14 @@ public enum Function {
                             if (matcher.find()) {
                                 return HTTP_METHODS;
                             }
+                            matcher = HTTP_CACHE_CONTROL_PATTERN.matcher(filter);
+                            if (matcher.find()) {
+                                return HTTP_CACHE_CONTROL_DIRECTIVES;
+                            }
+                            matcher = HTTP_PRAGMA_PATTERN.matcher(filter);
+                            if (matcher.find()) {
+                                return Arrays.asList(new Parameter("no-cache", "", "")); // NOI18N
+                            }
                             return HTTP_HEADER_RESPONSES;
                         default:
                             return Collections.emptyList();
@@ -131,7 +141,28 @@ public enum Function {
                         }
                         return method;
                     }
+                    matcher = HTTP_CACHE_CONTROL_PATTERN.matcher(filter);
+                    if (matcher.find()) {
+                        if (matcher.group("directive") != null) { // NOI18N
+                            return matcher.group("directive"); // NOI18N
+                        }
+                    }
+                    matcher = HTTP_PRAGMA_PATTERN.matcher(filter);
+                    if (matcher.find()) {
+                        if (matcher.group("directive") != null) { // NOI18N
+                            return matcher.group("directive"); // NOI18N
+                        }
+                    }
                     return super.getProperFilterText(paramIndex, filter);
+                }
+
+                @Override
+                public ParameterFilter getParameterFilter(int paramIndex, String filterText, String inputText) {
+                    Matcher matcher = HTTP_CACHE_CONTROL_PATTERN.matcher(inputText);
+                    if (matcher.find()) {
+                        return HTTP_CACHE_CONTROL_FILTER;
+                    }
+                    return super.getParameterFilter(paramIndex, filterText, inputText); //To change body of generated methods, choose Tools | Templates.
                 }
             },
     DATE("date") { // NOI18N
@@ -623,6 +654,12 @@ public enum Function {
                     return HTMLENTITIES.get(paramIndex, filter);
                 }
             },
+    SESSION_CACHE_LIMITER("session_cache_limiter") { // NOI18N
+                @Override
+                List<Parameter> get(int paramIndex, String filter) {
+                    return SESSION_CACHE_LIMITERS;
+                }
+            },
     DATE_TIME__FORMAT("DateTime::format") { // NOI18N
                 @Override
                 List<Parameter> get(int paramIndex, String filter) {
@@ -655,11 +692,19 @@ public enum Function {
             return !inputText.contains(parameterName);
         }
     };
+    private static final ParameterFilter HTTP_CACHE_CONTROL_FILTER = new ParameterFilter() {
+        @Override
+        public boolean accept(Parameter parameter, String filterText, String inputText) {
+            return parameter.getCategory().contains("RES") && parameter.getName().contains(filterText); // NOI18N
+        }
+    };
     private final String name;
     private static final Map<String, Function> STRING_TO_ENUM = new HashMap<String, Function>();
     public static final Pattern HTTP_VERSION_PATTERN = Pattern.compile("(?<version>\\AHTTP/\\d\\.\\d)\\s+(?<code>.*)\\z"); // NOI18N
     public static final Pattern HTTP_CONTENT_TYPE_PATTERN = Pattern.compile("(?<header>\\AContent-Type: (?<media>.*; (?<charset>charset=(?<encoding>.*|)|.*)|.*))\\z"); // NOI18N
     public static final Pattern HTTP_ALLOW_PATTERN = Pattern.compile("(?<header>\\AAllow: (?<method>.*))\\z"); // NOI18N
+    public static final Pattern HTTP_PRAGMA_PATTERN = Pattern.compile("(?<header>\\APragma: (?<directive>.*))\\z"); // NOI18N
+    public static final Pattern HTTP_CACHE_CONTROL_PATTERN = Pattern.compile("(?<header>\\ACache-Control: (?<directive>.*))\\z"); // NOI18N
 
     static {
         for (Function function : values()) {
