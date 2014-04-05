@@ -1,0 +1,52 @@
+[
+    {
+        "name": "GET",
+        "description": "",
+        "category": "1.0 1.1"
+    },
+    {
+        "name": "HEAD",
+        "description": "",
+        "category": "1.0 1.1"
+    },
+    {
+        "name": "POST",
+        "description": "",
+        "category": "1.0 1.1"
+    },
+    {
+        "name": "PUT",
+        "description": "",
+        "category": "1.0 1.1"
+    },
+    {
+        "name": "DELETE",
+        "description": "",
+        "category": "1.0 1.1"
+    },
+    {
+        "name": "TRACE",
+        "description": "",
+        "category": "1.1"
+    },
+    {
+        "name": "OPTIONS",
+        "description": "",
+        "category": "1.1"
+    },
+    {
+        "name": "CONNECT",
+        "description": "",
+        "category": "1.1"
+    },
+    {
+        "name": "LINK",
+        "description": "",
+        "category": "1.0"
+    },
+    {
+        "name": "UNLINK",
+        "description": "",
+        "category": "1.0"
+    }
+]

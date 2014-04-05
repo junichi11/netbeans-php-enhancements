@@ -1,0 +1,232 @@
+[
+    {
+        "name": "Access-Control-Allow-Origin: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Accept-Ranges: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Age: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Allow: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Cache-Control: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Connection: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Encoding: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Language: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Length: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Location: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-MD5: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Disposition: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Range: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Type: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Date: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ETag: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Expires: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Last-Modified: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Link: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Location: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "P3P: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Pragma: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Proxy-Authenticate: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Refresh: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Retry-After: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Server: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Set-Cookie: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Status: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Strict-Transport-Security: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Trailer: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Transfer-Encoding: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Upgrade: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Vary: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Via",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Warning: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "WWW-Authenticate: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "X-Frame-Options: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "X-XSS-Protection: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Content-Security-Policy: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "X-Content-Security-Policy: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "X-WebKit-CSP: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "X-Content-Type-Options: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "X-Powered-By: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "X-UA-Compatible: ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "HTTP/1.0",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "HTTP/1.1",
+        "description": "",
+        "category": ""
+    }
+]

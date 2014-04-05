@@ -15,12 +15,30 @@
                     </run-dependency>
                 </dependency>
                 <dependency>
+                    <code-name-base>org.netbeans.api.annotations.common</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>1</release-version>
+                        <specification-version>1.23.1</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
                     <code-name-base>org.netbeans.api.progress</code-name-base>
                     <build-prerequisite/>
                     <compile-dependency/>
                     <run-dependency>
                         <release-version>1</release-version>
                         <specification-version>1.35.1</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
+                    <code-name-base>org.netbeans.modules.csl.api</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>2</release-version>
+                        <specification-version>2.46.1.2.1.1.8</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
@@ -102,6 +120,15 @@
                     <run-dependency>
                         <release-version>1</release-version>
                         <specification-version>1.36.1</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
+                    <code-name-base>org.netbeans.modules.parsing.api</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>1</release-version>
+                        <specification-version>1.73.1.8</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
@@ -195,6 +222,10 @@
                 </test-type>
             </test-dependencies>
             <public-packages/>
+            <class-path-extension>
+                <runtime-relative-path>ext/gson-2.2.4-for-php-enhancements.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/gson-2.2.4-for-php-enhancements.jar</binary-origin>
+            </class-path-extension>
         </data>
     </configuration>
 </project>

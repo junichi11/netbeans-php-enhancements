@@ -1,0 +1,17 @@
+[
+    {
+        "name": "none",
+        "description": "no output",
+        "category": ""
+    },
+    {
+        "name": "long",
+        "description": "Output character code value (Example: U+3000, JIS+7E7E)",
+        "category": ""
+    },
+    {
+        "name": "entity",
+        "description": "Output character entity (Example: Ȁ)",
+        "category": ""
+    }
+]

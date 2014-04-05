@@ -1,0 +1,412 @@
+[
+    {
+        "name": "UCS-4",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UCS-4BE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UCS-4LE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UCS-2",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UCS-2BE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UCS-2LE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-32",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-32BE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-32LE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-16",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-16BE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-16LE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-7",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF7-IMAP",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-8",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ASCII",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "EUC-JP",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SJIS",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "eucJP-win",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SJIS-win",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-2022-JP",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-2022-JP-MS",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP932",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP51932",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SJIS-mac",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "MacJapanese",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "SJIS-Mobile#DOCOMO",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SJIS-DOCOMO",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "SJIS-Mobile#KDDI",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SJIS-KDDI",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "SJIS-Mobile#SOFTBANK",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SJIS-SOFTBANK",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "UTF-8-Mobile#DOCOMO",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-8-DOCOMO",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "UTF-8-Mobile#KDDI-A",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-8-Mobile#KDDI-B",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-8-KDDI",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "UTF-8-Mobile#SOFTBANK",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UTF-8-SOFTBANK",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "ISO-2022-JP-MOBILE#KDDI",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-2022-JP-KDDI",
+        "description": "",
+        "category": "Alias"
+    },
+    {
+        "name": "JIS",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "JIS-ms",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP50220",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP50220raw",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP50221",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP50222",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-1",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-2",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-3",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-4",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-5",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-6",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-7",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-8",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-9",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-10",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-13",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-14",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-8859-15",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "byte2be",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "byte2le",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "byte4be",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "byte4le",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "BASE64",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "HTML-ENTITIES",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "7bit",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "8bit",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "EUC-CN",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP936",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "GB18030",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "HZ",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "EUC-TW",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CP950",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "BIG-5",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "EUC-KR",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "UHC (CP949)",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "ISO-2022-KR",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "Windows-1251",
+        "description": "",
+        "category": "CP1251"
+    },
+    {
+        "name": "Windows-1252",
+        "description": "",
+        "category": "CP1252"
+    },
+    {
+        "name": "CP866",
+        "description": "",
+        "category": "IBM866"
+    },
+    {
+        "name": "KOI8-R",
+        "description": "",
+        "category": ""
+    }
+]

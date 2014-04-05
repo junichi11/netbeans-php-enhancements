@@ -1,0 +1,202 @@
+[
+    {
+        "name": "100 Continue",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "101 Switching Protocols",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "200 OK",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "201 Created",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "202 Accepted",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "203 Non-Authoritative Information",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "204 No Content",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "205 Reset Content",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "206 Partial Content",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "300 Multiple Choices",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "301 Moved Permanently",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "302 Found",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "303 See Other",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "304 Not Modified",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "305 Use Proxy",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "307 Temporary Redirect",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "400 Bad Request",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "401 Unauthorized",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+        "name": "402 Payment Required",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+	{
+        "name": "403 Forbidden",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "404 Not Found",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "405 Method Not Allowed",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "406 Not Acceptable",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "407 Proxy Authentication Required",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "408 Request Timeout",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "409 Conflict",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "410 Gone",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "411 Length Required",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "412 Precondition Failed",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "413 Request Entity Too Large",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "414 Request-URI Too Long",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "415 Unsupported Media Type",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "416 Requested Range Not Satisfiable",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "417 Expectation Failed",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "500 Internal Server Error",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "501 Not Implemented",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "502 Bad Gateway",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "503 Service Unavailable",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "504 Gateway Timeout",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    },
+    {
+		"name": "505 HTTP Version Not Supported",
+        "description": "",
+        "category": "HTTP STATUS CODE"
+    }
+]

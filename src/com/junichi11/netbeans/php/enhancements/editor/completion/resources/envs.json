@@ -1,0 +1,87 @@
+[
+    {
+        "name": "AUTH_TYPE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CONTENT_LENGTH",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "CONTENT_TYPE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "GATEWAY_INTERFACE",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "PATH_INFO",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "PATH_TRANSLATED",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "QUERY_STRING",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "REMOTE_ADDR",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "REMOTE_HOST",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "REMOTE_IDENT",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "REMOTE_USER",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "REQUEST_METHOD",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SCRIPT_NAME",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SERVER_NAME",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SERVER_PORT",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SERVER_PROTOCOL",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "SERVER_SOFTWARE",
+        "description": "",
+        "category": ""
+    }
+]

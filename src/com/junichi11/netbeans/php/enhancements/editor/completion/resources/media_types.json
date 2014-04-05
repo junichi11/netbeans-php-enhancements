@@ -1,0 +1,7202 @@
+[
+    {
+        "name": "application\/1d-interleaved-parityfec",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/3gpp-ims+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/activemessage",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/activemessage",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-costmap+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-costmapfilter+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-directory+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-endpointprop+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-endpointpropparams+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-endpointcost+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-endpointcostparams+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-error+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-networkmapfilter+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/alto-networkmap+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/andrew-inset",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/applefile",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/atom+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/atomdeleted+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/atomicmail",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/atomcat+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/atomsvc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/auth-policy+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/bacnet-xdd+zip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/batch-SMTP",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/beep+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/calendar+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/call-completion",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cals-1840",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cbor",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ccmp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ccxml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cdmi-capability",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cdmi-container",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cdmi-domain",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cdmi-object",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cdmi-queue",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cea-2018+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cellml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cfw",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cms",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cnrp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/commonground",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/conference-info+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cpl+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/csrattrs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/csta+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/CSTAdata+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/cybercash",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dash+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dashdelta",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/davmount+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dca-rft",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dec-dx",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dialog-info+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dicom",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dns",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dskpp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dssc+der",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dssc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/dvcs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ecmascript",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/EDI-Consent",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/EDIFACT",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/EDI-X12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/emma+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/emotionml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/encaprtp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/epp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/eshop",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/example",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/exi",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/fastinfoset",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/fastsoap",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/fdt+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/fits",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/font-sfnt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/font-tdpfr",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/font-woff",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/framework-attributes+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/gzip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/H224",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/held+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/http",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/hyperstudio",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ibe-key-request+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ibe-pkg-reply+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ibe-pp-data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/iges",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/im-iscomposing+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/index",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/index.cmd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/index.obj",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/index.response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/index.vnd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/inkml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/iotp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ipfix",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ipp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/isup",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/its+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/javascript",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/jrd+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/json-patch+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/kpml-request+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/kpml-response+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ld+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/load-control+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/link-format",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/lost+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/lostsync+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mac-binhex40",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/macwriteii",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mads+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/marc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/marcxml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mathematica",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mathml-content+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mathml-presentation+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mathml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-associated-procedure-description+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-deregister+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-envelope+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-msk-response+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-msk+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-protection-description+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-reception-report+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-register-response+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-register+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-schedule+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbms-user-service-description+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mbox",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/media_control+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/media-policy-dataset+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mediaservercontrol+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/metalink4+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mets+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mikey",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mods+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/moss-keys",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/moss-signature",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mosskey-data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mosskey-request",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mp21",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mp4",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mpeg4-generic",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mpeg4-iod",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mpeg4-iod-xmt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mrb-consumer+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mrb-publish+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/msc-ivr+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/msc-mixer+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/msword",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/mxf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/nasdata",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/news-checkgroups",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/news-groupinfo",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/news-transmission",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/nlsml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/nss",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ocsp-request",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ocsp-response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/octet-stream",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/oda",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ODX",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/oebps-package+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ogg",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/oxps",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/p2p-overlay+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/parityfec",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/patch-ops-error+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pdf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/PDX",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pgp-encrypted",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pgp-keys",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pgp-signature",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pidf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pidf-diff+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkcs10",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkcs7-mime",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkcs7-signature",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkcs8",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkix-attr-cert",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkix-cert",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkixcmp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkix-crl",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pkix-pkipath",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pls+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/poc-settings+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/postscript",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/provenance+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/prs.alvestrand.titrax-sheet",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/prs.cww",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/prs.hpub+zip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/prs.nprend",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/prs.plucker",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/prs.rdf-xml-crypt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/prs.xsf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/pskc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rdf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/qsig",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/raptorfec",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/reginfo+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/relax-ng-compact-syntax",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/remote-printing",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/reputon+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/resource-lists-diff+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/resource-lists+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/riscos",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rlmi+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rls-services+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rpki-ghostbusters",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rpki-manifest",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rpki-roa",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rpki-updown",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rtf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rtploopback",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/rtx",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/samlassertion+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/samlmetadata+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sbml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/scvp-cv-request",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/scvp-cv-response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/scvp-vp-request",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/scvp-vp-response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sdp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sep-exi",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sep+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/session-info",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/set-payment",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/set-payment-initiation",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/set-registration",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/set-registration-initiation",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sgml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sgml-open-catalog",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/shf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sieve",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/simple-filter+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/simple-message-summary",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/simpleSymbolContainer",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/slate",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/smil - OBSOLETE",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/smil+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/smpte336m",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/soap+fastinfoset",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/soap+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sparql-query",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sparql-results+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/spirits-event+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sql",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/srgs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/srgs+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/sru+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ssml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-apex-update",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-apex-update-confirm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-community-update",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-community-update-confirm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-error",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-sequence-adjust",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-sequence-adjust-confirm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-status-query",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-status-response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-update",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tamp-update-confirm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tei+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/thraud+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/timestamp-query",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/timestamp-reply",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/timestamped-data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ttml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/tve-trigger",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/ulpfec",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/urc-grpsheet+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/urc-ressheet+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/urc-targetdesc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/urc-uisocketdesc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vcard+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vcard+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vemmi",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp.bsf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp.pic-bw-large",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp.pic-bw-small",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp.pic-bw-var",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp.sms",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp2.bcmcsinfo+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp2.sms",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3gpp2.tcap",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.3M.Post-it-Notes",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.accpac.simply.aso",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.accpac.simply.imp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.acucobol",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.acucorp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.adobe.flash.movie",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.adobe.formscentral.fcdt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.adobe.fxp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.adobe.partial-upload",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.adobe.xdp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.adobe.xfdf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.aether.imp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ah-barcode",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ahead.space",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.airzip.filesecure.azf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.airzip.filesecure.azs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.americandynamics.acc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.amiga.ami",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.amundsen.maze+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.anser-web-certificate-issue-initiation",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.antix.game-component",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.api+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.apple.mpegurl",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.apple.installer+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.arastra.swi - OBSOLETE",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.aristanetworks.swi",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.astraea-software.iota",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.audiograph",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.autopackage",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.avistar+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.balsamiq.bmml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.bekitzur-stech+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.blueice.multipass",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.bluetooth.ep.oob",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.bluetooth.le.oob",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.bmi",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.businessobjects",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cab-jscript",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.canon-cpdl",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.canon-lips",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cendio.thinlinc.clientconf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.century-systems.tcp_stream",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.chemdraw+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.chipnuts.karaoke-mmd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cinderella",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cirpack.isdn-ext",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.claymore",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cloanto.rp9",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.clonk.c4group",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cluetrust.cartomobile-config",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cluetrust.cartomobile-config-pkg",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.collection.doc+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.collection+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.collection.next+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.commerce-battelle",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.commonspace",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cosmocaller",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.contact.cmsg",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.crick.clicker",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.crick.clicker.keyboard",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.crick.clicker.palette",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.crick.clicker.template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.crick.clicker.wordbank",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.criticaltools.wbs+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ctc-posml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ctct.ws+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cups-pdf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cups-postscript",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cups-ppd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cups-raster",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cups-raw",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.curl",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cyan.dean.root+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.cybank",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dart",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.data-vision.rdz",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dece.data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dece.ttml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dece.unspecified",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dece.zip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.denovo.fcselayout-link",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.desmume.movie",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dir-bi.plate-dl-nosuffix",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dm.delegation+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dna",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.document+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dolby.mobile.1",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dolby.mobile.2",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dpgraph",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dreamfactory",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dtg.local",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dtg.local.flash",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dtg.local.html",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.ait",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.dvbj",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.esgcontainer",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.ipdcdftnotifaccess",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.ipdcesgaccess",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.ipdcesgaccess2",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.ipdcesgpdd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.ipdcroaming",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.iptv.alfec-base",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.iptv.alfec-enhancement",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.notif-aggregate-root+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.notif-container+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.notif-generic+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.notif-ia-msglist+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.notif-ia-registration-request+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.notif-ia-registration-response+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.notif-init+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.pfr",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dvb.service",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dxr",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.dynageo",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.easykaraoke.cdgdownload",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ecdis-update",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ecowin.chart",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ecowin.filerequest",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ecowin.fileupdate",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ecowin.series",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ecowin.seriesrequest",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ecowin.seriesupdate",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.emclient.accessrequest+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.enliven",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.eprints.data+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.epson.esf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.epson.msf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.epson.quickanime",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.epson.salt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.epson.ssf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ericsson.quickcall",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.eszigno3+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.aoc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.asic-s+zip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.asic-e+zip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.cug+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvcommand+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvdiscovery+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvprofile+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvsad-bc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvsad-cod+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvsad-npvr+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvservice+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvsync+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.iptvueprofile+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.mcid+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.mheg5",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.overload-control-policy-dataset+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.pstn+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.sci+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.simservs+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.timestamp-token",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.tsl+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.etsi.tsl.der",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.eudora.data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ezpix-album",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ezpix-package",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.f-secure.mobile",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fdf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fdsn.mseed",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fdsn.seed",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ffsns",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fints",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.FloGraphIt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fluxtime.clip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.font-fontforge-sfd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.framemaker",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.frogans.fnc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.frogans.ltf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fsc.weblaunch",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujitsu.oasys",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujitsu.oasys2",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujitsu.oasys3",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujitsu.oasysgp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujitsu.oasysprs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujixerox.ART4",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujixerox.ART-EX",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujixerox.ddd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujixerox.docuworks",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujixerox.docuworks.binder",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujixerox.docuworks.container",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fujixerox.HBPL",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fut-misnet",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.fuzzysheet",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.genomatix.tuxedo",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.geocube+xml - OBSOLETE",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.geogebra.file",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.geogebra.tool",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.geometry-explorer",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.geonext",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.geoplan",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.geospace",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.globalplatform.card-content-mgt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.globalplatform.card-content-mgt-response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.gmx - OBSOLETE",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.google-earth.kml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.google-earth.kmz",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.grafeq",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.gridmp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.groove-account",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.groove-help",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.groove-identity-message",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.groove-injector",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.groove-tool-message",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.groove-tool-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.groove-vcard",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hal+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hal+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.HandHeld-Entertainment+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hbci",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hcl-bireports",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.heroku+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hhe.lesson-player",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hp-HPGL",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hp-hpid",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hp-hps",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hp-jlyt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hp-PCL",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hp-PCLXL",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.httphone",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hydrostatix.sof-data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.hzn-3d-crossword",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ibm.afplinedata",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ibm.electronic-media",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ibm.MiniPay",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ibm.modcap",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ibm.rights-management",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ibm.secure-container",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iccprofile",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ieee.1905",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.igloader",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.immervision-ivp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.immervision-ivu",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.informedcontrol.rms+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.infotech.project",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.infotech.project+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.informix-visionary",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.innopath.wamp.notification",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.insors.igm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.intercon.formnet",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.intergeo",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.intertrust.digibox",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.intertrust.nncp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.intu.qbo",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.intu.qfx",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iptc.g2.catalogitem+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iptc.g2.conceptitem+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iptc.g2.knowledgeitem+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iptc.g2.newsitem+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iptc.g2.newsmessage+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iptc.g2.packageitem+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.iptc.g2.planningitem+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ipunplugged.rcprofile",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.irepository.package+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.is-xpr",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.isac.fcs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.jam",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-directory-service",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-jpnstore-wakeup",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-payment-wakeup",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-registration",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-registration-wakeup",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-setstore-wakeup",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-verification",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.japannet-verification-wakeup",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.jcp.javame.midlet-rms",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.jisp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.joost.joda-archive",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.jsk.isdn-ngn",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kahootz",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.karbon",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.kchart",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.kformula",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.kivio",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.kontour",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.kpresenter",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.kspread",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kde.kword",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kenameaapp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kidspiration",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Kinar",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.koan",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.kodak-descriptor",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.las.las+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.liberty-request+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.llamagraphics.life-balance.desktop",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.llamagraphics.life-balance.exchange+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.lotus-1-2-3",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.lotus-approach",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.lotus-freelance",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.lotus-notes",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.lotus-organizer",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.lotus-screencam",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.lotus-wordpro",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.macports.portpkg",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.marlin.drm.actiontoken+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.marlin.drm.conftoken+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.marlin.drm.license+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.marlin.drm.mdcf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mcd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.medcalcdata",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mediastation.cdkey",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.meridian-slingshot",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.MFER",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mfmp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.micrografx.flo",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.micrografx.igx",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mif",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.minisoft-hp3000-save",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mitsubishi.misty-guard.trustweb",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Mobius.DAF",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Mobius.DIS",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Mobius.MBK",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Mobius.MQY",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Mobius.MSL",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Mobius.PLC",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Mobius.TXF",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mophun.application",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mophun.certificate",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.flexsuite",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.flexsuite.adsi",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.flexsuite.fis",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.flexsuite.gotap",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.flexsuite.kmr",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.flexsuite.ttc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.flexsuite.wem",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.motorola.iprm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mozilla.xul+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-artgalry",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-asf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-cab-compressed",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mseq",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-excel",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-excel.addin.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-excel.sheet.binary.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-excel.sheet.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-excel.template.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-fontobject",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-htmlhelp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-ims",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-lrm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-office.activeX+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-officetheme",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-playready.initiator+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-powerpoint",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-powerpoint.addin.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-powerpoint.presentation.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-powerpoint.slide.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-powerpoint.slideshow.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-powerpoint.template.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-project",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-tnef",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-windows.printerpairing",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-wmdrm.lic-chlg-req",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-wmdrm.lic-resp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-wmdrm.meter-chlg-req",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-wmdrm.meter-resp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-word.document.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-word.template.macroEnabled.12",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-works",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-wpl",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ms-xpsdocument",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.msign",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.multiad.creator",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.multiad.creator.cif",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.musician",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.music-niff",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.muvee.style",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.mynfc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ncd.control",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ncd.reference",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nervana",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.netfpx",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.neurolanguage.nlu",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nintendo.snes.rom",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nintendo.nitro.rom",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nitf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.noblenet-directory",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.noblenet-sealer",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.noblenet-web",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.catalogs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.conml+wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.conml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.iptv.config+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.iSDS-radio-presets",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.landmark+wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.landmark+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.landmarkcollection+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.ncd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.n-gage.ac+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.n-gage.data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.n-gage.symbian.install",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.pcd+wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.pcd+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.radio-preset",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.nokia.radio-presets",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.novadigm.EDM",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.novadigm.EDX",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.novadigm.EXT",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ntt-local.content-share",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ntt-local.file-transfer",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ntt-local.sip-ta_remote",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ntt-local.sip-ta_tcp_stream",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.chart",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.chart-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.database",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.formula",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.formula-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.graphics",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.graphics-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.image",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.image-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.presentation",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.presentation-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.spreadsheet",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.spreadsheet-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.text",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.text-master",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.text-template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oasis.opendocument.text-web",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.obn",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oftn.l10n+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.contentaccessdownload+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.contentaccessstreaming+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.cspg-hexbinary",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.dae.svg+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.dae.xhtml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.mippvcontrolmessage+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.pae.gem",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.spdiscovery+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.spdlist+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.ueprofile+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oipf.userprofile+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.olpc-sugar",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.associated-procedure-parameter+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.drm-trigger+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.imd+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.ltkm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.notification+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.provisioningtrigger",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.sgboot",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.sgdd+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.sgdu",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.simple-symbol-container",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.smartcard-trigger+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.sprov+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.bcast.stkm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.cab-address-book+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.cab-feature-handler+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.cab-pcc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.cab-subs-invite+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.cab-user-prefs+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.dcd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.dcdc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.dd2+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.drm.risd+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.group-usage-list+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.pal+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.poc.detailed-progress-report+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.poc.final-report+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.poc.groups+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.poc.invocation-descriptor+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.poc.optimized-progress-report+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.push",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.scidm.messages+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma.xcap-directory+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.omads-email+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.omads-file+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.omads-folder+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.omaloc-supl-init",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma-scws-config",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma-scws-http-request",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.oma-scws-http-response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openeye.oeb",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.custom-properties+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.customXmlProperties+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.drawing+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.drawingml.chart+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.drawingml.diagramColors+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.drawingml.diagramData+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.drawingml.diagramLayout+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.drawingml.diagramStyle+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.extended-properties+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.commentAuthors+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.comments+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.handoutMaster+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.presProps+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.slide",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.slide+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.slideshow",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.slideUpdateInfo+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.tableStyles+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.tags+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.template.main+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.presentationml.viewProps+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.calcChain+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheDefinition+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheRecords+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.pivotTable+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.queryTable+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.revisionHeaders+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.revisionLog+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheetMetadata+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.table+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.tableSingleCells+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.userNames+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.volatileDependencies+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.theme+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.themeOverride+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.vmlDrawing",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.template",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-package.core-properties+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-package.digital-signature-xmlsignature+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.openxmlformats-package.relationships+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.orange.indata",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.osa.netdeploy",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.osgeo.mapguide.package",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.osgi.bundle",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.osgi.dp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.osgi.subsystem",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.otps.ct-kip+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.palm",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.paos.xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pawaafile",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pcos",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pg.format",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pg.osasli",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.piaccess.application-licence",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.picsel",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pmi.widget",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.poc.group-advertisement+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pocketlearn",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.powerbuilder6",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.powerbuilder6-s",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.powerbuilder7",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.powerbuilder75",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.powerbuilder75-s",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.powerbuilder7-s",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.preminet",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.previewsystems.box",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.proteus.magazine",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.publishare-delta-tree",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pvi.ptid1",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pwg-multiplexed",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.pwg-xhtml-print+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.qualcomm.brew-app-res",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.Quark.QuarkXPress",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.quobject-quoxdocument",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.moml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-audit-conf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-audit-conn+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-audit-dialog+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-audit-stream+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-audit+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-conf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-dialog-base+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-dialog-fax-detect+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-dialog-fax-sendrecv+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-dialog-group+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-dialog-speech+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-dialog-transform+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml-dialog+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.radisys.msml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.rainstor.data",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.rapid",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.realvnc.bed",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.recordare.musicxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.recordare.musicxml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.RenLearn.rlprint",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.rig.cryptonote",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.route66.link66+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.rs-274x",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ruckus.download",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.s3sms",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sailingtracker.track",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sbm.cid",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sbm.mid2",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.scribus",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.3df",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.csf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.doc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.eml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.mht",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.net",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.ppt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.tiff",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealed.xls",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealedmedia.softseal.html",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sealedmedia.softseal.pdf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.seemail",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sema",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.semd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.semf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.shana.informed.formdata",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.shana.informed.formtemplate",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.shana.informed.interchange",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.shana.informed.package",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.SimTech-MindMapper",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.siren+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.smaf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.smart.notebook",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.smart.teacher",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.software602.filler.form+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.software602.filler.form-xml-zip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.solent.sdkm+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.spotfire.dxp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.spotfire.sfs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sss-cod",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sss-dtf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sss-ntf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.stepmania.package",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.stepmania.stepchart",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.street-stream",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sun.wadl+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.sus-calendar",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.svd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.swiftview-ics",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.dm.notification",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.dmddf+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.dmtnds+wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.dmtnds+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.dmddf+wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.dm+wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.dm+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml.ds.notification",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.syncml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.tao.intent-module-archive",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.tcpdump.pcap",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.tmobile-livetv",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.trid.tpt",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.triscape.mxs",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.trueapp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.truedoc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ubisoft.webplayer",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.ufdl",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uiq.theme",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.umajin",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.unity",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uoml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.alert",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.alert-wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.bearer-choice",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.bearer-choice-wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.cacheop",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.cacheop-wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.channel",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.channel-wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.list",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.listcmd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.listcmd-wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.list-wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.uplanet.signal",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.vcx",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.vd-study",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.vectorworks",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.verimatrix.vcas",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.vidsoft.vidconference",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.visio",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.visionary",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.vividence.scriptfile",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.vsf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wap.sic",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wap.slc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wap.wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wap.wmlc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wap.wmlscriptc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.webturbo",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wfa.p2p",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wfa.wsc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.windows.devicepairing",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wmc",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wmf.bootstrap",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wolfram.mathematica",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wolfram.mathematica.package",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wolfram.player",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wordperfect",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wqd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wrq-hp3000-labelled",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wt.stf",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wv.csp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wv.csp+wbxml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.wv.ssp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xacml+json",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xara",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xfdl",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xfdl.webform",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xmi+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xmpie.cpkg",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xmpie.dpkg",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xmpie.plan",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xmpie.ppkg",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.xmpie.xlim",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.hv-dic",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.hv-script",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.hv-voice",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.openscoreformat.osfpvg+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.openscoreformat",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.remote-setup",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.smaf-audio",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.smaf-phrase",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.through-ngn",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yamaha.tunnel-udpencap",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.yellowriver-custom-menu",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.zul",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vnd.zzazz.deck+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/voicexml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/vq-rtcpxr",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/watcherinfo+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/whoispp-query",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/whoispp-response",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/widget",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/wita",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/wordperfect5.1",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/wsdl+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/wspolicy+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/x400-bp",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xacml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcap-att+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcap-caps+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcap-diff+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcap-el+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcap-error+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcap-ns+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcon-conference-info-diff+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xcon-conference-info+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xenc+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xhtml-voice+xml - OBSOLETE",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xhtml+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xml-dtd",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xml-external-parsed-entity",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xmpp+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xop+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xslt+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/xv+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/yang",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/yin+xml",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/zip",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "application\/zlib",
+        "description": "",
+        "category": "application"
+    },
+    {
+        "name": "audio\/1d-interleaved-parityfec",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/32kadpcm",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/3gpp",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/3gpp2",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/ac3",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/AMR",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/AMR-WB",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/amr-wb",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/asc",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/ATRAC-ADVANCED-LOSSLESS",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/ATRAC-X",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/ATRAC3",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/basic",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/BV16",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/BV32",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/clearmode",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/CN",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/DAT12",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/dls",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/dsr-es201108",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/dsr-es202050",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/dsr-es202211",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/dsr-es202212",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/DV",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/DVI4",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/eac3",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/encaprtp",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRC",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRC-QCP",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRC0",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRC1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCB",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCB0",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCB1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCNW",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCNW0",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCNW1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCWB",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCWB0",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/EVRCWB1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/example",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/fwdred",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G719",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G722",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G7221",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G723",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G726-16",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G726-24",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G726-32",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G726-40",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G728",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G729",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G7291",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G729D",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/G729E",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/GSM",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/GSM-EFR",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/GSM-HR-08",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/iLBC",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/ip-mr_v2.5",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/L8",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/L16",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/L20",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/L24",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/LPC",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/mobile-xmf",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/MPA",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/mp4",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/MP4A-LATM",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/mpa-robust",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/mpeg",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/mpeg4-generic",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/ogg",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/parityfec",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/PCMA",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/PCMA-WB",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/PCMU",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/PCMU-WB",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/prs.sid",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/QCELP",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/raptorfec",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/RED",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/rtp-enc-aescm128",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/rtploopback",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/rtp-midi",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/rtx",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/SMV",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/SMV0",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/SMV-QCP",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/sp-midi",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/speex",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/t140c",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/t38",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/telephone-event",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/tone",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/UEMCLIP",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/ulpfec",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/VDVI",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/VMR-WB",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.3gpp.iufp",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.4SB",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.audiokoz",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.CELP",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.cisco.nse",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.cmles.radio-events",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.cns.anp1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.cns.inf1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dece.audio",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.digital-winds",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dlna.adts",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.heaac.1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.heaac.2",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.mlp",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.mps",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.pl2",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.pl2x",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.pl2z",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dolby.pulse.1",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dra",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dts",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dts.hd",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.dvb.file",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.everad.plj",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.hns.audio",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.lucent.voice",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.ms-playready.media.pya",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.nokia.mobile-xmf",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.nortel.vbk",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.nuera.ecelp4800",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.nuera.ecelp7470",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.nuera.ecelp9600",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.octel.sbc",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.qcelp - DEPRECATED - Please see: audio\/qcelp",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.rhetorex.32kadpcm",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.rip",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.sealedmedia.softseal.mpeg",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vnd.vmx.cvsd",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vorbis",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "audio\/vorbis-config",
+        "description": "",
+        "category": "audio"
+    },
+    {
+        "name": "image\/cgm",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/example",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/fits",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/g3fax",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/gif",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/ief",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/jp2",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/jpeg",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/jpm",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/jpx",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/ktx",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/naplps",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/png",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/prs.btif",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/prs.pti",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/pwg-raster",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/svg+xml",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/t38",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/tiff",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/tiff-fx",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.adobe.photoshop",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.airzip.accelerator.azv",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.cns.inf2",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.dece.graphic",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.djvu",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.dwg",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.dxf",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.dvb.subtitle",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.fastbidsheet",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.fpx",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.fst",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.fujixerox.edmics-mmr",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.fujixerox.edmics-rlc",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.globalgraphics.pgb",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.microsoft.icon",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.mix",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.ms-modi",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.net-fpx",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.radiance",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.sealed.png",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.sealedmedia.softseal.gif",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.sealedmedia.softseal.jpg",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.svf",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.wap.wbmp",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "image\/vnd.xiff",
+        "description": "",
+        "category": "image"
+    },
+    {
+        "name": "message\/CPIM",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/delivery-status",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/disposition-notification",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/example",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/external-body",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/feedback-report",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/global",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/global-delivery-status",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/global-disposition-notification",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/global-headers",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/http",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/imdn+xml",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/news - OBSOLETE",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/partial",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/rfc822",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/s-http",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/sip",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/sipfrag",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/tracking-status",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/vnd.si.simp - OBSOLETE",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "message\/vnd.wfa.wsc",
+        "description": "",
+        "category": "message"
+    },
+    {
+        "name": "model\/example",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/iges",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/mesh",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.collada+xml",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.dwf",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.flatland.3dml",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.gdl",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.gs-gdl",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.gtw",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.moml+xml",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.mts",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.parasolid.transmit.binary",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.parasolid.transmit.text",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vnd.vtu",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/vrml",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/x3d-vrml",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "model\/x3d+xml",
+        "description": "",
+        "category": "model"
+    },
+    {
+        "name": "multipart\/alternative",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/appledouble",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/byteranges",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/digest",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/encrypted",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/example",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/form-data",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/header-set",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/mixed",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/parallel",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/related",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/report",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/signed",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "multipart\/voice-message",
+        "description": "",
+        "category": "multipart"
+    },
+    {
+        "name": "text\/1d-interleaved-parityfec",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/calendar",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/css",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/csv",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/directory - DEPRECATED - Please see: ",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/dns",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/ecmascript - OBSOLETE",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/encaprtp",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/enriched",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/example",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/fwdred",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/grammar-ref-list",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/html",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/javascript - OBSOLETE",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/jcr-cnd",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/mizar",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/n3",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/parameters",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/parityfec",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/plain",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/provenance-notation",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/prs.fallenstein.rst",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/prs.lines.tag",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/raptorfec",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/RED",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/rfc822-headers",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/richtext",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/rtf",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/rtp-enc-aescm128",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/rtploopback",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/rtx",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/sgml",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/t140",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/tab-separated-values",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/troff",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/turtle",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/ulpfec",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/uri-list",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vcard",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.a",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.abc",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.curl",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.debian.copyright",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.DMClientScript",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.dvb.subtitle",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.esmertec.theme-descriptor",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.fly",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.fmi.flexstor",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.graphviz",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.in3d.3dml",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.in3d.spot",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.IPTC.NewsML",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.IPTC.NITF",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.latex-z",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.motorola.reflex",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.ms-mediapackage",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.net2phone.commcenter.command",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.radisys.msml-basic-layout",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.si.uricatalogue - OBSOLETE",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.sun.j2me.app-descriptor",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.trolltech.linguist",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.wap.si",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.wap.sl",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.wap.wml",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/vnd.wap.wmlscript",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/xml",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "text\/xml-external-parsed-entity",
+        "description": "",
+        "category": "text"
+    },
+    {
+        "name": "video\/1d-interleaved-parityfec",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/3gpp",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/3gpp2",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/3gpp-tt",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/BMPEG",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/BT656",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/CelB",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/DV",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/encaprtp",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/example",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/H261",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/H263",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/H263-1998",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/H263-2000",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/H264",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/H264-RCDO",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/H264-SVC",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/iso.segment",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/JPEG",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/jpeg2000",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/MJ2",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/MP1S",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/MP2P",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/MP2T",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/mp4",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/MP4V-ES",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/MPV",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/mpeg",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/mpeg4-generic",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/nv",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/ogg",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/parityfec",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/pointer",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/quicktime",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/raptorfec",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/raw",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/rtp-enc-aescm128",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/rtploopback",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/rtx",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/SMPTE292M",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/ulpfec",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vc1",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.CCTV",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dece.hd",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dece.mobile",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dece.mp4",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dece.pd",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dece.sd",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dece.video",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.directv.mpeg",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.directv.mpeg-tts",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dlna.mpeg-tts",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.dvb.file",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.fvt",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.hns.video",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.iptvforum.1dparityfec-1010",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.iptvforum.1dparityfec-2005",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.iptvforum.2dparityfec-1010",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.iptvforum.2dparityfec-2005",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.iptvforum.ttsavc",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.iptvforum.ttsmpeg2",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.motorola.video",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.motorola.videop",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.mpegurl",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.ms-playready.media.pyv",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.nokia.interleaved-multimedia",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.nokia.videovoip",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.objectvideo",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.radgamettools.bink",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.radgamettools.smacker",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.sealed.mpeg1",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.sealed.mpeg4",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.sealed.swf",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.sealedmedia.softseal.mov",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.uvvu.mp4",
+        "description": "",
+        "category": "video"
+    },
+    {
+        "name": "video\/vnd.vivo",
+        "description": "",
+        "category": "video"
+    }
+]

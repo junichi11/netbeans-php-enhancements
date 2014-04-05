@@ -41,6 +41,8 @@
  */
 package com.junichi11.netbeans.php.enhancements.options;
 
+import com.junichi11.netbeans.php.enhancements.editor.completion.Parameters;
+
 final class PHPEnhancementsPanel extends javax.swing.JPanel {
 
     private static final long serialVersionUID = -4525362573123684731L;
@@ -67,6 +69,7 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
         codeCompletionLabel = new javax.swing.JLabel();
         toUppercaseConstCheckBox = new javax.swing.JCheckBox();
         toUppercaseDefineCheckBox = new javax.swing.JCheckBox();
+        parametersCodeCompletionCheckBox = new javax.swing.JCheckBox();
 
         org.openide.awt.Mnemonics.setLocalizedText(typingHooksLabel, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.typingHooksLabel.text")); // NOI18N
 
@@ -79,6 +82,8 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
         org.openide.awt.Mnemonics.setLocalizedText(toUppercaseConstCheckBox, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.toUppercaseConstCheckBox.text")); // NOI18N
 
         org.openide.awt.Mnemonics.setLocalizedText(toUppercaseDefineCheckBox, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.toUppercaseDefineCheckBox.text")); // NOI18N
+
+        org.openide.awt.Mnemonics.setLocalizedText(parametersCodeCompletionCheckBox, org.openide.util.NbBundle.getMessage(PHPEnhancementsPanel.class, "PHPEnhancementsPanel.parametersCodeCompletionCheckBox.text")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -95,7 +100,8 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
                             .addComponent(doubleArrowOperatorCheckBox)
                             .addComponent(objectOperatorCheckBox)
                             .addComponent(toUppercaseConstCheckBox)
-                            .addComponent(toUppercaseDefineCheckBox))))
+                            .addComponent(toUppercaseDefineCheckBox)
+                            .addComponent(parametersCodeCompletionCheckBox))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -113,6 +119,8 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
                 .addComponent(toUppercaseConstCheckBox)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(toUppercaseDefineCheckBox)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(parametersCodeCompletionCheckBox)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -123,6 +131,7 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
         doubleArrowOperatorCheckBox.setSelected(options.isDoubleArrowOperator());
         toUppercaseConstCheckBox.setSelected(options.isToUppercaseConst());
         toUppercaseDefineCheckBox.setSelected(options.isToUppercaseDefine());
+        parametersCodeCompletionCheckBox.setSelected(options.isParametersCodeCompletion());
     }
 
     void store() {
@@ -131,6 +140,12 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
         options.setDoubleArrowOperator(doubleArrowOperatorCheckBox.isSelected());
         options.setToUppercaseConst(toUppercaseConstCheckBox.isSelected());
         options.setToUppercaseDefine(toUppercaseDefineCheckBox.isSelected());
+        options.setParametersCodeCompletion(parametersCodeCompletionCheckBox.isSelected());
+        if (parametersCodeCompletionCheckBox.isSelected()) {
+            Parameters.reload();
+        } else {
+            Parameters.clear();
+        }
     }
 
     boolean valid() {
@@ -142,6 +157,7 @@ final class PHPEnhancementsPanel extends javax.swing.JPanel {
     private javax.swing.JLabel codeCompletionLabel;
     private javax.swing.JCheckBox doubleArrowOperatorCheckBox;
     private javax.swing.JCheckBox objectOperatorCheckBox;
+    private javax.swing.JCheckBox parametersCodeCompletionCheckBox;
     private javax.swing.JCheckBox toUppercaseConstCheckBox;
     private javax.swing.JCheckBox toUppercaseDefineCheckBox;
     private javax.swing.JLabel typingHooksLabel;
