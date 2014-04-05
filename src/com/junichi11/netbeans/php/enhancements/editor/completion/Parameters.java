@@ -44,6 +44,7 @@ package com.junichi11.netbeans.php.enhancements.editor.completion;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
+import com.junichi11.netbeans.php.enhancements.options.PHPEnhancementsOptions;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,6 +54,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -74,6 +76,7 @@ public final class Parameters {
     public static final List<Parameter> HTTP_CHARSETS = new ArrayList<Parameter>();
     public static final List<Parameter> HTTP_METHODS = new ArrayList<Parameter>();
     public static final List<Parameter> HTTP_CACHE_CONTROL_DIRECTIVES = new ArrayList<Parameter>();
+    public static final List<Parameter> HTTP_LANGUAGES = new ArrayList<Parameter>();
     public static final List<Parameter> ENCODINGS = new ArrayList<Parameter>();
     public static final List<Parameter> CHARSETS = new ArrayList<Parameter>();
     public static final List<Parameter> SUBSTCHARS = new ArrayList<Parameter>();
@@ -89,9 +92,33 @@ public final class Parameters {
     }
 
     static {
+        if (PHPEnhancementsOptions.getInstance().isParametersCodeCompletion()) {
+            load();
+        }
+    }
+
+    private static void load() {
         PARAMETER_MAP.clear();
         buildParameterMap();
         buildParameters();
+        for (String lang : Locale.getISOLanguages()) {
+            HTTP_LANGUAGES.add(new Parameter(lang, "", "")); // NOI18N
+        }
+        PARAMETER_MAP.clear();
+    }
+
+    public static void reload() {
+        clear();
+        load();
+    }
+
+    public static void clear() {
+        PARAMETER_MAP.clear();
+        buildParameterMap();
+        for (Map.Entry<String, List<Parameter>> entry : PARAMETER_MAP.entrySet()) {
+            List<Parameter> list = entry.getValue();
+            list.clear();
+        }
         PARAMETER_MAP.clear();
     }
 
