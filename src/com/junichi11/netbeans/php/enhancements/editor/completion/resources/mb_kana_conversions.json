@@ -1,0 +1,92 @@
+[
+    {
+        "name": "r",
+        "description": "Convert \"zen-kaku\" alphabets to \"han-kaku\"",
+        "category": "Ａ->A"
+    },
+    {
+        "name": "R",
+        "description": "Convert \"han-kaku\" alphabets to \"zen-kaku\"",
+        "category": "A->Ａ"
+    },
+    {
+        "name": "n",
+        "description": "Convert \"zen-kaku\" numbers to \"han-kaku\"",
+        "category": "０->0"
+    },
+    {
+        "name": "N",
+        "description": "Convert \"han-kaku\" numbers to \"zen-kaku\"",
+        "category": "0->０"
+    },
+    {
+        "name": "a",
+        "description": "Convert \"zen-kaku\" alphabets and numbers to \"han-kaku\"",
+        "category": "Ａ０->A0"
+    },
+    {
+        "name": "A",
+        "description": "Convert \"han-kaku\" alphabets and numbers to \"zen-kaku\" (Characters included in \"a\", \"A\" options are U+0021 - U+007E excluding U+0022, U+0027, U+005C, U+007E)",
+        "category": "A0->Ａ０"
+    },
+    {
+        "name": "s",
+        "description": "Convert \"zen-kaku\" space to \"han-kaku\" (U+3000 -> U+0020)",
+        "category": "U+3000(　)->U+0020( )"
+    },
+    {
+        "name": "S",
+        "description": "Convert \"han-kaku\" space to \"zen-kaku\" (U+0020 -> U+3000)",
+        "category": "U+0020( )->U+3000(　)"
+    },
+    {
+        "name": "k",
+        "description": "Convert \"zen-kaku kata-kana\" to \"han-kaku kata-kana\"",
+        "category": "ア->ｱ"
+    },
+    {
+        "name": "K",
+        "description": "Convert \"han-kaku kata-kana\" to \"zen-kaku kata-kana\"",
+        "category": "ｱ->ア"
+    },
+    {
+        "name": "h",
+        "description": "Convert \"zen-kaku hira-gana\" to \"han-kaku kata-kana\"",
+        "category": "あ->ｱ"
+    },
+    {
+        "name": "H",
+        "description": "Convert \"han-kaku kata-kana\" to \"zen-kaku hira-gana\"",
+        "category": "ｱ->あ"
+    },
+    {
+        "name": "c",
+        "description": "Convert \"zen-kaku kata-kana\" to \"zen-kaku hira-gana\"",
+        "category": "ア->あ"
+    },
+    {
+        "name": "C",
+        "description": "Convert \"zen-kaku hira-gana\" to \"zen-kaku kata-kana\"",
+        "category": "あ->ア"
+    },
+    {
+        "name": "V",
+        "description": "Collapse voiced sound notation and convert them into a character. Use with \"K\",\"H\"",
+        "category": "ｶﾞ->ガ,が"
+    },
+    {
+        "name": "KVC",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "KVa",
+        "description": "",
+        "category": ""
+    },
+    {
+        "name": "HV",
+        "description": "",
+        "category": ""
+    }
+]

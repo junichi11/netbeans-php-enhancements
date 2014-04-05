@@ -1,0 +1,32 @@
+[
+    {
+        "name": "G",
+        "description": "",
+        "category": "GET"
+    },
+    {
+        "name": "P",
+        "description": "",
+        "category": "POST"
+    },
+    {
+        "name": "C",
+        "description": "",
+        "category": "COOKIE"
+    },
+    {
+        "name": "S",
+        "description": "",
+        "category": "string"
+    },
+    {
+        "name": "L",
+        "description": "",
+        "category": "list"
+    },
+    {
+        "name": "I",
+        "description": "",
+        "category": "whole list"
+    }
+]

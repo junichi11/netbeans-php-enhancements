@@ -71,9 +71,31 @@ array('key' => 'value');
 
 ### Code completion
 
+#### Constant
+
 Please check `Tools > Options > PHP > Enhancements`
 
 - Change name for `define`, `defined` and `const` to uppercase name
+
+#### Function and method parameter
+
+- multibyte functions (e.g. mb_convert_encoding())
+- header
+- ini_set, ini_get, ini_alter, ini_restore
+- date_default_timezone_set
+- date, date_format
+- Datetime::format, DateTimeImmutable::format
+- htmlentities, htmlspecialchars
+- session_cache_limiter
+
+Please run code completion ([Ctrl + Space]) inside quotes.
+
+e.g.
+```php
+<?php
+ini_get('here');
+date("here");
+```
 
 ## License
 

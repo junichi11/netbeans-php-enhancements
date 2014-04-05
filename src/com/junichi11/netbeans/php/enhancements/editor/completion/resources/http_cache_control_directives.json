@@ -1,0 +1,62 @@
+[
+    {
+        "name": "no-cache",
+        "description": "",
+        "category": "REQ/RES"
+    },
+    {
+        "name": "no-store",
+        "description": "",
+        "category": "REQ/RES"
+    },
+    {
+        "name": "max-age",
+        "description": "",
+        "category": "REQ/RES"
+    },
+    {
+        "name": "max-stale",
+        "description": "",
+        "category": "REQ"
+    },
+    {
+        "name": "min-fresh",
+        "description": "",
+        "category": "REQ"
+    },
+    {
+        "name": "no-transform",
+        "description": "",
+        "category": "REQ/RES"
+    },
+    {
+        "name": "only-if-cached",
+        "description": "",
+        "category": "REQ"
+    },
+    {
+        "name": "public",
+        "description": "",
+        "category": "RES"
+    },
+    {
+        "name": "private",
+        "description": "",
+        "category": "RES"
+    },
+    {
+        "name": "must-revalidate",
+        "description": "",
+        "category": "RES"
+    },
+    {
+        "name": "proxy-revalidate",
+        "description": "",
+        "category": "RES"
+    },
+    {
+        "name": "s-maxage",
+        "description": "",
+        "category": "RES"
+    }
+]

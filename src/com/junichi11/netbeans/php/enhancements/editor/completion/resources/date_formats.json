@@ -1,0 +1,237 @@
+[
+    {
+        "name": "d",
+        "description": "Day of the month, 2 digits with leading zeros",
+        "category": "01 to 31"
+    },
+    {
+        "name": "D",
+        "description": "A textual representation of a day, three letters",
+        "category": "Mon through Sun"
+    },
+    {
+        "name": "j",
+        "description": "Day of the month without leading zeros",
+        "category": "1 to 31"
+    },
+    {
+        "name": "l",
+        "description": "A full textual representation of the day of the week",
+        "category": "Sunday through Saturday"
+    },
+    {
+        "name": "N",
+        "description": "ISO-8601 numeric representation of the day of the week (added in PHP 5.1.0)",
+        "category": "1 (for Monday) through 7 (for Sunday)"
+    },
+    {
+        "name": "S",
+        "description": "English ordinal suffix for the day of the month, 2 characters",
+        "category": " st, nd, rd or th. Works well with j "
+    },
+    {
+        "name": "w",
+        "description": "Numeric representation of the day of the week",
+        "category": "0 (for Sunday) through 6 (for Saturday)"
+    },
+    {
+        "name": "z",
+        "description": "The day of the year (starting from 0)",
+        "category": "0 through 365"
+    },
+    {
+        "name": "W",
+        "description": "ISO-8601 week number of year, weeks starting on Monday (added in PHP 4.1.0)",
+        "category": "Example: 42 (the 42nd week in the year)"
+    },
+    {
+        "name": "F",
+        "description": "A full textual representation of a month, such as January or March",
+        "category": "January through December"
+    },
+    {
+        "name": "m",
+        "description": "Numeric representation of a month, with leading zeros",
+        "category": "01 through 12"
+    },
+    {
+        "name": "M",
+        "description": "A short textual representation of a month, three letters",
+        "category": "Jan through Dec"
+    },
+    {
+        "name": "n",
+        "description": "Numeric representation of a month, without leading zeros",
+        "category": "1 through 12"
+    },
+    {
+        "name": "t",
+        "description": "Number of days in the given month",
+        "category": "28 through 31"
+    },
+    {
+        "name": "L",
+        "description": "Whether it's a leap year",
+        "category": "1 if it is a leap year, 0 otherwise."
+    },
+    {
+        "name": "o",
+        "description": "ISO-8601 year number. This has the same value as Y, except that if the ISO week number (W) belongs to the previous or next year, that year is used instead. (added in PHP 5.1.0)",
+        "category": "Examples: 1999 or 2003"
+    },
+    {
+        "name": "Y",
+        "description": "A full numeric representation of a year, 4 digits",
+        "category": "Examples: 1999 or 2003"
+    },
+    {
+        "name": "y",
+        "description": "A two digit representation of a year",
+        "category": "Examples: 99 or 03"
+    },
+    {
+        "name": "a",
+        "description": "Lowercase Ante meridiem and Post meridiem",
+        "category": "am or pm"
+    },
+    {
+        "name": "A",
+        "description": "Uppercase Ante meridiem and Post meridiem",
+        "category": "AM or PM"
+    },
+    {
+        "name": "B",
+        "description": "Swatch Internet time",
+        "category": "000 through 999"
+    },
+    {
+        "name": "g",
+        "description": "12-hour format of an hour without leading zeros",
+        "category": "1 through 12"
+    },
+    {
+        "name": "G",
+        "description": "24-hour format of an hour without leading zeros",
+        "category": "0 through 23"
+    },
+    {
+        "name": "h",
+        "description": "12-hour format of an hour with leading zeros",
+        "category": "01 through 12"
+    },
+    {
+        "name": "H",
+        "description": "24-hour format of an hour with leading zeros",
+        "category": "00 through 23"
+    },
+    {
+        "name": "i",
+        "description": "Minutes with leading zeros",
+        "category": "00 to 59"
+    },
+    {
+        "name": "s",
+        "description": "Seconds, with leading zeros",
+        "category": "00 through 59"
+    },
+    {
+        "name": "u",
+        "description": " Microseconds (added in PHP 5.2.2). Note that date() will always generate 000000 since it takes an integer parameter, whereas DateTime::format() does support microseconds. ",
+        "category": "Example: 654321"
+    },
+    {
+        "name": "e",
+        "description": "Timezone identifier (added in PHP 5.1.0)",
+        "category": "Examples: UTC, GMT, Atlantic\/Azores"
+    },
+    {
+        "name": "I",
+        "description": "Whether or not the date is in daylight saving time",
+        "category": "1 if Daylight Saving Time, 0 otherwise."
+    },
+    {
+        "name": "O",
+        "description": "Difference to Greenwich time (GMT) in hours",
+        "category": "Example: +0200"
+    },
+    {
+        "name": "P",
+        "description": "Difference to Greenwich time (GMT) with colon between hours and minutes (added in PHP 5.1.3)",
+        "category": "Example: +02:00"
+    },
+    {
+        "name": "T",
+        "description": "Timezone abbreviation",
+        "category": "Examples: EST, MDT ..."
+    },
+    {
+        "name": "Z",
+        "description": "Timezone offset in seconds. The offset for timezones west of UTC is always negative, and for those east of UTC is always positive.",
+        "category": "-43200 through 50400"
+    },
+    {
+        "name": "c",
+        "description": "ISO 8601 date (added in PHP 5)",
+        "category": "2004-02-12T15:19:21+00:00"
+    },
+    {
+        "name": "r",
+        "description": "",
+        "category": "Example: Thu, 21 Dec 2000 16:01:07 +0200"
+    },
+    {
+        "name": "U",
+        "description": "Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)",
+        "category": "See also time()"
+    },
+    {
+        "name": "Y-m-d",
+        "description": "",
+        "category": "2014-03-29"
+    },
+    {
+        "name": "Y-m-d H:i:s",
+        "description": "",
+        "category": "2014-03-29 23:01:30"
+    },
+    {
+        "name": "Y/m/d",
+        "description": "",
+        "category": "2014/03/29"
+    },
+    {
+        "name": "Y.m.d",
+        "description": "",
+        "category": "2014.03.29"
+    },
+    {
+        "name": "Y m d",
+        "description": "",
+        "category": "2014 03 29"
+    },
+    {
+        "name": "d-m-Y",
+        "description": "",
+        "category": "29-03-2014"
+    },
+    {
+        "name": "d/m/Y",
+        "description": "",
+        "category": "29/03/2014"
+    },
+    {
+        "name": "d.m.Y",
+        "description": "",
+        "category": "29.03.2014"
+    },
+    {
+        "name": "H:i:s",
+        "description": "",
+        "category": "23:01:30"
+    },
+    {
+        "name": "h:i:s",
+        "description": "",
+        "category": "11:01:30"
+    }
+]
