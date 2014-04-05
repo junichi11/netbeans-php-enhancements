@@ -159,7 +159,7 @@ public final class Parameters {
             }
             try {
                 InputStream inputStream = resource.openStream();
-                JsonReader jsonReader = new JsonReader(new BufferedReader(new InputStreamReader(inputStream)));
+                JsonReader jsonReader = new JsonReader(new BufferedReader(new InputStreamReader(inputStream, "UTF-8"))); // NOI18N
                 try {
                     Type type = new TypeToken<ArrayList<Parameter>>() {
                     }.getType();
