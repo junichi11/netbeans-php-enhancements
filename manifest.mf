@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 OpenIDE-Module: com.junichi11.netbeans.php.enhancements
 OpenIDE-Module-Localizing-Bundle: com/junichi11/netbeans/php/enhancements/Bundle.properties
-OpenIDE-Module-Specification-Version: 0.7.1
+OpenIDE-Module-Requires: org.openide.windows.WindowManager
+OpenIDE-Module-Specification-Version: 0.8.0
 
