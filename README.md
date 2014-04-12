@@ -97,6 +97,11 @@ ini_get('here');
 date("here");
 ```
 
+## Download
+
+- http://plugins.netbeans.org/plugin/51791/php-enhancements (Plugin Portal)
+- https://github.com/junichi11/netbeans-php-enhancements/releases (github releases: contains old versions)
+
 ## License
 
 [Common Development and Distribution License (CDDL) v1.0 and GNU General Public License (GPL) v2](http://netbeans.org/cddl-gplv2.html)
