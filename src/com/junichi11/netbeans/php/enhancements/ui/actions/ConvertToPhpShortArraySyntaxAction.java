@@ -53,7 +53,6 @@ import javax.swing.text.StyledDocument;
 import org.netbeans.api.lexer.Token;
 import org.netbeans.api.lexer.TokenSequence;
 import org.netbeans.api.progress.ProgressHandle;
-import org.netbeans.api.progress.ProgressHandleFactory;
 import org.netbeans.modules.php.editor.lexer.LexUtilities;
 import org.netbeans.modules.php.editor.lexer.PHPTokenId;
 import org.openide.DialogDisplayer;
@@ -126,7 +125,7 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
 
             @Override
             public void run() {
-                ProgressHandle handle = ProgressHandleFactory.createHandle(Bundle.ConvertToPhpShortArraySyntaxAction_perform_progress());
+                ProgressHandle handle = ProgressHandle.createHandle(Bundle.ConvertToPhpShortArraySyntaxAction_perform_progress());
                 try {
                     handle.start();
                     for (DataObject dataObject : context) {
