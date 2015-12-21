@@ -212,7 +212,7 @@ public class ParameterCompletionProvider implements CompletionProvider {
          * @throws ParseException
          */
         private int getParameterIndex(FileObject fileObject, final int caretOffset) throws ParseException {
-            final Set<ParameterInfo> info = new HashSet<ParameterInfo>();
+            final Set<ParameterInfo> info = new HashSet<>();
             ParserManager.parse(Collections.singleton(Source.create(fileObject)), new UserTask() {
 
                 @Override
@@ -320,7 +320,7 @@ public class ParameterCompletionProvider implements CompletionProvider {
     }
 
     private static String withClassName(Document document, final int offset, String name) {
-        final Set<DeclarationFinder.DeclarationLocation> locations = new HashSet<DeclarationFinder.DeclarationLocation>();
+        final Set<DeclarationFinder.DeclarationLocation> locations = new HashSet<>();
         try {
             ParserManager.parse(Collections.singleton(Source.create(document)), new UserTask() {
 

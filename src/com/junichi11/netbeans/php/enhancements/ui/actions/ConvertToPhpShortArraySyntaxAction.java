@@ -88,7 +88,7 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
 
     private final List<DataObject> context;
     private final StringBuilder sb = new StringBuilder();
-    private final List<Integer> balanceStack = new LinkedList<Integer>();
+    private final List<Integer> balanceStack = new LinkedList<>();
     private boolean isArraySyntax = false;
     private boolean isChanged = false;
     private int arrayCount = 0;
