@@ -51,6 +51,7 @@ import javax.swing.text.AbstractDocument;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
+import org.netbeans.api.annotations.common.CheckForNull;
 import org.netbeans.api.editor.EditorRegistry;
 import org.netbeans.api.html.lexer.HTMLTokenId;
 import org.netbeans.api.lexer.Token;
@@ -164,15 +165,22 @@ public final class SmartDeleteAction implements ActionListener {
         return target.startsWith(wrapString) && target.endsWith(wrapString);
     }
 
+    @CheckForNull
     private TokenSequence<? extends TokenId> getTokenSequence(Document document, int offset) {
         AbstractDocument ad = (AbstractDocument) document;
         ad.readLock();
         TokenSequence<? extends TokenId> tokenSequence;
         try {
             TokenHierarchy<Document> th = TokenHierarchy.get(document);
+            if (th == null) {
+                return null;
+            }
             tokenSequence = th.tokenSequence();
         } finally {
             ad.readUnlock();
+        }
+        if (tokenSequence == null) {
+            return null;
         }
         tokenSequence.move(offset);
         tokenSequence.moveNext();
