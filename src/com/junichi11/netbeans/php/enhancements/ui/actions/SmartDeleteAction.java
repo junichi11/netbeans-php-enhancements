@@ -76,7 +76,7 @@ import org.openide.util.NbBundle.Messages;
 public final class SmartDeleteAction implements ActionListener {
 
     private final EditorCookie context;
-    private final Set<? extends TokenId> availableIds = new HashSet<>(Arrays.asList(
+    private static final Set<? extends TokenId> AVAILABLEIDS = new HashSet<>(Arrays.asList(
             PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING,
             PHPTokenId.PHP_VARIABLE,
             PHPTokenId.PHP_STRING,
@@ -116,7 +116,7 @@ public final class SmartDeleteAction implements ActionListener {
         TokenId id = token.id();
         String primaryCategory = id.primaryCategory();
         boolean isString = primaryCategory.equals("string"); // NOI18N
-        if (!availableIds.contains(id) && !isString) {
+        if (!AVAILABLEIDS.contains(id) && !isString) {
             return;
         }
         String text = token.text().toString();
