@@ -42,7 +42,10 @@
 package com.junichi11.netbeans.php.enhancements.editor.typinghooks;
 
 import com.junichi11.netbeans.php.enhancements.options.PHPEnhancementsOptions;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
 import org.netbeans.api.editor.mimelookup.MimePath;
 import org.netbeans.api.editor.mimelookup.MimeRegistration;
 import org.netbeans.api.lexer.Token;
@@ -60,6 +63,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
 
     private boolean isObjectOperator;
     private boolean isDoubleArrowOperator;
+    private static final Logger LOGGER = Logger.getLogger(PhpTypedTextInterceptorEx.class.getName());
 
     @Override
     public boolean beforeInsert(Context context) throws BadLocationException {
@@ -94,6 +98,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
     }
 
     private void handleChar(MutableContext context, char ch, TokenSequence<PHPTokenId> ts) {
+        // ->
         if (isMinus(ch) && isObjectOperator) {
             ts.movePrevious();
             Token<PHPTokenId> token = ts.token();
@@ -118,13 +123,36 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             return;
         }
 
+        // =>
         if (isEqual(ch) && isDoubleArrowOperator) {
             Token<PHPTokenId> caretToken = ts.token();
             if (caretToken == null || caretToken.id() == PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING) {
                 return;
             }
+            if (!ts.movePrevious()) {
+                return;
+            }
+            Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
             if (isInArray(ts, caretOffset)) {
+                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR) {
+                    // in case of =>|, just remove ">"
+                    if (previoutsToken.text().toString().equals("=>")) { // NOI18N
+                        Document document = context.getDocument();
+                        if (document != null) {
+                            try {
+                                int removeOffset = caretOffset - 1;
+                                if (removeOffset >= 0) {
+                                    document.remove(removeOffset, 1);
+                                    context.getComponent().setCaretPosition(removeOffset);
+                                }
+                            } catch (BadLocationException ex) {
+                                LOGGER.log(Level.WARNING, "incorrect position:" + ex.offsetRequested(), ex); // NOI18N
+                            }
+                        }
+                    }
+                    return;
+                }
                 String text = ch + ">"; // NOI18N
                 context.setText(text, text.length());
             }
