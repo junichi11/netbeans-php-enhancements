@@ -135,7 +135,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
             if (isInArray(ts, caretOffset)) {
-                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR) {
+                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || ignorePreviousToken(previoutsToken)) {
                     // in case of =>|, just remove ">"
                     if (previoutsToken.text().toString().equals("=>")) { // NOI18N
                         Document document = context.getDocument();
@@ -151,6 +151,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
                             }
                         }
                     }
+                    // in case of =|, ==| and ===|, do nothing
                     return;
                 }
                 String text = ch + ">"; // NOI18N
@@ -159,11 +160,21 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
         }
     }
 
-    private boolean isInArray(TokenSequence<PHPTokenId> ts, int caretOffset) {
+    /**
+     * Check whether the caret position is inside an array. Both array() and []
+     * are checked.
+     * <br />
+     * <b>NOTE:</b>In case of [], not sure whether it is declaration or access.
+     *
+     * @param ts the token sequence
+     * @param caretOffset the caret offset
+     * @return {@code true} if it is inside the array, otherwise {@code false}
+     */
+    private static boolean isInArray(TokenSequence<PHPTokenId> ts, int caretOffset) {
         ts.move(caretOffset);
         int newArrayBalacne = 0;
         int oldArrayBalacne = 0;
-        while(ts.movePrevious()) {
+        while (ts.movePrevious()) {
             Token<PHPTokenId> token = ts.token();
             if (token.id() == PHPTokenId.PHP_SEMICOLON) { // terminator
                 break;
@@ -173,12 +184,12 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
                     return true;
                 }
                 newArrayBalacne--;
-            } else if(isRightBracket(token)) { // ]
+            } else if (isRightBracket(token)) { // ]
                 newArrayBalacne++;
-            } else if(isLeftBrace(token)) { // (
+            } else if (isLeftBrace(token)) { // (
                 if (oldArrayBalacne == 0) {
                     // array(
-                    if(!ts.movePrevious()) {
+                    if (!ts.movePrevious()) {
                         break;
                     }
                     PHPTokenId id = ts.token().id();
@@ -190,7 +201,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
                     return ts.token().id() == PHPTokenId.PHP_ARRAY;
                 }
                 oldArrayBalacne--;
-            } else if(isRightBrace(token)) { // )
+            } else if (isRightBrace(token)) { // )
                 oldArrayBalacne++;
             }
         }
@@ -205,26 +216,96 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
     public void cancelled(Context context) {
     }
 
-    private boolean isMinus(char ch) {
+    /**
+     * Check whether the char is '-'.
+     *
+     * @param ch the char
+     * @return {@code true} if it is '-', otherwise {@code false}
+     */
+    private static boolean isMinus(char ch) {
         return ch == '-';
     }
 
-    private boolean isEqual(char ch) {
+    /**
+     * Check whether the char is '='.
+     *
+     * @param ch the char
+     * @return {@code true} if it is '=', otherwise {@code false}
+     */
+    private static boolean isEqual(char ch) {
         return ch == '=';
     }
 
+    /**
+     * Check whether a previous token is specific one. If the previous token +
+     * "=" is another operator, it should be ignored.
+     *
+     * @param token the previous token
+     * @return {@code true} the previous token + "=" is another operator,
+     * otherwise {@code false}
+     */
+    private static boolean ignorePreviousToken(Token<PHPTokenId> token) {
+        if (token.id() == PHPTokenId.PHP_TOKEN) {
+            String tokenText = token.text().toString();
+            switch (tokenText) {
+                // fall-through
+                case "=": // NOI18N
+                case "<": // NOI18N
+                case ">": // NOI18N
+                case "!": // NOI18N
+                case "+": // NOI18N
+                case "-": // NOI18N
+                case "%": // NOI18N
+                case "/": // NOI18N
+                case "*": // NOI18N
+                case "&": // NOI18N
+                case "|": // NOI18N
+                case "^": // NOI18N
+                case ".": // NOI18N
+                    return true;
+                default:
+                    break;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Check whether the token is "[".
+     *
+     * @param token the token
+     * @return {@code true} if it is "[", otherwise {@code false}
+     */
     private static boolean isLeftBracket(Token<PHPTokenId> token) {
         return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("["); // NOI18N
     }
 
+    /**
+     * Check whether the token is "]".
+     *
+     * @param token the token
+     * @return {@code true} if it is "]", otherwise {@code false}
+     */
     private static boolean isRightBracket(Token<PHPTokenId> token) {
         return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("]"); // NOI18N
     }
 
+    /**
+     * Check whether the token is "(".
+     *
+     * @param token the token
+     * @return {@code true} if it is "(", otherwise {@code false}
+     */
     private static boolean isLeftBrace(Token<PHPTokenId> token) {
         return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("("); // NOI18N
     }
 
+    /**
+     * Check whether the token is ")".
+     *
+     * @param token the token
+     * @return {@code true} if it is ")", otherwise {@code false}
+     */
     private static boolean isRightBrace(Token<PHPTokenId> token) {
         return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals(")"); // NOI18N
     }
