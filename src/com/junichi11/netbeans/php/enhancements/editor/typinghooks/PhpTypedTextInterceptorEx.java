@@ -135,7 +135,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
             if (isInArray(ts, caretOffset)) {
-                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR) {
+                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || isEqual(previoutsToken)) {
                     // in case of =>|, just remove ">"
                     if (previoutsToken.text().toString().equals("=>")) { // NOI18N
                         Document document = context.getDocument();
@@ -151,6 +151,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
                             }
                         }
                     }
+                    // in case of =|, ==| and ===|, do nothing
                     return;
                 }
                 String text = ch + ">"; // NOI18N
@@ -211,6 +212,10 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
 
     private boolean isEqual(char ch) {
         return ch == '=';
+    }
+
+    private static boolean isEqual(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("="); // NOI18N
     }
 
     private static boolean isLeftBracket(Token<PHPTokenId> token) {
