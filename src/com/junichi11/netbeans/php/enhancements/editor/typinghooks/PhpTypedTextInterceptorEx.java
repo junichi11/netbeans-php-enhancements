@@ -135,7 +135,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
             if (isInArray(ts, caretOffset)) {
-                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || isEqual(previoutsToken)) {
+                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || ignorePreviousToken(previoutsToken)) {
                     // in case of =>|, just remove ">"
                     if (previoutsToken.text().toString().equals("=>")) { // NOI18N
                         Document document = context.getDocument();
@@ -237,13 +237,37 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
     }
 
     /**
-     * Check whether the token is "=".
+     * Check whether a previous token is specific one. If the previous token +
+     * "=" is another operator, it should be ignored.
      *
-     * @param token the token
-     * @return {@code true} if it is "=", otherwise {@code false}
+     * @param token the previous token
+     * @return {@code true} the previous token + "=" is another operator,
+     * otherwise {@code false}
      */
-    private static boolean isEqual(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("="); // NOI18N
+    private static boolean ignorePreviousToken(Token<PHPTokenId> token) {
+        if (token.id() == PHPTokenId.PHP_TOKEN) {
+            String tokenText = token.text().toString();
+            switch (tokenText) {
+                // fall-through
+                case "=": // NOI18N
+                case "<": // NOI18N
+                case ">": // NOI18N
+                case "!": // NOI18N
+                case "+": // NOI18N
+                case "-": // NOI18N
+                case "%": // NOI18N
+                case "/": // NOI18N
+                case "*": // NOI18N
+                case "&": // NOI18N
+                case "|": // NOI18N
+                case "^": // NOI18N
+                case ".": // NOI18N
+                    return true;
+                default:
+                    break;
+            }
+        }
+        return false;
     }
 
     /**
