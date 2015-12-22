@@ -58,7 +58,7 @@ public enum SuperGlobalArray {
                 }
             };
 
-    private static final HashMap<String, SuperGlobalArray> STRING_TO_ENUM = new HashMap<String, SuperGlobalArray>();
+    private static final HashMap<String, SuperGlobalArray> STRING_TO_ENUM = new HashMap<>();
 
     static {
         for (SuperGlobalArray array : values()) {

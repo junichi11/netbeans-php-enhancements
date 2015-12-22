@@ -67,26 +67,26 @@ public final class Parameters {
 
     private static final Logger LOGGER = Logger.getLogger(Parameters.class.getName());
 
-    public static final Map<String, List<Parameter>> PARAMETER_MAP = new HashMap<String, List<Parameter>>();
-    public static final List<Parameter> DATE_FORMATS = new ArrayList<Parameter>();
-    public static final List<Parameter> TIMEZONES = new ArrayList<Parameter>();
-    public static final List<Parameter> PHPINI_DIRECTIVES = new ArrayList<Parameter>();
-    public static final List<Parameter> HTTP_HEADER_RESPONSES = new ArrayList<Parameter>();
-    public static final List<Parameter> HTTP_STATUS_CODES = new ArrayList<Parameter>();
-    public static final List<Parameter> HTTP_CHARSETS = new ArrayList<Parameter>();
-    public static final List<Parameter> HTTP_METHODS = new ArrayList<Parameter>();
-    public static final List<Parameter> HTTP_CACHE_CONTROL_DIRECTIVES = new ArrayList<Parameter>();
-    public static final List<Parameter> HTTP_LANGUAGES = new ArrayList<Parameter>();
-    public static final List<Parameter> ENCODINGS = new ArrayList<Parameter>();
-    public static final List<Parameter> CHARSETS = new ArrayList<Parameter>();
-    public static final List<Parameter> SUBSTCHARS = new ArrayList<Parameter>();
-    public static final List<Parameter> MB_LANGUAGES = new ArrayList<Parameter>();
-    public static final List<Parameter> MB_KANA_CONVERSIONS = new ArrayList<Parameter>();
-    public static final List<Parameter> MB_GET_INFO_TYPES = new ArrayList<Parameter>();
-    public static final List<Parameter> MB_HTTP_INPUT_TYPES = new ArrayList<Parameter>();
-    public static final List<Parameter> SESSION_CACHE_LIMITERS = new ArrayList<Parameter>();
-    public static final List<Parameter> MEDIA_TYPES = new ArrayList<Parameter>();
-    public static final List<Parameter> ENVS = new ArrayList<Parameter>();
+    public static final Map<String, List<Parameter>> PARAMETER_MAP = new HashMap<>();
+    public static final List<Parameter> DATE_FORMATS = new ArrayList<>();
+    public static final List<Parameter> TIMEZONES = new ArrayList<>();
+    public static final List<Parameter> PHPINI_DIRECTIVES = new ArrayList<>();
+    public static final List<Parameter> HTTP_HEADER_RESPONSES = new ArrayList<>();
+    public static final List<Parameter> HTTP_STATUS_CODES = new ArrayList<>();
+    public static final List<Parameter> HTTP_CHARSETS = new ArrayList<>();
+    public static final List<Parameter> HTTP_METHODS = new ArrayList<>();
+    public static final List<Parameter> HTTP_CACHE_CONTROL_DIRECTIVES = new ArrayList<>();
+    public static final List<Parameter> HTTP_LANGUAGES = new ArrayList<>();
+    public static final List<Parameter> ENCODINGS = new ArrayList<>();
+    public static final List<Parameter> CHARSETS = new ArrayList<>();
+    public static final List<Parameter> SUBSTCHARS = new ArrayList<>();
+    public static final List<Parameter> MB_LANGUAGES = new ArrayList<>();
+    public static final List<Parameter> MB_KANA_CONVERSIONS = new ArrayList<>();
+    public static final List<Parameter> MB_GET_INFO_TYPES = new ArrayList<>();
+    public static final List<Parameter> MB_HTTP_INPUT_TYPES = new ArrayList<>();
+    public static final List<Parameter> SESSION_CACHE_LIMITERS = new ArrayList<>();
+    public static final List<Parameter> MEDIA_TYPES = new ArrayList<>();
+    public static final List<Parameter> ENVS = new ArrayList<>();
 
     private Parameters() {
     }

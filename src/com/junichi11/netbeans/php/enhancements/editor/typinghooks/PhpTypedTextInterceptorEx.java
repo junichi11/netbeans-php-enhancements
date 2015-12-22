@@ -42,9 +42,10 @@
 package com.junichi11.netbeans.php.enhancements.editor.typinghooks;
 
 import com.junichi11.netbeans.php.enhancements.options.PHPEnhancementsOptions;
-import java.util.Arrays;
-import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
 import org.netbeans.api.editor.mimelookup.MimePath;
 import org.netbeans.api.editor.mimelookup.MimeRegistration;
 import org.netbeans.api.lexer.Token;
@@ -62,6 +63,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
 
     private boolean isObjectOperator;
     private boolean isDoubleArrowOperator;
+    private static final Logger LOGGER = Logger.getLogger(PhpTypedTextInterceptorEx.class.getName());
 
     @Override
     public boolean beforeInsert(Context context) throws BadLocationException {
@@ -96,6 +98,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
     }
 
     private void handleChar(MutableContext context, char ch, TokenSequence<PHPTokenId> ts) {
+        // ->
         if (isMinus(ch) && isObjectOperator) {
             ts.movePrevious();
             Token<PHPTokenId> token = ts.token();
@@ -120,66 +123,75 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             return;
         }
 
-        // TODO short array syntax
+        // =>
         if (isEqual(ch) && isDoubleArrowOperator) {
             Token<PHPTokenId> caretToken = ts.token();
             if (caretToken == null || caretToken.id() == PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING) {
                 return;
             }
-            List<PHPTokenId> tokenIdList = Arrays.asList(PHPTokenId.PHP_SEMICOLON, PHPTokenId.PHP_CURLY_CLOSE, PHPTokenId.PHP_OPENTAG);
-            Token<? extends PHPTokenId> token = LexUtilities.findPreviousToken(ts, tokenIdList);
-            if (token == null || !tokenIdList.contains(token.id())) {
+            if (!ts.movePrevious()) {
                 return;
             }
-
-            Token<? extends PHPTokenId> arrayToken;
+            Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
-            List<PHPTokenId> findList = Arrays.asList(PHPTokenId.PHP_ARRAY);
-            do {
-                arrayToken = LexUtilities.findNextToken(ts, findList);
-                if (arrayToken == null) {
-                    break;
+            if (isInArray(ts, caretOffset)) {
+                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR) {
+                    // in case of =>|, just remove ">"
+                    if (previoutsToken.text().toString().equals("=>")) { // NOI18N
+                        Document document = context.getDocument();
+                        if (document != null) {
+                            try {
+                                int removeOffset = caretOffset - 1;
+                                if (removeOffset >= 0) {
+                                    document.remove(removeOffset, 1);
+                                    context.getComponent().setCaretPosition(removeOffset);
+                                }
+                            } catch (BadLocationException ex) {
+                                LOGGER.log(Level.WARNING, "incorrect position:" + ex.offsetRequested(), ex); // NOI18N
+                            }
+                        }
+                    }
+                    return;
                 }
-                PHPTokenId id = arrayToken.id();
-                if (id != PHPTokenId.PHP_ARRAY) {
-                    break;
-                }
-                if (isInArray(ts, caretOffset)) {
-                    String text = ch + ">"; // NOI18N
-                    context.setText(text, text.length());
-                    break;
-                }
-            } while (arrayToken.id() == PHPTokenId.PHP_ARRAY);
+                String text = ch + ">"; // NOI18N
+                context.setText(text, text.length());
+            }
         }
     }
 
     private boolean isInArray(TokenSequence<PHPTokenId> ts, int caretOffset) {
-        if (ts.token().id() != PHPTokenId.PHP_ARRAY) {
-            return false;
-        }
-
-        ts.moveNext();
-        String tokenText = ts.token().text().toString();
-        if (tokenText.equals("(")) { // NOI18N
-            int startOffset = ts.offset();
-            int balance = 0;
-            while (ts.moveNext()) {
-                tokenText = ts.token().text().toString();
-                if (tokenText.equals(")")) { // NOI18N
-                    // found
-                    if (balance == 0) {
-                        int endOffset = ts.offset();
-                        if (startOffset < caretOffset && caretOffset <= endOffset) {
-                            return true;
-                        }
+        ts.move(caretOffset);
+        int newArrayBalacne = 0;
+        int oldArrayBalacne = 0;
+        while(ts.movePrevious()) {
+            Token<PHPTokenId> token = ts.token();
+            if (token.id() == PHPTokenId.PHP_SEMICOLON) { // terminator
+                break;
+            }
+            if (isLeftBracket(token)) { // [
+                if (newArrayBalacne == 0) {
+                    return true;
+                }
+                newArrayBalacne--;
+            } else if(isRightBracket(token)) { // ]
+                newArrayBalacne++;
+            } else if(isLeftBrace(token)) { // (
+                if (oldArrayBalacne == 0) {
+                    // array(
+                    if(!ts.movePrevious()) {
                         break;
                     }
-                    balance--;
+                    PHPTokenId id = ts.token().id();
+                    if (id == PHPTokenId.WHITESPACE) {
+                        if (!ts.movePrevious()) {
+                            break;
+                        }
+                    }
+                    return ts.token().id() == PHPTokenId.PHP_ARRAY;
                 }
-
-                if (tokenText.equals("(")) { // NOI18N
-                    balance++;
-                }
+                oldArrayBalacne--;
+            } else if(isRightBrace(token)) { // )
+                oldArrayBalacne++;
             }
         }
         return false;
@@ -194,11 +206,27 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
     }
 
     private boolean isMinus(char ch) {
-        return ch == '-'; // NOI18N
+        return ch == '-';
     }
 
     private boolean isEqual(char ch) {
-        return ch == '='; // NOI18N
+        return ch == '=';
+    }
+
+    private static boolean isLeftBracket(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("["); // NOI18N
+    }
+
+    private static boolean isRightBracket(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("]"); // NOI18N
+    }
+
+    private static boolean isLeftBrace(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("("); // NOI18N
+    }
+
+    private static boolean isRightBrace(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals(")"); // NOI18N
     }
 
     @MimeRegistration(mimeType = "text/x-php5", service = TypedTextInterceptor.Factory.class)

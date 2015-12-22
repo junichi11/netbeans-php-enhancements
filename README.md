@@ -66,7 +66,8 @@ e.g.  type `$this-` => `$this->`, type `array('key' =)` => `array('key' =>)`
 
 ```php
 $this->property;
-array('key' => 'value');
+$array = array('key' => 'value');
+$a = ["foo" => "bar"];
 ```
 
 ### Code completion
@@ -88,7 +89,7 @@ Please check `Tools > Options > PHP > Enhancements`
 - htmlentities, htmlspecialchars
 - session_cache_limiter
 
-Please run code completion ([Ctrl + Space]) inside quotes.
+Please run code completion (<kbd>Ctrl</kbd> + <kbd>Space</kbd>) inside quotes.
 
 e.g.
 ```php

@@ -51,6 +51,7 @@ import javax.swing.text.AbstractDocument;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
+import org.netbeans.api.annotations.common.CheckForNull;
 import org.netbeans.api.editor.EditorRegistry;
 import org.netbeans.api.html.lexer.HTMLTokenId;
 import org.netbeans.api.lexer.Token;
@@ -75,7 +76,7 @@ import org.openide.util.NbBundle.Messages;
 public final class SmartDeleteAction implements ActionListener {
 
     private final EditorCookie context;
-    private final Set<? extends TokenId> availableIds = new HashSet<TokenId>(Arrays.asList(
+    private static final Set<? extends TokenId> AVAILABLEIDS = new HashSet<>(Arrays.asList(
             PHPTokenId.PHP_CONSTANT_ENCAPSED_STRING,
             PHPTokenId.PHP_VARIABLE,
             PHPTokenId.PHP_STRING,
@@ -115,7 +116,7 @@ public final class SmartDeleteAction implements ActionListener {
         TokenId id = token.id();
         String primaryCategory = id.primaryCategory();
         boolean isString = primaryCategory.equals("string"); // NOI18N
-        if (!availableIds.contains(id) && !isString) {
+        if (!AVAILABLEIDS.contains(id) && !isString) {
             return;
         }
         String text = token.text().toString();
@@ -164,15 +165,22 @@ public final class SmartDeleteAction implements ActionListener {
         return target.startsWith(wrapString) && target.endsWith(wrapString);
     }
 
+    @CheckForNull
     private TokenSequence<? extends TokenId> getTokenSequence(Document document, int offset) {
         AbstractDocument ad = (AbstractDocument) document;
         ad.readLock();
         TokenSequence<? extends TokenId> tokenSequence;
         try {
             TokenHierarchy<Document> th = TokenHierarchy.get(document);
+            if (th == null) {
+                return null;
+            }
             tokenSequence = th.tokenSequence();
         } finally {
             ad.readUnlock();
+        }
+        if (tokenSequence == null) {
+            return null;
         }
         tokenSequence.move(offset);
         tokenSequence.moveNext();

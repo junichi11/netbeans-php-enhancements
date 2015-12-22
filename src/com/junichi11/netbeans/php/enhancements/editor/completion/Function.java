@@ -699,7 +699,7 @@ public enum Function {
         }
     };
     private final String name;
-    private static final Map<String, Function> STRING_TO_ENUM = new HashMap<String, Function>();
+    private static final Map<String, Function> STRING_TO_ENUM = new HashMap<>();
     public static final Pattern HTTP_VERSION_PATTERN = Pattern.compile("(?<version>\\AHTTP/\\d\\.\\d)\\s+(?<code>.*)\\z"); // NOI18N
     public static final Pattern HTTP_CONTENT_TYPE_PATTERN = Pattern.compile("(?<header>\\AContent-Type: (?<media>.*; (?<charset>charset=(?<encoding>.*|)|.*)|.*))\\z"); // NOI18N
     public static final Pattern HTTP_ALLOW_PATTERN = Pattern.compile("(?<header>\\AAllow: (?<method>.*))\\z"); // NOI18N
