@@ -170,7 +170,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @param caretOffset the caret offset
      * @return {@code true} if it is inside the array, otherwise {@code false}
      */
-    private boolean isInArray(TokenSequence<PHPTokenId> ts, int caretOffset) {
+    private static boolean isInArray(TokenSequence<PHPTokenId> ts, int caretOffset) {
         ts.move(caretOffset);
         int newArrayBalacne = 0;
         int oldArrayBalacne = 0;
@@ -222,7 +222,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @param ch the char
      * @return {@code true} if it is '-', otherwise {@code false}
      */
-    private boolean isMinus(char ch) {
+    private static boolean isMinus(char ch) {
         return ch == '-';
     }
 
@@ -232,7 +232,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @param ch the char
      * @return {@code true} if it is '=', otherwise {@code false}
      */
-    private boolean isEqual(char ch) {
+    private static boolean isEqual(char ch) {
         return ch == '=';
     }
 
