@@ -135,7 +135,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
             if (isInArray(ts, caretOffset)) {
-                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || ignorePreviousToken(previoutsToken)) {
+                if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || isIgnoredContext(previoutsToken)) {
                     // in case of =>|, just remove ">"
                     if (previoutsToken.text().toString().equals("=>")) { // NOI18N
                         Document document = context.getDocument();
@@ -151,7 +151,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
                             }
                         }
                     }
-                    // in case of =|, ==| and ===|, do nothing
+                    // in case of =|, ==| and ===|, e.t.c. do nothing
                     return;
                 }
                 String text = ch + ">"; // NOI18N
@@ -244,7 +244,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} the previous token + "=" is another operator,
      * otherwise {@code false}
      */
-    private static boolean ignorePreviousToken(Token<PHPTokenId> token) {
+    private static boolean isIgnoredContext(Token<PHPTokenId> token) {
         if (token.id() == PHPTokenId.PHP_TOKEN) {
             String tokenText = token.text().toString();
             switch (tokenText) {
