@@ -407,7 +407,7 @@ public class ParameterCompletionProvider implements CompletionProvider {
         private final String description;
         private final String category;
         private final String filter;
-        private static final ImageIcon icon = ImageUtilities.loadImageIcon("com/junichi11/netbeans/php/enhancements/resources/parameter16.png", false); // NOI18N
+        private static final ImageIcon ICON = ImageUtilities.loadImageIcon("com/junichi11/netbeans/php/enhancements/resources/parameter16.png", false); // NOI18N
 
         public ParameterCompletionItem(int caretOffset, String filter, Parameter parameter) {
             this.text = parameter.getName();
@@ -455,7 +455,7 @@ public class ParameterCompletionProvider implements CompletionProvider {
         }
 
         private ImageIcon getIcon() {
-            return icon;
+            return ICON;
         }
 
         private String getLeftHtmlText() {
