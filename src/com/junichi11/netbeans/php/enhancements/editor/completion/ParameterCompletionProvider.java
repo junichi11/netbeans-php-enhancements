@@ -53,10 +53,12 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.Action;
 import javax.swing.ImageIcon;
+import javax.swing.text.AbstractDocument;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
 import javax.swing.text.StyledDocument;
+import org.apache.commons.lang.StringUtils;
 import org.netbeans.api.annotations.common.CheckForNull;
 import org.netbeans.api.editor.completion.Completion;
 import org.netbeans.api.editor.mimelookup.MimeRegistration;
@@ -64,7 +66,6 @@ import org.netbeans.api.lexer.Token;
 import org.netbeans.api.lexer.TokenSequence;
 import org.netbeans.modules.csl.api.DeclarationFinder;
 import org.netbeans.modules.csl.api.ElementHandle;
-import org.netbeans.modules.csl.api.ParameterInfo;
 import org.netbeans.modules.editor.NbEditorUtilities;
 import org.netbeans.modules.parsing.api.ParserManager;
 import org.netbeans.modules.parsing.api.ResultIterator;
@@ -75,8 +76,6 @@ import org.netbeans.modules.parsing.spi.Parser;
 import org.netbeans.modules.php.editor.csl.DeclarationFinderImpl;
 import org.netbeans.modules.php.editor.lexer.LexUtilities;
 import org.netbeans.modules.php.editor.lexer.PHPTokenId;
-import org.netbeans.modules.php.editor.model.Model;
-import org.netbeans.modules.php.editor.model.ParameterInfoSupport;
 import org.netbeans.modules.php.editor.parser.PHPParseResult;
 import org.netbeans.spi.editor.completion.CompletionDocumentation;
 import org.netbeans.spi.editor.completion.CompletionItem;
@@ -168,7 +167,7 @@ public class ParameterCompletionProvider implements CompletionProvider {
                         }
 
                         // get parameter index
-                        int parameterIndex = getParameterIndex(fileObject, caretOffset);
+                        int parameterIndex = getParameterIndex(doc, caretOffset, functionName);
                         if (parameterIndex < 0) {
                             return;
                         }
@@ -196,50 +195,73 @@ public class ParameterCompletionProvider implements CompletionProvider {
                         resultSet.addItem(new ParameterCompletionItem(caretOffset, filterText, parameter));
                     }
                 }
-            } catch (ParseException ex) {
-                Exceptions.printStackTrace(ex);
             } finally {
                 resultSet.finish();
             }
         }
 
-        /**
-         * Get parameter index.
-         *
-         * @param fileObject not null
-         * @param caretOffset > 0
-         * @return index number if it is found, -1 otherwse.
-         * @throws ParseException
-         */
-        private int getParameterIndex(FileObject fileObject, final int caretOffset) throws ParseException {
-            final Set<ParameterInfo> info = new HashSet<>();
-            ParserManager.parse(Collections.singleton(Source.create(fileObject)), new UserTask() {
+    }
 
-                @Override
-                public void run(ResultIterator resultIterator) throws Exception {
-                    Parser.Result result = resultIterator.getParserResult();
-                    if (result == null) {
-                        return;
+    /**
+     * Get parameter index for the current caret position.
+     *
+     * @param document document
+     * @param caretOffset the caret offset
+     * @param functionName the function name
+     * @return index number if it is found, otherwise -1
+     */
+    private static int getParameterIndex(Document document, int caretOffset, String functionName) {
+        ((AbstractDocument) document).readLock();
+        try {
+            TokenSequence<PHPTokenId> ts = LexUtilities.getPHPTokenSequence(document, caretOffset);
+            if (ts != null && !StringUtils.isEmpty(functionName) && caretOffset >= 0) {
+                ts.move(caretOffset);
+                int index = 0;
+                int braceBalance = 0;
+                int bracketBalance = 0;
+                while (ts.movePrevious()) {
+                    Token<PHPTokenId> token = ts.token();
+                    if (token == null) {
+                        break;
                     }
-                    PHPParseResult parseResult = (PHPParseResult) result;
-                    Model model = parseResult.getModel();
-                    ParameterInfoSupport parameterInfoSupport = model.getParameterInfoSupport(caretOffset);
-                    ParameterInfo parameterInfo = parameterInfoSupport.getParameterInfo();
-                    if (parameterInfo != null) {
-                        info.add(parameterInfo);
+
+                    PHPTokenId id = token.id();
+                    if (id == PHPTokenId.PHP_SEMICOLON) {
+                        break;
+                    }
+
+                    String tokenText = token.text().toString();
+                    if (tokenText.equals(functionName) && braceBalance == -1 && bracketBalance == 0) {
+                        return index;
+                    }
+                    // check array(), [], function()
+                    switch (tokenText) {
+                        case ",": // NOI18N
+                            if (braceBalance == 0 && bracketBalance == 0) {
+                                index++;
+                            }
+                            break;
+                        case "(": // NOI18N
+                            braceBalance--;
+                            break;
+                        case ")": // NOI18N
+                            braceBalance++;
+                            break;
+                        case "[": // NOI18N
+                            bracketBalance--;
+                            break;
+                        case "]": // NOI18N
+                            bracketBalance++;
+                            break;
+                        default:
+                            break;
                     }
                 }
-            });
-            int parameterIndex = -1;
-            if (!info.isEmpty()) {
-                for (ParameterInfo parameterInfo : info) {
-                    parameterIndex = parameterInfo.getCurrentIndex();
-                    break;
-                }
-                info.clear();
             }
-            return parameterIndex;
+        } finally {
+            ((AbstractDocument) document).readUnlock();
         }
+        return -1;
     }
 
     @CheckForNull
