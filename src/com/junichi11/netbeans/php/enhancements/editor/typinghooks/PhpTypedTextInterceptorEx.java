@@ -42,6 +42,7 @@
 package com.junichi11.netbeans.php.enhancements.editor.typinghooks;
 
 import com.junichi11.netbeans.php.enhancements.options.PHPEnhancementsOptions;
+import com.junichi11.netbeans.php.enhancements.utils.Utils;
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
@@ -332,7 +333,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
         return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), ')');
     }
 
-    @MimeRegistration(mimeType = "text/x-php5", service = TypedTextInterceptor.Factory.class)
+    @MimeRegistration(mimeType = Utils.PHP_MIME_TYPE, service = TypedTextInterceptor.Factory.class)
     public static class Factory implements TypedTextInterceptor.Factory {
 
         @Override
