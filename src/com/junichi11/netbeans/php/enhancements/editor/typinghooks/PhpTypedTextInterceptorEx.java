@@ -137,7 +137,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             if (isInArray(ts, caretOffset)) {
                 if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || isIgnoredContext(previoutsToken)) {
                     // in case of =>|, just remove ">"
-                    if (previoutsToken.text().toString().equals("=>")) { // NOI18N
+                    if (LexUtilities.textEquals(previoutsToken.text(), '=', '>')) {
                         Document document = context.getDocument();
                         if (document != null) {
                             try {
@@ -277,7 +277,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is "[", otherwise {@code false}
      */
     private static boolean isLeftBracket(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("["); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), '[');
     }
 
     /**
@@ -287,7 +287,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is "]", otherwise {@code false}
      */
     private static boolean isRightBracket(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("]"); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), ']');
     }
 
     /**
@@ -297,7 +297,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is "(", otherwise {@code false}
      */
     private static boolean isLeftBrace(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("("); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), '(');
     }
 
     /**
@@ -307,7 +307,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is ")", otherwise {@code false}
      */
     private static boolean isRightBrace(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals(")"); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), ')');
     }
 
     @MimeRegistration(mimeType = "text/x-php5", service = TypedTextInterceptor.Factory.class)
