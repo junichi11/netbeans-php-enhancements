@@ -42,6 +42,9 @@
 package com.junichi11.netbeans.php.enhancements.editor.typinghooks;
 
 import com.junichi11.netbeans.php.enhancements.options.PHPEnhancementsOptions;
+import com.junichi11.netbeans.php.enhancements.utils.Utils;
+import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.text.BadLocationException;
@@ -63,6 +66,8 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
 
     private boolean isObjectOperator;
     private boolean isDoubleArrowOperator;
+    private static final List<PHPTokenId> AFTER_AS = Arrays.asList(PHPTokenId.PHP_VARIABLE, PHPTokenId.WHITESPACE, PHPTokenId.PHP_AS);
+
     private static final Logger LOGGER = Logger.getLogger(PhpTypedTextInterceptorEx.class.getName());
 
     @Override
@@ -134,10 +139,10 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             }
             Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
-            if (isInArray(ts, caretOffset)) {
+            if (isInArray(ts, caretOffset) || isAfterAs(ts, caretOffset)) {
                 if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || isIgnoredContext(previoutsToken)) {
                     // in case of =>|, just remove ">"
-                    if (previoutsToken.text().toString().equals("=>")) { // NOI18N
+                    if (LexUtilities.textEquals(previoutsToken.text(), '=', '>')) {
                         Document document = context.getDocument();
                         if (document != null) {
                             try {
@@ -206,6 +211,24 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             }
         }
         return false;
+    }
+
+    /**
+     * Check whether the caret position is after "as".
+     *
+     * @param ts the token sequence
+     * @param caretOffset the caret offset
+     * @return {@code true} if it is after "as", otherwise {@code false}
+     */
+    private static boolean isAfterAs(TokenSequence<PHPTokenId> ts, int caretOffset) {
+        ts.move(caretOffset);
+        if (ts.movePrevious()
+                && ts.token().id() != PHPTokenId.WHITESPACE) {
+            ts.moveNext();
+        }
+
+        return AFTER_AS.stream()
+                .noneMatch((tokenId) -> (!ts.movePrevious() || tokenId != ts.token().id()));
     }
 
     @Override
@@ -277,7 +300,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is "[", otherwise {@code false}
      */
     private static boolean isLeftBracket(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("["); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), '[');
     }
 
     /**
@@ -287,7 +310,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is "]", otherwise {@code false}
      */
     private static boolean isRightBracket(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("]"); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), ']');
     }
 
     /**
@@ -297,7 +320,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is "(", otherwise {@code false}
      */
     private static boolean isLeftBrace(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals("("); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), '(');
     }
 
     /**
@@ -307,10 +330,10 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      * @return {@code true} if it is ")", otherwise {@code false}
      */
     private static boolean isRightBrace(Token<PHPTokenId> token) {
-        return token.id() == PHPTokenId.PHP_TOKEN && token.text().toString().equals(")"); // NOI18N
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), ')');
     }
 
-    @MimeRegistration(mimeType = "text/x-php5", service = TypedTextInterceptor.Factory.class)
+    @MimeRegistration(mimeType = Utils.PHP_MIME_TYPE, service = TypedTextInterceptor.Factory.class)
     public static class Factory implements TypedTextInterceptor.Factory {
 
         @Override
