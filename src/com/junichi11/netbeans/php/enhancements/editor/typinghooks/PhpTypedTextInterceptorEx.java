@@ -221,18 +221,13 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      */
     private static boolean isAfterAs(TokenSequence<PHPTokenId> ts, int caretOffset) {
         ts.move(caretOffset);
-        if(ts.movePrevious()
+        if (ts.movePrevious()
                 && ts.token().id() != PHPTokenId.WHITESPACE) {
             ts.moveNext();
         }
 
-        for (PHPTokenId tokenId : AFTER_AS) {
-            if (!ts.movePrevious()
-                    || tokenId != ts.token().id()) {
-                return false;
-            }
-        }
-        return true;
+        return AFTER_AS.stream()
+                .noneMatch((tokenId) -> (!ts.movePrevious() || tokenId != ts.token().id()));
     }
 
     @Override

@@ -44,10 +44,6 @@ package com.junichi11.netbeans.php.enhancements.ui.actions;
 import com.junichi11.netbeans.php.enhancements.options.DummyImageOptions;
 import java.awt.Color;
 import java.awt.Dialog;
-import java.awt.event.InputMethodEvent;
-import java.awt.event.InputMethodListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import javax.swing.JColorChooser;
 import javax.swing.JPanel;
 import org.openide.DialogDescriptor;
@@ -146,7 +142,7 @@ public class DummyImagePanel extends JPanel {
 
     public String getFormat() {
         // TODO add other formats support
-        return "PNG";
+        return "PNG"; // NOI18N
     }
 
     private String getExt() {

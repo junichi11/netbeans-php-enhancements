@@ -96,16 +96,12 @@ abstract class ConvertToAction implements ActionListener {
             }
 
             final int selectionStartPosition = editor.getSelectionStart();
-            NbDocument.runAtomic(document, new Runnable() {
-
-                @Override
-                public void run() {
-                    try {
-                        document.remove(selectionStartPosition, selectedText.length());
-                        document.insertString(selectionStartPosition, convertedString, null);
-                    } catch (BadLocationException ex) {
-                        Exceptions.printStackTrace(ex);
-                    }
+            NbDocument.runAtomic(document, () -> {
+                try {
+                    document.remove(selectionStartPosition, selectedText.length());
+                    document.insertString(selectionStartPosition, convertedString, null);
+                } catch (BadLocationException ex) {
+                    Exceptions.printStackTrace(ex);
                 }
             });
         } catch (IOException ex) {

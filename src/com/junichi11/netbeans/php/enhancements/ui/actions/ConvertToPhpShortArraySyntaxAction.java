@@ -121,27 +121,23 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
         }
 
         // show progress bar
-        RequestProcessor.getDefault().post(new Runnable() {
-
-            @Override
-            public void run() {
-                ProgressHandle handle = ProgressHandle.createHandle(Bundle.ConvertToPhpShortArraySyntaxAction_perform_progress());
-                try {
-                    handle.start();
-                    for (DataObject dataObject : context) {
-                        actionPerformed(dataObject);
-                    }
-                } finally {
-                    handle.finish();
-                }
-
-                // show complete dialog
-                NotifyDescriptor.Message message = new NotifyDescriptor.Message(
-                        Bundle.ConvertToPhpShortArraySyntaxAction_action_complete(),
-                        NotifyDescriptor.INFORMATION_MESSAGE
-                );
-                DialogDisplayer.getDefault().notify(message);
+        RequestProcessor.getDefault().post(() -> {
+            ProgressHandle handle = ProgressHandle.createHandle(Bundle.ConvertToPhpShortArraySyntaxAction_perform_progress());
+            try {
+                handle.start();
+                context.forEach((dataObject) -> {
+                    actionPerformed(dataObject);
+                });
+            } finally {
+                handle.finish();
             }
+
+            // show complete dialog
+            NotifyDescriptor.Message message = new NotifyDescriptor.Message(
+                    Bundle.ConvertToPhpShortArraySyntaxAction_action_complete(),
+                    NotifyDescriptor.INFORMATION_MESSAGE
+            );
+            DialogDisplayer.getDefault().notify(message);
         });
     }
 
@@ -193,31 +189,28 @@ public final class ConvertToPhpShortArraySyntaxAction implements ActionListener 
         }
         ts.move(0);
 
-        NbDocument.runAtomic(sdoc, new Runnable() {
-            @Override
-            public void run() {
-                init();
+        NbDocument.runAtomic(sdoc, () -> {
+            init();
 
-                while (ts.moveNext()) {
-                    Token<PHPTokenId> token = ts.token();
-                    handleToken(token);
-                }
-                if (!isChanged) {
-                    return;
-                }
+            while (ts.moveNext()) {
+                Token<PHPTokenId> token = ts.token();
+                handleToken(token);
+            }
+            if (!isChanged) {
+                return;
+            }
 
-                try {
-                    // XXX line feed is added to last token when document is devided to tokens
-                    int length = sb.length();
-                    if (length > 0) {
-                        // delete last position
-                        sb.deleteCharAt(length - 1);
-                    }
-                    sdoc.remove(0, sdoc.getLength());
-                    sdoc.insertString(0, sb.toString(), null);
-                } catch (BadLocationException ex) {
-                    Exceptions.printStackTrace(ex);
+            try {
+                // XXX line feed is added to last token when document is devided to tokens
+                int length = sb.length();
+                if (length > 0) {
+                    // delete last position
+                    sb.deleteCharAt(length - 1);
                 }
+                sdoc.remove(0, sdoc.getLength());
+                sdoc.insertString(0, sb.toString(), null);
+            } catch (BadLocationException ex) {
+                Exceptions.printStackTrace(ex);
             }
         });
     }
