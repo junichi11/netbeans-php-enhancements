@@ -103,6 +103,10 @@ date("here");
 - http://plugins.netbeans.org/plugin/51791/php-enhancements (Plugin Portal)
 - https://github.com/junichi11/netbeans-php-enhancements/releases (github releases: contains old versions)
 
+## Donation
+
+<a href="https://www.patreon.com/junichi11"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" height="50"></a>
+
 ## License
 
-[Common Development and Distribution License (CDDL) v1.0 and GNU General Public License (GPL) v2](http://netbeans.org/cddl-gplv2.html)
+Apache License, Version 2.0
