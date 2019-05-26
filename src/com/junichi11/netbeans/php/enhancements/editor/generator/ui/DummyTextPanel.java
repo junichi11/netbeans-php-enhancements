@@ -16,7 +16,6 @@
 package com.junichi11.netbeans.php.enhancements.editor.generator.ui;
 
 import com.junichi11.netbeans.php.enhancements.options.DummyTextOptions;
-import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.JTextField;
