@@ -19,7 +19,6 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultStyledDocument;
-import static junit.framework.Assert.assertEquals;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
