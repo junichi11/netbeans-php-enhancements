@@ -54,7 +54,7 @@ import org.openide.util.RequestProcessor;
 )
 @ActionReferences({
     @ActionReference(path = "Menu/Edit", position = 3300),
-    @ActionReference(path = "Projects/Actions", position = 1800),
+    @ActionReference(path = "Projects/org-netbeans-modules-php-project/Actions", position = 1800),
     @ActionReference(path = "Loaders/text/x-php5/Actions", position = 1800),
     @ActionReference(path = "Loaders/folder/any/Actions", position = 1800),})
 @Messages("CTL_ConvertToPhpShortArraySyntaxAction=Convert to short array syntax")
