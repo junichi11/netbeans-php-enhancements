@@ -100,8 +100,8 @@ date("here");
 
 ## Download
 
-- http://plugins.netbeans.org/plugin/51791/php-enhancements (Plugin Portal)
 - https://github.com/junichi11/netbeans-php-enhancements/releases (github releases: contains old versions)
+- https://plugins.netbeans.apache.org/catalogue/?id=29 (Plugin Portal)
 
 ## Donation
 
