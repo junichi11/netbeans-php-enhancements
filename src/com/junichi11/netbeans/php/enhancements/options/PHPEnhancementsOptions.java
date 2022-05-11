@@ -31,6 +31,21 @@ public final class PHPEnhancementsOptions {
     private static final String TO_UPPERCASE_DEFINE = "uppercase.define"; // NOI18N
     private static final String PARAMETERS_CODE_COMPLETION = "parameters.code.completion"; // NOI18N
 
+    // cache
+    private static volatile boolean isObjectOperator;
+    private static volatile boolean isDoubleArrowOperator;
+    private static volatile boolean isToUppercaseConst;
+    private static volatile boolean isToUppercaseDefine;
+    private static volatile boolean isParametersCodeCompletion;
+
+    static {
+        INSTANCE.initialize(OBJECT_OPERATOR_TYPINGHOOK);
+        INSTANCE.initialize(DOUBLE_ARROW_TYPINGHOOK);
+        INSTANCE.initialize(TO_UPPERCASE_CONST);
+        INSTANCE.initialize(TO_UPPERCASE_DEFINE);
+        INSTANCE.initialize(PARAMETERS_CODE_COMPLETION);
+    }
+
     public static PHPEnhancementsOptions getInstance() {
         return INSTANCE;
     }
@@ -38,40 +53,105 @@ public final class PHPEnhancementsOptions {
     private PHPEnhancementsOptions() {
     }
 
+    public static boolean isPHPEnhancementsOptions(String key) {
+        return OBJECT_OPERATOR_TYPINGHOOK.equals(key)
+                || DOUBLE_ARROW_TYPINGHOOK.equals(key)
+                || TO_UPPERCASE_CONST.equals(key)
+                || TO_UPPERCASE_DEFINE.equals(key)
+                || PARAMETERS_CODE_COMPLETION.equals(key);
+    }
+
+    public void initialize(String key) {
+        switch (key) {
+            case OBJECT_OPERATOR_TYPINGHOOK:
+                isObjectOperator = isObjectOperator(true);
+                break;
+            case DOUBLE_ARROW_TYPINGHOOK:
+                isDoubleArrowOperator = isDoubleArrowOperator(true);
+                break;
+            case TO_UPPERCASE_CONST:
+                isToUppercaseConst = isToUppercaseConst(true);
+                break;
+            case TO_UPPERCASE_DEFINE:
+                isToUppercaseDefine = isToUppercaseDefine(true);
+                break;
+            case PARAMETERS_CODE_COMPLETION:
+                isParametersCodeCompletion = isParametersCodeCompletion(true);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public boolean isObjectOperator(boolean force) {
+        if (force) {
+            return getPreferences().getBoolean(OBJECT_OPERATOR_TYPINGHOOK, false);
+        }
+        return isObjectOperator;
+    }
+
     public boolean isObjectOperator() {
-        return getPreferences().getBoolean(OBJECT_OPERATOR_TYPINGHOOK, false);
+        return isObjectOperator(false);
     }
 
     public void setObjectOperator(boolean isObjectOperator) {
         getPreferences().putBoolean(OBJECT_OPERATOR_TYPINGHOOK, isObjectOperator);
     }
 
+    public boolean isDoubleArrowOperator(boolean force) {
+        if (force) {
+            return getPreferences().getBoolean(DOUBLE_ARROW_TYPINGHOOK, false);
+        }
+        return isDoubleArrowOperator;
+    }
+
     public boolean isDoubleArrowOperator() {
-        return getPreferences().getBoolean(DOUBLE_ARROW_TYPINGHOOK, false);
+        return isDoubleArrowOperator(false);
     }
 
     public void setDoubleArrowOperator(boolean isDoubleArrowOperator) {
         getPreferences().putBoolean(DOUBLE_ARROW_TYPINGHOOK, isDoubleArrowOperator);
     }
 
+    public boolean isToUppercaseConst(boolean force) {
+        if (force) {
+            return getPreferences().getBoolean(TO_UPPERCASE_CONST, false);
+        }
+        return isToUppercaseConst;
+    }
+
     public boolean isToUppercaseConst() {
-        return getPreferences().getBoolean(TO_UPPERCASE_CONST, false);
+        return isToUppercaseConst(false);
     }
 
     public void setToUppercaseConst(boolean isToUppercaseConst) {
         getPreferences().putBoolean(TO_UPPERCASE_CONST, isToUppercaseConst);
     }
 
+    public boolean isToUppercaseDefine(boolean force) {
+        if (force) {
+            return getPreferences().getBoolean(TO_UPPERCASE_DEFINE, false);
+        }
+        return isToUppercaseDefine;
+    }
+
     public boolean isToUppercaseDefine() {
-        return getPreferences().getBoolean(TO_UPPERCASE_DEFINE, false);
+        return isToUppercaseDefine(false);
     }
 
     public void setToUppercaseDefine(boolean isToUppercaseDefine) {
         getPreferences().putBoolean(TO_UPPERCASE_DEFINE, isToUppercaseDefine);
     }
 
+    public boolean isParametersCodeCompletion(boolean force) {
+        if (force) {
+            return getPreferences().getBoolean(PARAMETERS_CODE_COMPLETION, true);
+        }
+        return isParametersCodeCompletion;
+    }
+
     public boolean isParametersCodeCompletion() {
-        return getPreferences().getBoolean(PARAMETERS_CODE_COMPLETION, true);
+        return isParametersCodeCompletion(false);
     }
 
     public void setParametersCodeCompletion(boolean isParameters) {
