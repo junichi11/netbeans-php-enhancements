@@ -113,7 +113,10 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
             }
             Token<PHPTokenId> previoutsToken = ts.token();
             int caretOffset = context.getOffset();
-            if (isInArray(ts, caretOffset) || isAfterAs(ts, caretOffset)) {
+            if (isInArray(ts, caretOffset)
+                    || isAfterAs(ts, caretOffset)
+                    || isInArrowFunction(ts, caretOffset)
+                    || addInMatchExpression(ts, caretOffset)) {
                 if (previoutsToken.id() == PHPTokenId.PHP_OPERATOR || isIgnoredContext(previoutsToken)) {
                     // in case of =>|, just remove ">"
                     if (LexUtilities.textEquals(previoutsToken.text(), '=', '>')) {
@@ -130,7 +133,7 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
                             }
                         }
                     }
-                    // in case of =|, ==| and ===|, e.t.c. do nothing
+                    // in case of =|, ==| and ===|, etc. do nothing
                     return;
                 }
                 String text = ch + ">"; // NOI18N
@@ -151,22 +154,22 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      */
     private static boolean isInArray(TokenSequence<PHPTokenId> ts, int caretOffset) {
         ts.move(caretOffset);
-        int newArrayBalacne = 0;
-        int oldArrayBalacne = 0;
+        int newArrayBalance = 0;
+        int oldArrayBalance = 0;
         while (ts.movePrevious()) {
             Token<PHPTokenId> token = ts.token();
             if (token.id() == PHPTokenId.PHP_SEMICOLON) { // terminator
                 break;
             }
             if (isLeftBracket(token)) { // [
-                if (newArrayBalacne == 0) {
+                if (newArrayBalance == 0) {
                     return true;
                 }
-                newArrayBalacne--;
+                newArrayBalance--;
             } else if (isRightBracket(token)) { // ]
-                newArrayBalacne++;
+                newArrayBalance++;
             } else if (isLeftBrace(token)) { // (
-                if (oldArrayBalacne == 0) {
+                if (oldArrayBalance == 0) {
                     // array(
                     if (!ts.movePrevious()) {
                         break;
@@ -179,9 +182,9 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
                     }
                     return ts.token().id() == PHPTokenId.PHP_ARRAY;
                 }
-                oldArrayBalacne--;
+                oldArrayBalance--;
             } else if (isRightBrace(token)) { // )
-                oldArrayBalacne++;
+                oldArrayBalance++;
             }
         }
         return false;
@@ -203,6 +206,75 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
 
         return AFTER_AS.stream()
                 .noneMatch((tokenId) -> (!ts.movePrevious() || tokenId != ts.token().id()));
+    }
+
+    private static boolean isInArrowFunction(TokenSequence<PHPTokenId> ts, int caretOffset) {
+        ts.move(caretOffset);
+        int braceBalance = 0;
+        while (ts.movePrevious()) {
+            Token<PHPTokenId> token = ts.token();
+            if (token.id() == PHPTokenId.PHP_SEMICOLON) { // terminator
+                break;
+            }
+            if (isRightBrace(token)) {
+                braceBalance++;
+            } else if (isLeftBrace(token)) {
+                braceBalance--;
+            } else if (token.id() == PHPTokenId.PHP_FN) {
+                if (braceBalance == 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private static boolean addInMatchExpression(TokenSequence<PHPTokenId> ts, int caretOffset) {
+        ts.move(caretOffset);
+        int braceBalance = 0;
+        int curlyBalance = 0;
+        int bracketBalance = 0;
+        int commaCount = 0;
+        while (ts.movePrevious()) {
+            Token<PHPTokenId> token = ts.token();
+            if (token.id() == PHPTokenId.PHP_SEMICOLON) { // terminator
+                break;
+            }
+            if (isRightBrace(token)) {
+                braceBalance++;
+            } else if (isLeftBrace(token)) {
+                braceBalance--;
+            } else if (isRightCurlyBrace(token)) {
+                curlyBalance++;
+            } else if (isLeftCurlyBrace(token)) {
+                curlyBalance--;
+            } else if (isRightBracket(token)) {
+                bracketBalance++;
+            } else if (isLeftBracket(token)) {
+                bracketBalance--;
+            } else if (isComma(token)) {
+                if (bracketBalance == 0
+                        && bracketBalance == 0
+                        && curlyBalance == 0) {
+                    commaCount++;
+                }
+            } else if (LexUtilities.textEquals(token.text(), '=', '>')) {
+                // e.g. condition() => $test =^
+                if (bracketBalance == 0
+                        && bracketBalance == 0
+                        && curlyBalance == 0
+                        && commaCount == 0) {
+                    return false;
+                }
+            } else if (token.id() == PHPTokenId.PHP_MATCH) {
+                if (braceBalance == 0
+                        && bracketBalance == 0
+                        && curlyBalance == -1) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     @Override
@@ -305,6 +377,36 @@ public class PhpTypedTextInterceptorEx implements TypedTextInterceptor {
      */
     private static boolean isRightBrace(Token<PHPTokenId> token) {
         return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), ')');
+    }
+
+    /**
+     * Check whether the token is "{".
+     *
+     * @param token the token
+     * @return {@code true} if it is "{", otherwise {@code false}
+     */
+    private static boolean isLeftCurlyBrace(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_CURLY_OPEN;
+    }
+
+    /**
+     * Check whether the token is "}".
+     *
+     * @param token the token
+     * @return {@code true} if it is "}", otherwise {@code false}
+     */
+    private static boolean isRightCurlyBrace(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_CURLY_CLOSE;
+    }
+
+    /**
+     * Check whether the token is ",".
+     *
+     * @param token the token
+     * @return {@code true} if it is ",", otherwise {@code false}
+     */
+    private static boolean isComma(Token<PHPTokenId> token) {
+        return token.id() == PHPTokenId.PHP_TOKEN && LexUtilities.textEquals(token.text(), ',');
     }
 
     @MimeRegistration(mimeType = Utils.PHP_MIME_TYPE, service = TypedTextInterceptor.Factory.class)

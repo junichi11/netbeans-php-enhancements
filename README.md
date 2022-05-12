@@ -68,7 +68,17 @@ e.g.  type `$this-` => `$this->`, type `array('key' =)` => `array('key' =>)`
 $this->property;
 $array = array('key' => 'value');
 $a = ["foo" => "bar"];
+$f = fn() => "arrow function";
+$result = match ($condition) {
+    1, 2 => foo(),
+    default => bar(),
+};
 ```
+
+#### Note:
+
+- If you want to type `==`, please type `=` after `=>`.
+- If you want to type `=`, please delete `>`. (It's difficult to handle all cases correctly...)
 
 ### Code completion
 
